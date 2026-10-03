@@ -1,0 +1,45 @@
+name: publish README reader
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - site/readme.html
+      - site/readme-reader.js
+      - site/lang-picker.js
+      - site/style.css
+      - site/vendor/**
+      - .github/workflows/readme-pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: readme-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Assemble the static reader
+        run: |
+          mkdir -p _readme_pages/vendor
+          cp site/readme.html _readme_pages/index.html
+          cp site/readme.html site/readme-reader.js site/lang-picker.js site/style.css _readme_pages/
+          cp site/vendor/marked.umd.js site/vendor/marked-LICENSE.md _readme_pages/vendor/
+          touch _readme_pages/.nojekyll
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _readme_pages
+      - uses: actions/deploy-pages@v4
+        id: deployment

@@ -1,0 +1,75 @@
+name: translate full README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - scripts/translate_readme_full.py
+      - scripts/readme_translations.py
+      - .github/workflows/readme-translations.yml
+  workflow_dispatch:
+
+concurrency:
+  group: readme-translations
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        lang: [es, fr, pt, de, it, zh, ja, ko, hi, ar, ru, tr]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: .github/translate-requirements.txt
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-facebook-nllb-200-distilled-600M
+
+      - run: pip install -r .github/translate-requirements.txt
+
+      - name: Translate complete README without changing code or paths
+        env:
+          LANG_CODE: ${{ matrix.lang }}
+        run: python3 scripts/translate_readme_full.py --lang "$LANG_CODE" --output "$RUNNER_TEMP/README.full.md"
+
+      - name: Publish this language to translations branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LANG_CODE: ${{ matrix.lang }}
+        run: |
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          PUBLISH_DIR="$RUNNER_TEMP/readme-publish"
+          trap 'git worktree remove --force "$PUBLISH_DIR" 2>/dev/null || true' EXIT
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git worktree remove --force "$PUBLISH_DIR" 2>/dev/null || true
+            git fetch origin "+refs/heads/translations:refs/remotes/origin/translations"
+            git worktree add --detach "$PUBLISH_DIR" origin/translations
+            mkdir -p "$PUBLISH_DIR/i18n/$LANG_CODE"
+            cp "$RUNNER_TEMP/README.full.md" "$PUBLISH_DIR/i18n/$LANG_CODE/README.full.md"
+            if ( cd "$PUBLISH_DIR" && git add -f "i18n/$LANG_CODE/README.full.md" &&
+                 { git diff --cached --quiet || git commit -m "docs(i18n): full README in $LANG_CODE"; } &&
+                 git push origin HEAD:refs/heads/translations ); then
+              exit 0
+            fi
+            sleep "$((RANDOM % 12 + 3))"
+          done
+          echo "Could not publish $LANG_CODE after retries" >&2
+          exit 1
