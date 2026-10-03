@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
+</p>
+
+<p align="center">
   <b>Read in your language:</b>
   <a href="i18n/es/README.md">Español</a> ·
   <a href="i18n/fr/README.md">Français</a> ·
@@ -14,12 +18,6 @@
   <a href="i18n/tr/README.md">Türkçe</a>
   <br><sub>Translated landing pages, committed to the repo. English is canonical; lesson pages are machine-translated on the <code>translations</code> branch. See <a href="docs/i18n.md">docs/i18n.md</a>.</sub>
 </p>
-
-<p align="center">
-  <img src="assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
-</p>
-
-
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-1a1a1a?style=flat-square&labelColor=fafaf5" alt="MIT License"></a>
@@ -80,10 +78,6 @@ same lesson code.
 
 Not sure where you fit? Use the [`start-learning` placement tutor](skills/start-learning/SKILL.md)
 or the [website prerequisites guide](https://aiengineeringfromscratch.com/prereqs.html).
-
-### Read primary sources where they belong
-
-The Sutskever–Carmack reading-list sources are connected to the lessons that teach their ideas across the existing phases. Open the [phase-by-phase research crosswalk](research/sutskever-30/README.md) for 30 source cards, notebook companions, and scope notes. This adds no separate phase and does not replace the course lesson. Use the [Sutskever Paper Tutor](skills/sutskever-paper-tutor/SKILL.md) to discuss a source or quiz one concept at a time.
 
 Compare four core domains and six career routes in the [AI Engineering Learning Paths](https://aiengineeringfromscratch.com/learning-paths.html).
 
@@ -1367,7 +1361,6 @@ HEAD/GET).
 - *Chain-of-Thought Prompting* → [Phase 11](#phase-11)
 - *ReAct: Reasoning + Acting in LLMs* → [Phase 14](#phase-14)
 - *Model Context Protocol* — Anthropic → [Phase 13](#phase-13)
-- *Sutskever–Carmack reading-list sources* — 30 items woven into the relevant existing phases → [paper-to-lesson map](research/sutskever-30/README.md)
 
 </td>
 </tr>
