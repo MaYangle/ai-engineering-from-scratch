@@ -226,9 +226,3 @@ on first based on their weakest area.
 Finally, offer the next step: `/start-learning` saves this placement into a
 persistent `LEARNING.md` study plan, and `/learn` starts the first lesson,
 taught interactively.
-
-## Optional primary-source extension
-
-After the placement score and core phase recommendation are complete, offer an optional primary-source card only when the learner wants deeper research context. The 30 Sutskever–Carmack reading-list items are mapped to existing phase lessons in research/sutskever-30/README.md; do not change the placement score, replace a core lesson, or invent a new phase.
-
-Use the weakest scored area to choose one relevant existing connection: Math & Statistics → P01, P12, P19, P23, or P25; Classical ML → P05; Deep Learning → P04, P07, P10, or P17; NLP & Transformers → P02, P03, P13, P14, P22, or P27; Applied AI → P28, P29, or P30. Open the matching card, confirm its mapped course lesson, and use the sutskever-paper-tutor skill for discussion or a one-question-at-a-time quiz.
