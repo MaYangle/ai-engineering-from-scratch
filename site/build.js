@@ -14,6 +14,19 @@ const crypto = require('crypto');
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const README_PATH = path.join(REPO_ROOT, 'README.md');
+const README_EN_START = '<!-- README-EN:START -->';
+const README_EN_END = '<!-- README-EN:END -->';
+
+function englishReadme(content) {
+  const start = content.indexOf(README_EN_START);
+  const end = content.indexOf(README_EN_END);
+  if (start < 0 && end < 0) return content;
+  if (start < 0 || end < start || content.indexOf(README_EN_START, start + 1) >= 0 ||
+      content.indexOf(README_EN_END, end + 1) >= 0) {
+    throw new Error('README English section markers are missing or duplicated');
+  }
+  return content.slice(start + README_EN_START.length, end).trim() + '\n';
+}
 const ROADMAP_PATH = path.join(REPO_ROOT, 'ROADMAP.md');
 const GLOSSARY_PATH = path.join(REPO_ROOT, 'glossary', 'terms.md');
 const OUTPUT_PATH = path.join(__dirname, 'data.js');
@@ -146,6 +159,7 @@ function parseRoadmap(content) {
 
 // ─── Parse README.md for phases and lessons ──────────────────────────
 function parseReadme(content, roadmapStatuses) {
+  content = englishReadme(content);
   const phases = [];
 
   // Split into phase blocks
@@ -648,6 +662,7 @@ function writeFigureManifest(repoRoot = REPO_ROOT, siteDir = __dirname) {
 // phase-level learning path. Keeping the website graph generated from it
 // prevents the interactive roadmap from drifting into a second curriculum.
 function parseCurriculumPrereqs(content, phases) {
+  content = englishReadme(content);
   const section = content.match(/## The shape of the curriculum[\s\S]*?```mermaid\s*\r?\n([\s\S]*?)```/);
   if (!section) throw new Error('README.md is missing the canonical curriculum Mermaid graph');
 

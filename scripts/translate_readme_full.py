@@ -79,7 +79,7 @@ def translate_visible(line, table, translate):
         if protected:
             if part.lower().startswith("<img "):
                 part = ACCESSIBLE_TEXT.sub(
-                    lambda match: match.group(1) + match.group(2)
+                    lambda match: match.group(1) + "=" + match.group(2)
                     + translate_phrase(match.group(3), table, translate) + match.group(4),
                     part,
                 )

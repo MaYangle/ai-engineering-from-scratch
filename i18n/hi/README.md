@@ -1,24 +1,4 @@
 <p align="center"><sub>सामुदायिक अनुवाद। <a href="../../README.md">अंग्रेज़ी संस्करण ही प्रामाणिक है</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>
-<!-- README-LANGUAGES:START -->
-<p align="center">
-  <b>Read the full README in your language:</b>
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=en">English</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=es">Español</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=fr">Français</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=pt">Português</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=de">Deutsch</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=it">Italiano</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=zh">简体中文</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=ja">日本語</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=ko">한국어</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=hi">हिन्दी</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=ar">العربية</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=ru">Русский</a> ·
-  <a href="https://mayangle.github.io/ai-engineering-from-scratch/readme.html?lang=tr">Türkçe</a>
-  <br><sub>The static reader switches the whole document in place. Commands, code, and repository paths remain unchanged. English is canonical; translations are generated with NLLB-200. See <a href="../../docs/i18n.md">docs/i18n.md</a>.</sub>
-</p>
-<!-- README-LANGUAGES:END -->
-
 <p align="center">
   <img src="../../assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
 </p>

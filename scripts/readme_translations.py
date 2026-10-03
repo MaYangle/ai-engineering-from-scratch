@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Hand-authored README translations, consumed by build_readme_i18n.py.
+"""Hand-authored legacy README translations, consumed by build_readme_i18n.py.
 
 Keyed by the exact English block (whitespace-normalized). Inline markdown, code
 spans, and links are preserved in the translations. The high-visibility landing
@@ -8,7 +8,7 @@ paragraphs stay in canonical English. Any block without an entry falls back to
 English, so partial coverage is safe and this table can grow language by
 language without breaking a build.
 
-To add a language: add its code here and to the README language bar; run
+ To add a legacy landing copy: add its code here; run
     python3 scripts/build_readme_i18n.py
 """
 
@@ -57,7 +57,7 @@ README_NOTE = {
     "pt": '<p align="center"><sub>Tradução da comunidade. O <a href="../../README.md">inglês é a versão canônica</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "de": '<p align="center"><sub>Community-Übersetzung. Maßgeblich ist das <a href="../../README.md">englische Original</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "it": '<p align="center"><sub>Traduzione della community. Fa fede la <a href="../../README.md">versione inglese</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
-    "zh": '<p align="center"><sub>社区翻译，以<a href="../../README.md">英文原文为准</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
+    "zh": '<p align="center"><sub>完整中文译本，以<a href="../../README.md">英文原文为准</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "ja": '<p align="center"><sub>コミュニティによる翻訳です。正文は<a href="../../README.md">英語版</a>です · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "ko": '<p align="center"><sub>커뮤니티 번역입니다. 정본은 <a href="../../README.md">영어판</a>입니다 · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "hi": '<p align="center"><sub>सामुदायिक अनुवाद। <a href="../../README.md">अंग्रेज़ी संस्करण ही प्रामाणिक है</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',

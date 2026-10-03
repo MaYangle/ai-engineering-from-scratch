@@ -7,21 +7,6 @@
   'use strict';
   var LANGS = Array.isArray(window.AIFS_LANGS) ? window.AIFS_LANGS : [{ code: 'en', native: 'English' }];
   var RTL = { ar: 1, he: 1, fa: 1, ur: 1 };
-  var UI = {
-    en: ['Language', 'Filter languages', 'Choose language. Current language: '],
-    es: ['Idioma', 'Filtrar idiomas', 'Elegir idioma. Idioma actual: '],
-    fr: ['Langue', 'Filtrer les langues', 'Choisir la langue. Langue actuelle : '],
-    pt: ['Idioma', 'Filtrar idiomas', 'Escolher idioma. Idioma atual: '],
-    de: ['Sprache', 'Sprachen filtern', 'Sprache wählen. Aktuelle Sprache: '],
-    it: ['Lingua', 'Filtra le lingue', 'Scegli la lingua. Lingua attuale: '],
-    zh: ['语言', '筛选语言', '选择语言。当前语言：'],
-    ja: ['言語', '言語を絞り込む', '言語を選択。現在の言語：'],
-    ko: ['언어', '언어 검색', '언어 선택. 현재 언어: '],
-    hi: ['भाषा', 'भाषाएँ छाँटें', 'भाषा चुनें। वर्तमान भाषा: '],
-    ar: ['اللغة', 'تصفية اللغات', 'اختر اللغة. اللغة الحالية: '],
-    ru: ['Язык', 'Поиск языка', 'Выбрать язык. Текущий язык: '],
-    tr: ['Dil', 'Dilleri filtrele', 'Dil seçin. Geçerli dil: ']
-  };
   var pickerId = 0;
 
   function isCertificationLesson() {
@@ -90,13 +75,8 @@
 
     function updateButton() {
       var label = nativeOf(current());
-      var ui = UI[current()] || UI.en;
       currentLabel.textContent = label;
-      btn.setAttribute('aria-label', ui[2] + label);
-      panel.querySelector('.lang-panel-head').textContent = ui[0];
-      filter.placeholder = ui[1];
-      filter.setAttribute('aria-label', ui[1]);
-      list.setAttribute('aria-label', ui[0]);
+      btn.setAttribute('aria-label', 'Choose language. Current language: ' + label);
     }
 
     function renderList(q) {
@@ -159,9 +139,7 @@
         try { localStorage.setItem('lang', lang); } catch (_) {}
         url.searchParams.set('lang', lang);
       }
-      // file:// previews cannot always change their history entry. The saved
-      // preference still updates, so the page can re-render without a server.
-      try { history.replaceState(null, '', url); } catch (_) {}
+      history.replaceState(null, '', url);
       applyDir(lang);
       updateButton();
       close(true);

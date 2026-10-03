@@ -1,13 +1,6 @@
-name: translate full README
+name: draft full Chinese README
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - README.md
-      - scripts/translate_readme_full.py
-      - scripts/readme_translations.py
-      - .github/workflows/readme-translations.yml
   workflow_dispatch:
 
 concurrency:
