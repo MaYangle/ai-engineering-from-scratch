@@ -109,3 +109,10 @@ The simulator uses stdlib only. The intent is pedagogical: hold the numbers in y
 - [Anthropic — Measuring AI agent autonomy in practice](https://www.anthropic.com/research/measuring-agent-autonomy) — internal view on horizon, alignment faking, and deployment gap.
 - [METR — Resources for Measuring Autonomous AI Capabilities](https://metr.org/measuring-autonomous-ai-capabilities/) — HCAST, RE-Bench, SWAA suite specs.
 - [Anthropic — Claude's Constitution (January 2026)](https://www.anthropic.com/news/claudes-constitution) — the priority hierarchy that governs long-horizon Claude behavior.
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P24 · Machine Super Intelligence](../../../../research/sutskever-30/papers/P24.md)
