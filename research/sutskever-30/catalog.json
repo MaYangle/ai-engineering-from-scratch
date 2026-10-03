@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": 1,
+      "title": "The First Law of Complexodynamics",
+      "authors": "Scott Aaronson",
+      "kind": "Essay / blog post (not a research paper)",
+      "source": "https://scottaaronson.blog/?p=762",
+      "source_label": "Author's original essay",
+      "related_sources": [],
+      "course_lesson": "01.09",
+      "course_path": "phases/01-math-foundations/09-information-theory/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/01_complexity_dynamics.ipynb",
+      "license": "Link only; no explicit redistribution permission found.",
+      "scope": "Rule 30 and mixing are toy illustrations. They do not prove a physical law, and apparent complexity is not Shannon entropy."
+    },
+    {
+      "id": 2,
+      "title": "The Unreasonable Effectiveness of Recurrent Neural Networks",
+      "authors": "Andrej Karpathy",
+      "kind": "Tutorial / blog post (not a research paper)",
+      "source": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
+      "source_label": "Author's original tutorial",
+      "related_sources": [],
+      "course_lesson": "05.16",
+      "course_path": "phases/05-nlp-foundations-to-advanced/16-text-generation-pre-transformer/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/02_char_rnn_karpathy.ipynb",
+      "license": "Link only; no explicit redistribution permission found.",
+      "scope": "The synthetic-text Notebook demonstrates a character RNN; it does not reproduce the tutorial's real-text experiments or measure language understanding."
+    },
+    {
+      "id": 3,
+      "title": "Understanding LSTM Networks",
+      "authors": "Christopher Olah; original LSTM paper by Sepp Hochreiter and Jürgen Schmidhuber",
+      "kind": "Tutorial (not the original LSTM research paper)",
+      "source": "https://colah.github.io/posts/2015-08-Understanding-LSTMs/",
+      "source_label": "Olah's explanatory tutorial",
+      "related_sources": [
+        "https://doi.org/10.1162/neco.1997.9.8.1735"
+      ],
+      "course_lesson": "05.08",
+      "course_path": "phases/05-nlp-foundations-to-advanced/08-cnns-rnns-for-text/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/03_lstm_understanding.ipynb",
+      "license": "Link only; no explicit redistribution permission found.",
+      "scope": "Gates can help preserve useful state and gradients but do not guarantee arbitrary long-term memory."
+    },
+    {
+      "id": 4,
+      "title": "Recurrent Neural Network Regularization",
+      "authors": "Wojciech Zaremba, Ilya Sutskever, and Oriol Vinyals",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1409.2329",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "03.07",
+      "course_path": "phases/03-deep-learning-core/07-regularization/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/04_rnn_regularization.ipynb",
+      "license": "Link only; arXiv's default non-exclusive distribution license is not a general permission to rehost the PDF.",
+      "scope": "The paper applies dropout on non-recurrent connections. A repeated temporal mask is a distinct design choice and needs separate attribution."
+    },
+    {
+      "id": 5,
+      "title": "Keeping Neural Networks Simple by Minimizing the Description Length of the Weights",
+      "authors": "Geoffrey Hinton and Drew van Camp",
+      "kind": "Research paper",
+      "source": "https://doi.org/10.1145/168304.168306",
+      "source_label": "ACM Digital Library record",
+      "related_sources": [],
+      "course_lesson": "03.07",
+      "course_path": "phases/03-deep-learning-core/07-regularization/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/05_neural_network_pruning.ipynb",
+      "license": "Link only. ACM allows limited personal/classroom non-commercial copying; public server redistribution requires permission.",
+      "scope": "The 1993 MDL method is not modern magnitude pruning. The Notebook combines related methods; cite pruning sources separately."
+    },
+    {
+      "id": 6,
+      "title": "Pointer Networks",
+      "authors": "Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1506.03134",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "05.10",
+      "course_path": "phases/05-nlp-foundations-to-advanced/10-attention-mechanism/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/06_pointer_networks.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "A pointer selects variable-sized input positions. It does not itself make the encoder permutation-invariant or guarantee generalization."
+    },
+    {
+      "id": 7,
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "authors": "Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton",
+      "kind": "Research paper",
+      "source": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks",
+      "source_label": "NeurIPS paper record",
+      "related_sources": [
+        "https://www.cs.toronto.edu/~kriz/imagenet_classification_with_deep_convolutional.pdf"
+      ],
+      "course_lesson": "04.03",
+      "course_path": "phases/04-computer-vision/03-cnns-lenet-to-resnet/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/07_alexnet_cnn.ipynb",
+      "license": "Link only; no explicit permission to rehost the PDF found.",
+      "scope": "Synthetic images and a scaled network are not an ImageNet reproduction. Keep the paper's LSVRC 2010 evaluation separate from its later 2012 competition result."
+    },
+    {
+      "id": 8,
+      "title": "Order Matters: Sequence to Sequence for Sets",
+      "authors": "Oriol Vinyals, Samy Bengio, and Manjunath Kudlur",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1511.06391",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "05.09",
+      "course_path": "phases/05-nlp-foundations-to-advanced/09-sequence-to-sequence/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/08_seq2seq_for_sets.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The Notebook's broad read-process-write framing is a teaching abstraction. Its forward-pass examples do not demonstrate a learned model or the paper's full experiments."
+    },
+    {
+      "id": 9,
+      "title": "GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism",
+      "authors": "Yanping Huang et al.",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1811.06965",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "10.05",
+      "course_path": "phases/10-llms-from-scratch/05-scaling-distributed/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/09_gpipe.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The single-process simulation explains scheduling ideas; it does not demonstrate multi-device throughput or the paper's speedups."
+    },
+    {
+      "id": 10,
+      "title": "Deep Residual Learning for Image Recognition",
+      "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1512.03385",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "04.03",
+      "course_path": "phases/04-computer-vision/03-cnns-lenet-to-resnet/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/10_resnet_deep_residual.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "Skip connections can ease optimization; they do not guarantee gradients never vanish or reproduce the paper's ImageNet experiments."
+    },
+    {
+      "id": 11,
+      "title": "Multi-Scale Context Aggregation by Dilated Convolutions",
+      "authors": "Fisher Yu and Vladlen Koltun",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1511.07122",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "04.07",
+      "course_path": "phases/04-computer-vision/07-semantic-segmentation-unet/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/11_dilated_convolutions.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The paper targets dense prediction and semantic segmentation; one dilated-convolution operator is not the full paper model."
+    },
+    {
+      "id": 12,
+      "title": "Neural Message Passing for Quantum Chemistry",
+      "authors": "Justin Gilmer et al.",
+      "kind": "Research paper",
+      "source": "https://proceedings.mlr.press/v70/gilmer17a.html",
+      "source_label": "PMLR paper record",
+      "related_sources": [
+        "https://arxiv.org/abs/1704.01212",
+        "https://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf"
+      ],
+      "course_lesson": "01.21",
+      "course_path": "phases/01-math-foundations/21-graph-theory/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/12_graph_neural_networks.ipynb",
+      "license": "PMLR articles are published under the CC BY 4.0 author agreement. An unmodified PDF is included at [pdfs/P12.pdf](pdfs/P12.pdf) with attribution.",
+      "scope": "The toy implementation is not the paper's quantum-chemistry experiment or QM9 reproduction."
+    },
+    {
+      "id": 13,
+      "title": "Attention Is All You Need",
+      "authors": "Ashish Vaswani et al.",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1706.03762",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "07.05",
+      "course_path": "phases/07-transformers-deep-dive/05-full-transformer/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/13_attention_is_all_you_need.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The original paper uses an encoder–decoder for sequence transduction. Causal self-attention is a related autoregressive language-model setup, not the entire original architecture."
+    },
+    {
+      "id": 14,
+      "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+      "authors": "Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1409.0473",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "05.10",
+      "course_path": "phases/05-nlp-foundations-to-advanced/10-attention-mechanism/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/14_bahdanau_attention.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "This is additive attention over an RNN encoder–decoder, not Transformer self-attention. The synthetic translation task is not the paper experiment."
+    },
+    {
+      "id": 15,
+      "title": "Identity Mappings in Deep Residual Networks",
+      "authors": "Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1603.05027",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "04.03",
+      "course_path": "phases/04-computer-vision/03-cnns-lenet-to-resnet/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-01-foundations/15_identity_mappings_resnet.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The paper analyzes identity skip paths and post-add activations; pre-activation is a complete block design, not just moving ReLU before a convolution."
+    },
+    {
+      "id": 16,
+      "title": "A Simple Neural Network Module for Relational Reasoning",
+      "authors": "Adam Santoro et al.",
+      "kind": "Research paper",
+      "source": "https://proceedings.neurips.cc/paper/2017/hash/e6acf4b0f69f6f6e60e9a815938aa1ff-Abstract.html",
+      "source_label": "NeurIPS paper record",
+      "related_sources": [
+        "https://arxiv.org/abs/1706.01427"
+      ],
+      "course_lesson": "05.13",
+      "course_path": "phases/05-nlp-foundations-to-advanced/13-question-answering/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/16_relational_reasoning.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The toy task demonstrates a relation-network architecture; it does not establish general reasoning or reproduce the full evaluations."
+    },
+    {
+      "id": 17,
+      "title": "Variational Lossy Autoencoder",
+      "authors": "Xi Chen, Diederik P. Kingma et al.",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1611.02731",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "08.02",
+      "course_path": "phases/08-generative-ai/02-autoencoders-vae/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/17_variational_autoencoder.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The Notebook primarily teaches a standard VAE; the linked paper combines global latent variables with an autoregressive decoder to capture global structure and leave details lossy."
+    },
+    {
+      "id": 18,
+      "title": "Relational Recurrent Neural Networks",
+      "authors": "Adam Santoro, Ryan Faulkner, David Raposo, Jack Rae, Mike Chrzanowski, Theophane Weber, Daan Wierstra, Oriol Vinyals, Razvan Pascanu, and Timothy Lillicrap",
+      "kind": "Research paper",
+      "source": "https://proceedings.neurips.cc/paper/2018/hash/e2eabaf96372e20a9e3d4b5f83723a61-Abstract.html",
+      "source_label": "NeurIPS paper record",
+      "related_sources": [
+        "https://arxiv.org/abs/1806.01822"
+      ],
+      "course_lesson": "05.08",
+      "course_path": "phases/05-nlp-foundations-to-advanced/08-cnns-rnns-for-text/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/18_relational_rnn.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The notebook implements selected relational-memory components and experiments on toy tasks; it is not the paper's full training and benchmark suite."
+    },
+    {
+      "id": 19,
+      "title": "Quantifying the Rise and Fall of Complexity in Closed Systems: The Coffee Automaton",
+      "authors": "Scott Aaronson et al.",
+      "kind": "Research paper with a later author correction",
+      "source": "https://arxiv.org/abs/1405.6903",
+      "source_label": "arXiv paper record",
+      "related_sources": [
+        "https://scottaaronson.blog/?p=1818"
+      ],
+      "course_lesson": "01.09",
+      "course_path": "phases/01-math-foundations/09-information-theory/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/19_coffee_automaton.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "Read Aaronson's correction before treating the interacting coffee-automaton experiment as evidence: he reported a serious experimental error. The Notebook's extra thermodynamics topics are separate illustrations, not verified results of the paper."
+    },
+    {
+      "id": 20,
+      "title": "Neural Turing Machines",
+      "authors": "Alex Graves, Greg Wayne, and Ivo Danihelka",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/1410.5401",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "14.07",
+      "course_path": "phases/14-agent-engineering/07-memory-virtual-context-memgpt/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/20_neural_turing_machine.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The copy task teaches differentiable read/write; it is not the paper's full training setup or evidence of general algorithmic ability."
+    },
+    {
+      "id": 21,
+      "title": "Deep Speech 2: End-to-End Speech Recognition in English and Mandarin",
+      "authors": "Dario Amodei et al.",
+      "kind": "Research paper",
+      "source": "https://proceedings.mlr.press/v48/amodei16.html",
+      "source_label": "PMLR paper record",
+      "related_sources": [
+        "https://arxiv.org/abs/1512.02595",
+        "https://proceedings.mlr.press/v48/amodei16.pdf"
+      ],
+      "course_lesson": "06.04",
+      "course_path": "phases/06-speech-and-audio/04-speech-recognition-asr/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/21_ctc_speech.ipynb",
+      "license": "PMLR articles are published under the CC BY 4.0 author agreement. An unmodified PDF is included at [pdfs/P21.pdf](pdfs/P21.pdf) with attribution.",
+      "scope": "The Notebook demonstrates CTC mechanics on synthetic features; it does not reproduce Deep Speech 2 with real speech or large-scale training."
+    },
+    {
+      "id": 22,
+      "title": "Scaling Laws for Neural Language Models",
+      "authors": "Jared Kaplan et al.",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/2001.08361",
+      "source_label": "arXiv paper record",
+      "related_sources": [
+        "https://arxiv.org/abs/2203.15556"
+      ],
+      "course_lesson": "07.13",
+      "course_path": "phases/07-transformers-deep-dive/13-scaling-laws/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/22_scaling_laws.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "Synthetic curves illustrate fitting/extrapolation, not the paper's empirical measurements. Chinchilla is later work by Hoffmann et al. (2022), not a Kaplan result; see the related source link."
+    },
+    {
+      "id": 23,
+      "title": "The Minimum Description Length Principle",
+      "authors": "Peter Grünwald; the Notebook also cites Jorma Rissanen's foundational article",
+      "kind": "Book plus foundational article (not a single paper)",
+      "source": "https://doi.org/10.7551/MITPRESS/4643.001.0001",
+      "source_label": "MIT Press book record",
+      "related_sources": [
+        "https://doi.org/10.1016/0005-1098(78)90005-5"
+      ],
+      "course_lesson": "01.09",
+      "course_path": "phases/01-math-foundations/09-information-theory/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/23_mdl_principle.ipynb",
+      "license": "Link only; book and Elsevier article are copyrighted; no redistribution permission found.",
+      "scope": "MDL depends on a specified coding scheme and model class. It is related to, but not identical to, uncomputable Kolmogorov complexity."
+    },
+    {
+      "id": 24,
+      "title": "Machine Super Intelligence",
+      "authors": "Shane Legg",
+      "kind": "PhD thesis (not a research paper)",
+      "source": "https://www.vetta.org/documents/Machine_Super_Intelligence.pdf",
+      "source_label": "Thesis PDF hosted by the author",
+      "related_sources": [
+        "https://www.inf.usi.ch/en/feeds/8625"
+      ],
+      "course_lesson": "15.01",
+      "course_path": "phases/15-autonomous-systems/01-long-horizon-agents/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/24_machine_super_intelligence.ipynb",
+      "license": "Link only; no explicit reuse license found.",
+      "scope": "Exact Solomonoff induction and AIXI are uncomputable. Monte Carlo/MCTS toys are approximations; takeoff simulations are thought experiments, not validated forecasts."
+    },
+    {
+      "id": 25,
+      "title": "An Introduction to Kolmogorov Complexity and Its Applications",
+      "authors": "Ming Li and Paul Vitányi",
+      "kind": "Book (not a single research paper)",
+      "source": "https://link.springer.com/book/10.1007/978-0-387-49820-1",
+      "source_label": "Springer book record",
+      "related_sources": [],
+      "course_lesson": "01.09",
+      "course_path": "phases/01-math-foundations/09-information-theory/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/25_kolmogorov_complexity.ipynb",
+      "license": "Link only; copyrighted book, no redistribution permission found.",
+      "scope": "A compressor's length is an upper bound for that encoding, not exact Kolmogorov complexity; finite incompressibility is not proof of algorithmic randomness."
+    },
+    {
+      "id": 26,
+      "title": "CS231n: Convolutional Neural Networks for Visual Recognition",
+      "authors": "Stanford CS231n course staff",
+      "kind": "University course (not a paper)",
+      "source": "https://cs231n.stanford.edu/2017/",
+      "source_label": "Stanford course site",
+      "related_sources": [
+        "https://cs231n.stanford.edu/2017/syllabus"
+      ],
+      "course_lesson": "04.02",
+      "course_path": "phases/04-computer-vision/02-convolutions-from-scratch/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-02-architectures-and-memory/26_cs231n_cnn_fundamentals.ipynb",
+      "license": "Link only; no course-site asset reuse license found.",
+      "scope": "This is an abbreviated NumPy tutorial, not Stanford's full course. Synthetic images are not CIFAR-10/ImageNet results; the original course expects calculus, linear algebra, statistics, and ML background."
+    },
+    {
+      "id": 27,
+      "title": "Better & Faster Large Language Models via Multi-token Prediction",
+      "authors": "Fabian Gloeckle, Badr Youbi Idrissi, Baptiste Rozière, David Lopez-Paz, and Gabriel Synnaeve",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/2404.19737",
+      "source_label": "arXiv paper record",
+      "related_sources": [],
+      "course_lesson": "10.18",
+      "course_path": "phases/10-llms-from-scratch/18-multi-token-prediction/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/27_multi_token_prediction.ipynb",
+      "license": "The source identifies CC BY 4.0. An unmodified PDF is included at [pdfs/P27.pdf](pdfs/P27.pdf) with attribution.",
+      "scope": "The paper uses independent future-token heads over a shared Transformer trunk. The small RNN/synthetic-text Notebook does not reproduce large-model benchmarks or inference-speed claims."
+    },
+    {
+      "id": 28,
+      "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "authors": "Vladimir Karpukhin et al.",
+      "kind": "Research paper",
+      "source": "https://aclanthology.org/2020.emnlp-main.550/",
+      "source_label": "ACL Anthology paper record",
+      "related_sources": [
+        "https://arxiv.org/abs/2004.04906",
+        "https://doi.org/10.18653/v1/2020.emnlp-main.550",
+        "https://aclanthology.org/2020.emnlp-main.550.pdf"
+      ],
+      "course_lesson": "05.14",
+      "course_path": "phases/05-nlp-foundations-to-advanced/14-information-retrieval-search/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/28_dense_passage_retrieval.ipynb",
+      "license": "ACL materials published since 2016 are licensed under CC BY 4.0. An unmodified PDF is included at [pdfs/P28.pdf](pdfs/P28.pdf) with attribution.",
+      "scope": "The simple random-initialized RNN encoder is not the paper's trained BERT-based DPR system. Do not claim DPR quality without a real training/evaluation run."
+    },
+    {
+      "id": 29,
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "authors": "Patrick Lewis et al.",
+      "kind": "Research paper",
+      "source": "https://arxiv.org/abs/2005.11401",
+      "source_label": "arXiv paper record",
+      "related_sources": [
+        "https://papers.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html"
+      ],
+      "course_lesson": "11.06",
+      "course_path": "phases/11-llm-engineering/06-rag/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/29_rag.ipynb",
+      "license": "Link only; no broad redistribution grant found.",
+      "scope": "The simple retriever/generator illustrates the architecture; it does not reproduce the original DPR, BART, Wikipedia-index training/evaluation setup."
+    },
+    {
+      "id": 30,
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "authors": "Nelson F. Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua, Fabio Petroni, and Percy Liang",
+      "kind": "Research paper (final TACL article, 2024)",
+      "source": "https://aclanthology.org/2024.tacl-1.9/",
+      "source_label": "ACL Anthology final article record",
+      "related_sources": [
+        "https://aclanthology.org/2024.tacl-1.9.pdf",
+        "https://arxiv.org/abs/2307.03172"
+      ],
+      "course_lesson": "05.28",
+      "course_path": "phases/05-nlp-foundations-to-advanced/28-long-context-evaluation/docs/en.md",
+      "notebook_url": "https://github.com/MaYangle/sutskever-30-implementations/blob/main/notebooks/track-03-limits-and-systems/30_lost_in_middle.ipynb",
+      "license": "The source identifies CC BY 4.0. An unmodified PDF is included at [pdfs/P30.pdf](pdfs/P30.pdf) with attribution.",
+      "scope": "The paper evaluates multi-document QA and key/value retrieval on real models. The synthetic position curve illustrates evaluation design, not the paper's findings."
+    }
+  ]
+}
