@@ -28,6 +28,7 @@ ENGLISH = re.compile(r"[A-Za-z]{2,}")
 INLINE_CODE = re.compile(r"`+[^`\n]*`+")
 LINK_TARGET = re.compile(r"\]\(([^)]*)\)")
 HTML_TARGET = re.compile(r"\b(?:href|src)=[\"']([^\"']+)[\"']")
+ACCESSIBLE_TEXT = re.compile(r'\b(alt|title)=(\")([^\"]*)(\")', re.IGNORECASE)
 
 
 def split_protected(value):
@@ -72,6 +73,12 @@ def translate_visible(line, table, translate):
     result = [marker]
     for protected, part in split_protected(body):
         if protected:
+            if part.lower().startswith("<img "):
+                part = ACCESSIBLE_TEXT.sub(
+                    lambda match: match.group(1) + match.group(2)
+                    + translate_phrase(match.group(3), table, translate) + match.group(4),
+                    part,
+                )
             result.append(part)
             continue
         for fragment in MARKUP.split(part):
