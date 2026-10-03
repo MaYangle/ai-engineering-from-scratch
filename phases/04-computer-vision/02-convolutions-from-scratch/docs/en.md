@@ -392,3 +392,10 @@ This lesson produces:
 - [CS231n: Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/convolutional-networks/) — the canonical lecture notes, including the original im2col explanation
 - [The Annotated ConvNet (fast.ai)](https://nbviewer.org/github/fastai/fastbook/blob/master/13_convolutions.ipynb) — a notebook that walks from manual convolution to a trained digit classifier
 - [Receptive Field Arithmetic for CNNs (Dang Ha The Hien)](https://distill.pub/2019/computing-receptive-fields/) — the paper-quality interactive explainer of receptive field calculations
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P26 · CS231n: Convolutional Neural Networks for Visual Recognition](../../../../research/sutskever-30/papers/P26.md)
