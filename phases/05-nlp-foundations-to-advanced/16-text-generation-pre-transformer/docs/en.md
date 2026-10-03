@@ -254,3 +254,10 @@ Refuse to report perplexity computed with different tokenization between systems
 - [Chen and Goodman (1998). An Empirical Study of Smoothing Techniques for Language Modeling](https://dash.harvard.edu/handle/1/25104739) — the paper that settled Kneser-Ney as the best n-gram smoother.
 - [Kneser and Ney (1995). Improved Backing-off for M-gram Language Modeling](https://ieeexplore.ieee.org/document/479394) — the original KN paper.
 - [KenLM](https://kheafield.com/code/kenlm/) — fast production n-gram LM, still used in 2026 for latency-sensitive applications.
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P02 · The Unreasonable Effectiveness of Recurrent Neural Networks](../../../../research/sutskever-30/papers/P02.md)
