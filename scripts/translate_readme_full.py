@@ -11,7 +11,7 @@ import hashlib
 import re
 from pathlib import Path
 
-from build_readme_i18n import README, spans
+from build_readme_i18n import README, english_source, spans
 from readme_translations import TRANSLATIONS
 from translate_lessons import NLLB_CODES, _nllb_pipe, _nllb_sentence
 
@@ -58,7 +58,11 @@ def translate_phrase(value, table, translate):
     else:
         translated = translate(core).replace("\r", " ").replace("\n", " ").strip()
         if not translated:
-            raise ValueError(f"empty translation for {core!r}")
+            # NLLB occasionally returns an empty string for a mixed acronym /
+            # product-name title. Keep the source phrase for editorial review
+            # rather than discarding the rest of a long translation job.
+            print(f"needs manual translation: {core!r}", flush=True)
+            translated = core
         # A translated pipe would create another Markdown table cell.
         translated = translated.replace("|", r"\|")
     return lead + translated + tail
@@ -143,7 +147,7 @@ def main():
     parser.add_argument("--lang", required=True, choices=sorted(TRANSLATIONS))
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    source = README.read_text(encoding="utf-8")
+    source = english_source(README.read_text(encoding="utf-8"))
     target = NLLB_CODES.get(args.lang)
     if not target:
         parser.error(f"no NLLB language code for {args.lang}")
