@@ -172,3 +172,10 @@ See `outputs/skill-transformer-block-reviewer.md`. The skill reviews a new trans
 - [Zhang, Sennrich (2019). Root Mean Square Layer Normalization](https://arxiv.org/abs/1910.07467) — RMSNorm.
 - [Shazeer (2020). GLU Variants Improve Transformer](https://arxiv.org/abs/2002.05202) — the SwiGLU paper.
 - [HuggingFace `modeling_llama.py`](https://github.com/huggingface/transformers/blob/main/src/transformers/models/llama/modeling_llama.py) — canonical 2026 decoder-only block.
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P13 · Attention Is All You Need](../../../../research/sutskever-30/papers/P13.md)
