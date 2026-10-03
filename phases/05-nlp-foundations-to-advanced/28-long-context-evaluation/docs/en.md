@@ -202,3 +202,10 @@ Refuse to trust a context window from the model card alone. Refuse NIAH-only eva
 - [Modarressi et al. (2024). NoLiMa: Non-lexical needles](https://arxiv.org/abs/2404.06666) — harder needles.
 - [Kuratov et al. (2024). BABILong](https://arxiv.org/abs/2406.10149) — reasoning-in-haystack.
 - [Liu et al. (2024). Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172) — the depth-bias paper.
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P30 · Lost in the Middle: How Language Models Use Long Contexts](../../../../research/sutskever-30/papers/P30.md)
