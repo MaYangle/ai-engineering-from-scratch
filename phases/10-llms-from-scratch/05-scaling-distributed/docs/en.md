@@ -570,3 +570,10 @@ This lesson produces `outputs/prompt-distributed-training-planner.md` -- a promp
 - [Zhao et al., 2023 -- "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel"](https://arxiv.org/abs/2304.11277) -- PyTorch's native FSDP implementation
 - [Llama 3 Technical Report](https://arxiv.org/abs/2407.21783) -- 16,384 GPU training with 3D parallelism details
 - [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) -- how MoE architecture reduces training cost by an order of magnitude
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P09 · GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](../../../../research/sutskever-30/papers/P09.md)
