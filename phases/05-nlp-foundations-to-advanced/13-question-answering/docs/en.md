@@ -195,3 +195,10 @@ Refuse closed-book LLM answers for regulatory or compliance-sensitive questions.
 - [Karpukhin et al. (2020). Dense Passage Retrieval for Open-Domain QA](https://arxiv.org/abs/2004.04906) — DPR, the canonical dense retriever for QA.
 - [Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) — the paper that named RAG.
 - [Gao et al. (2023). Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997) — comprehensive RAG survey.
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P16 · A Simple Neural Network Module for Relational Reasoning](../../../../research/sutskever-30/papers/P16.md)
