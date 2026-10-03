@@ -199,3 +199,11 @@ Refuse to recommend fine-tuning a transformer when data is under ~500 labeled ex
 - [Kim, Y. (2014). Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882) — the TextCNN paper. Eight pages. Readable.
 - [Hochreiter, S. and Schmidhuber, J. (1997). Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf) — the LSTM paper. Unexpectedly lucid.
 - [Olah, C. (2015). Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) — the diagrams that made LSTMs accessible to everyone.
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P03 · Understanding LSTM Networks](../../../../research/sutskever-30/papers/P03.md)
+- [P18 · Relational Recurrent Neural Networks](../../../../research/sutskever-30/papers/P18.md)
