@@ -391,3 +391,12 @@ This lesson produces:
 - [Very Deep Convolutional Networks (Simonyan & Zisserman, 2014)](https://arxiv.org/abs/1409.1556) — the VGG paper; still the best reference for "why 3x3"
 - [ImageNet Classification with Deep CNNs (Krizhevsky et al., 2012)](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) — AlexNet; the paper that ended the hand-crafted-feature era
 - [Going Deeper with Convolutions (Szegedy et al., 2014)](https://arxiv.org/abs/1409.4842) — Inception v1; the parallel-filter idea that still shows up in vision transformers
+
+
+## Research connections
+
+Use these primary-source cards as optional scholarly context for this lesson. Each card separates the original source's evidence from a teaching demonstration.
+
+- [P07 · ImageNet Classification with Deep Convolutional Neural Networks](../../../../research/sutskever-30/papers/P07.md)
+- [P10 · Deep Residual Learning for Image Recognition](../../../../research/sutskever-30/papers/P10.md)
+- [P15 · Identity Mappings in Deep Residual Networks](../../../../research/sutskever-30/papers/P15.md)
