@@ -18,6 +18,8 @@ on:
       - "scripts/debias_quizzes.py"
       - "scripts/check_quiz_bias.py"
       - "scripts/build_readme_i18n.py"
+      - "scripts/audit_readme_locales.py"
+      - "scripts/test_audit_readme_locales.py"
       - "scripts/readme_translations.py"
       - "scripts/build_catalog.py"
       - "scripts/check_readme_counts.py"
@@ -32,6 +34,8 @@ on:
       - "site/test_learning_paths.js"
       - "languages.json"
       - "README.md"
+      - "i18n/*/README.md"
+      - "docs/i18n.md"
       - "CONTRIBUTING.md"
       - "SPONSORS.md"
       - "BACKERS.md"
@@ -61,6 +65,8 @@ on:
       - "scripts/debias_quizzes.py"
       - "scripts/check_quiz_bias.py"
       - "scripts/build_readme_i18n.py"
+      - "scripts/audit_readme_locales.py"
+      - "scripts/test_audit_readme_locales.py"
       - "scripts/readme_translations.py"
       - "scripts/build_catalog.py"
       - "scripts/check_readme_counts.py"
@@ -75,6 +81,8 @@ on:
       - "site/test_learning_paths.js"
       - "languages.json"
       - "README.md"
+      - "i18n/*/README.md"
+      - "docs/i18n.md"
       - "CONTRIBUTING.md"
       - "SPONSORS.md"
       - "BACKERS.md"
@@ -148,6 +156,8 @@ jobs:
         run: python3 scripts/debias_certification_questions.py --check
       - name: README translations are in sync with English
         run: python3 scripts/build_readme_i18n.py --check
+      - name: README locale audit detects structural drift
+        run: python3 scripts/test_audit_readme_locales.py
       - name: translation workflow publisher retries safely
         run: python3 scripts/test_translate_workflow.py
       - name: interface-string translator pins, reuses, and protects correctly
@@ -193,7 +203,7 @@ jobs:
         run: python3 scripts/build_catalog.py
       - name: sync README counts
         run: python3 scripts/check_readme_counts.py --fix
-      - name: regenerate README translations from the synced English
+      - name: sync README stats and validate complete translations
         run: python3 scripts/build_readme_i18n.py
       - name: commit + push if README changed
         env:
