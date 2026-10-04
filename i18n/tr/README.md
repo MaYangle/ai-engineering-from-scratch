@@ -1,5 +1,9 @@
 <p align="center"><sub>Topluluk çevirisi. Esas alınan sürüm <a href="../../README.md">İngilizce</a>dir · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>
 <p align="center">
+  <b>Read in your language:</b> English · <a href="../../README_CH.md">简体中文</a>
+</p>
+
+<p align="center">
   <img src="../../assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
 </p>
 

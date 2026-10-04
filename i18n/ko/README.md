@@ -1,5 +1,9 @@
 <p align="center"><sub>커뮤니티 번역입니다. 정본은 <a href="../../README.md">영어판</a>입니다 · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>
 <p align="center">
+  <b>Read in your language:</b> English · <a href="../../README_CH.md">简体中文</a>
+</p>
+
+<p align="center">
   <img src="../../assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
 </p>
 

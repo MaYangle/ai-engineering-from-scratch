@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build legacy translated README files from the canonical English section.
+"""Build legacy translated README files from the canonical English README.
 
 The README is mostly structure: a banner, badges, the full lesson table, and
 HTML blocks. Only prose and headings are translated; every other byte is kept
@@ -29,8 +29,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 OUT_ROOT = ROOT / "i18n"
-EN_START = "<!-- README-EN:START -->"
-EN_END = "<!-- README-EN:END -->"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -109,15 +107,6 @@ _HTML_TEXT = re.compile(r'>([^<>]+)<')
 _PROTECTED_HTML_TEXT = frozenset({'Become a sponsor'})
 
 
-def english_source(text):
-    """Use only the canonical English body of the in-page bilingual README."""
-    if EN_START not in text and EN_END not in text:
-        return text
-    if text.count(EN_START) != 1 or text.count(EN_END) != 1:
-        raise ValueError("README English section markers must appear exactly once")
-    return text.split(EN_START, 1)[1].split(EN_END, 1)[0].strip("\n") + "\n"
-
-
 def localize_links(md):
     """Prefix ../../ to repo-root-relative links so a README two levels deep in
     i18n/<lang>/ still resolves images, the lesson table, and the language bar.
@@ -180,7 +169,7 @@ def main():
     ap.add_argument("--dump", action="store_true")
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
-    text = english_source(README.read_text(encoding="utf-8"))
+    text = README.read_text(encoding="utf-8")
 
     assert render(text, "en", {}) == text, "generator is not structure-lossless"
 

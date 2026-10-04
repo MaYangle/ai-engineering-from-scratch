@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Translate every reader-visible README phrase while preserving executable text.
+"""Generate a full Chinese README draft while preserving executable text.
 
-This is the static reader's full-document source. The GitHub README translations
-on main remain the hand-edited landing copies. GitHub Actions publishes this
-generated document to the translations branch, one language at a time.
+The manual workflow publishes a draft to the translations branch. A fluent
+reviewer must edit it before it replaces the reader-facing README_CH.md.
 """
 
 import argparse
@@ -11,7 +10,7 @@ import hashlib
 import re
 from pathlib import Path
 
-from build_readme_i18n import README, english_source, spans
+from build_readme_i18n import README, spans
 from readme_translations import TRANSLATIONS
 from translate_lessons import NLLB_CODES, _nllb_pipe, _nllb_sentence
 
@@ -147,7 +146,7 @@ def main():
     parser.add_argument("--lang", required=True, choices=sorted(TRANSLATIONS))
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    source = english_source(README.read_text(encoding="utf-8"))
+    source = README.read_text(encoding="utf-8")
     target = NLLB_CODES.get(args.lang)
     if not target:
         parser.error(f"no NLLB language code for {args.lang}")

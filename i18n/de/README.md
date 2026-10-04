@@ -1,5 +1,9 @@
 <p align="center"><sub>Community-Übersetzung. Maßgeblich ist das <a href="../../README.md">englische Original</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>
 <p align="center">
+  <b>Read in your language:</b> English · <a href="../../README_CH.md">简体中文</a>
+</p>
+
+<p align="center">
   <img src="../../assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
 </p>
 
