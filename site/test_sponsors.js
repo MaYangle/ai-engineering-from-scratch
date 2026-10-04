@@ -78,13 +78,12 @@ test('supporter navigation survives translated README headings', () => {
   assert.ok(translations.length > 0);
   for (const file of ['README.md', ...translations]) {
     const text = read(file);
-    const sponsorLabel = file === 'i18n/zh/README.md' ? '成为赞助方' : 'Become a sponsor';
     assert.ok(text.includes('href="#supporters"'), file);
     assert.ok(text.includes('<a id="supporters"></a>'), file);
-    const sponsorLink = text.match(new RegExp(`href="([^"]*SPONSORS\\.md)">${sponsorLabel}</a>`));
+    const sponsorLink = text.match(/href="([^"]*SPONSORS\.md)">Become a sponsor/);
     assert.ok(sponsorLink, file);
     assert.equal(path.resolve(root, path.dirname(file), sponsorLink[1]), path.join(root, 'SPONSORS.md'), file);
-    assert.equal((text.match(new RegExp(`>${sponsorLabel}</a>`, 'g')) || []).length, 1, file);
+    assert.equal((text.match(/>Become a sponsor<\/a>/g) || []).length, 1, file);
     if (file !== 'README.md') {
       assert.doesNotMatch(
         text,

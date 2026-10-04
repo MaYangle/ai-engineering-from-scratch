@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Hand-authored legacy README translations, consumed by build_readme_i18n.py.
+"""Hand-authored README translations, consumed by build_readme_i18n.py.
 
 Keyed by the exact English block (whitespace-normalized). Inline markdown, code
 spans, and links are preserved in the translations. The high-visibility landing
@@ -8,7 +8,7 @@ paragraphs stay in canonical English. Any block without an entry falls back to
 English, so partial coverage is safe and this table can grow language by
 language without breaking a build.
 
- To add a legacy landing copy: add its code here; run
+To add a language: add its code here and to the README language bar; run
     python3 scripts/build_readme_i18n.py
 """
 
@@ -57,7 +57,7 @@ README_NOTE = {
     "pt": '<p align="center"><sub>Tradução da comunidade. O <a href="../../README.md">inglês é a versão canônica</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "de": '<p align="center"><sub>Community-Übersetzung. Maßgeblich ist das <a href="../../README.md">englische Original</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "it": '<p align="center"><sub>Traduzione della community. Fa fede la <a href="../../README.md">versione inglese</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
-    "zh": '<p align="center"><sub>完整中文译本，以<a href="../../README.md">英文原文为准</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
+    "zh": '<p align="center"><sub>社区翻译，以<a href="../../README.md">英文原文为准</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "ja": '<p align="center"><sub>コミュニティによる翻訳です。正文は<a href="../../README.md">英語版</a>です · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "ko": '<p align="center"><sub>커뮤니티 번역입니다. 정본은 <a href="../../README.md">영어판</a>입니다 · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
     "hi": '<p align="center"><sub>सामुदायिक अनुवाद। <a href="../../README.md">अंग्रेज़ी संस्करण ही प्रामाणिक है</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>',
@@ -160,20 +160,6 @@ TRANSLATIONS = {
         HERO1: "**84% 的学生已经在使用 AI 工具，却只有 18% 觉得自己能专业地使用它们。** 这套课程正是为了填补这道鸿沟。",
         HERO2: "523 节课。20 个阶段。约 342 小时。Python、TypeScript、Rust、Julia。每节课都产出一个可复用的成果：一个提示词、一个技能、一个智能体、一个 MCP 服务器。免费、开源、MIT 许可。",
         HERO3: "你不只是学 AI，你亲手把它造出来。从头到尾，全部手写。",
-        H_START_BUILD: "从这里开始：选择你想构建的东西",
-        START_BUILD: "开始前不必先浏览 523 节课。选一个目标即可。每个链接都会打开同一套课程的 GitHub 或网站版本，两边使用相同的课程代码。",
-        NOT_SURE: "不确定从哪里开始？试试 [`start-learning` 入门测评导师](skills/start-learning/SKILL.md)，或查看[网站的先修知识指南](https://aiengineeringfromscratch.com/prereqs.html)。",
-        LEARNING_PATHS: "在 [AI 工程学习路径](https://aiengineeringfromscratch.com/learning-paths.html)中，对比四大核心领域和六条职业路线。",
-        H_SPONSORS: "赞助方",
-        SPONSOR_ALT: "SerpApi：面向 AI 应用的网页搜索 API，提供适合各种集成方式的 Markdown 和 JSON 格式。",
-        SPONSOR_THANKS: "感谢赞助方的支持。",
-        SPONSOR_SUPPORT: "有了你们的支持，每节课都能保持免费和开源。",
-        SEE_SUPPORTERS: "查看所有支持者",
-        H_USE_LESSON: "每节课都按同一方法学习",
-        LESSON_COMMANDS: "除非课程明确要求切换目录，否则课程页面中的命令都应从仓库根目录运行。如果一节课提供多种编程语言，请运行你正在学习的那种实现。",
-        H_CLONE_EVIDENCE: "克隆仓库，留下第一份学习证据",
-        PREFLIGHT: "环境预检会区分现在必需的工具和之后才需要的工具。每项必需检查若失败，都会说明检测到的原因，并给出修复命令。第二条命令运行一节不依赖第三方包的课程，最后展示神经网络层的核心运算：矩阵乘向量。请保存终端输出，作为你的第一份学习证据。",
-        "A/B Testing LLM Features — GrowthBook and Statsig": "LLM 功能的 A/B 测试——GrowthBook 与 Statsig",
         WAYS: "三种入门方式，任选其一。",
         LICENSE_LINE: "MIT 许可。随你怎么用：复刻、教学、出售、发布都行。欢迎署名，但并非必须。",
         MAINTAINED: "由 [Rohit Ghumare](https://github.com/rohitg00) 和社区共同维护。",

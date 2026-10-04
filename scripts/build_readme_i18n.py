@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build legacy translated README files from the canonical English README.
+"""Build translated README files from the canonical English README.
 
 The README is mostly structure: a banner, badges, the full lesson table, and
 HTML blocks. Only prose and headings are translated; every other byte is kept
@@ -17,9 +17,7 @@ without a translation falls back to English.
     python3 scripts/build_readme_i18n.py --check     # fail if any output is stale
 
 Output goes to i18n/<lang>/README.md and is committed to main (unlike the lesson
-translations, which live on the translations branch). The full Chinese README
-is edited separately and embedded in the root README, so this builder skips zh.
-English stays canonical.
+translations, which live on the translations branch). English stays canonical.
 """
 import argparse
 import re
@@ -184,11 +182,6 @@ def main():
 
     stale = []
     for lang in TRANSLATIONS:
-        if lang == "zh":
-            # The complete Chinese README is reviewed as a full document and
-            # composed into the root README; never replace it with a partial
-            # hand-authored landing copy.
-            continue
         note = README_NOTE.get(lang, "")
         body = localize_links(render(text, lang, TRANSLATIONS))
         content = f"{note}\n{body}" if note else body

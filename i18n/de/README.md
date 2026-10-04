@@ -1,10 +1,23 @@
 <p align="center"><sub>Community-Übersetzung. Maßgeblich ist das <a href="../../README.md">englische Original</a> · <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a></sub></p>
 <p align="center">
-  <b>Read in your language:</b> English · <a href="../../README_CH.md">简体中文</a>
+  <img src="../../assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
 </p>
 
 <p align="center">
-  <img src="../../assets/banner.svg" alt="AI Engineering from Scratch — reference manual banner" width="100%">
+  <b>Read in your language:</b>
+  <a href="../../i18n/es/README.md">Español</a> ·
+  <a href="../../i18n/fr/README.md">Français</a> ·
+  <a href="../../i18n/pt/README.md">Português</a> ·
+  <a href="../../i18n/de/README.md">Deutsch</a> ·
+  <a href="../../i18n/it/README.md">Italiano</a> ·
+  <a href="../../i18n/zh/README.md">简体中文</a> ·
+  <a href="../../i18n/ja/README.md">日本語</a> ·
+  <a href="../../i18n/ko/README.md">한국어</a> ·
+  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
+  <a href="../../i18n/ar/README.md">العربية</a> ·
+  <a href="../../i18n/ru/README.md">Русский</a> ·
+  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <br><sub>Translated landing pages, committed to the repo. English is canonical; lesson pages are machine-translated on the <code>translations</code> branch. See <a href="../../docs/i18n.md">docs/i18n.md</a>.</sub>
 </p>
 
 <p align="center">
