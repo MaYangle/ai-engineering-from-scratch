@@ -34,16 +34,13 @@
 
 ### الرعاة
 
-<a href="https://serpapi.com/ai-engineering-from-scratch">
-  <img align="left" src="../../assets/sponsors/serpapi-banner.png" alt="SerpApi. واجهة API للبحث على الويب لتطبيقات الذكاء الاصطناعي، متاحة بصيغتي Markdown وJSON لأي تكامل." width="600">
-</a>
+<p align="center">
+  <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi. واجهة API للبحث على الويب لتطبيقات الذكاء الاصطناعي، متاحة بصيغتي Markdown وJSON لأي تكامل." width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack. أنشئ تطبيقات MCP جاهزة للإنتاج باستخدام NitroStack. منصة تطوير متكاملة لإنشاء خوادم وتطبيقات MCP الجاهزة للإنتاج واختبارها وتصحيح أخطائها ونشرها. انقر لمعرفة المزيد." width="440"></picture></a>
+</p>
 
-<p><br><b>شكرًا لرعاتنا.</b></p>
-<p>دعمكم يُبقي كل درس مجانيًا ومفتوح المصدر.</p>
-<p>
-  <a href="#supporters">عرض جميع الداعمين</a><br>
-  <a href="../../SPONSORS.md">اصبح راعي</a>
-  <br clear="all">
+<p align="center">
+  <sub><span>دعمكم يُبقي كل درس مجانيًا ومفتوح المصدر.</span> <a href="#supporters">عرض جميع الداعمين</a> · <a href="../../SPONSORS.md">اصبح راعي</a></sub>
 </p>
 
 ```text

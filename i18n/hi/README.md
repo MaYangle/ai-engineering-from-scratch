@@ -34,16 +34,13 @@
 
 ### प्रायोजक
 
-<a href="https://serpapi.com/ai-engineering-from-scratch">
-  <img align="left" src="../../assets/sponsors/serpapi-banner.png" alt="SerpApi। आपके AI ऐप्स के लिए वेब खोज API। किसी भी एकीकरण के लिए Markdown और JSON में उपलब्ध।" width="600">
-</a>
+<p align="center">
+  <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi। आपके AI ऐप्स के लिए वेब खोज API। किसी भी एकीकरण के लिए Markdown और JSON में उपलब्ध।" width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack। NitroStack के साथ उत्पादन-तैयार MCP ऐप बनाएँ। उत्पादन-तैयार MCP सर्वर और ऐप बनाने, जाँचने, त्रुटियाँ सुधारने और तैनात करने का शुरू से अंत तक का विकास मंच। अधिक जानने के लिए क्लिक करें।" width="440"></picture></a>
+</p>
 
-<p><br><b>हमारे प्रायोजकों का धन्यवाद।</b></p>
-<p>आपका सहयोग हर पाठ को मुफ़्त और ओपन सोर्स बनाए रखता है।</p>
-<p>
-  <a href="#supporters">सभी समर्थक देखें</a><br>
-  <a href="../../SPONSORS.md">एक प्रायोजक बनें</a>
-  <br clear="all">
+<p align="center">
+  <sub><span>आपका सहयोग हर पाठ को मुफ़्त और ओपन सोर्स बनाए रखता है।</span> <a href="#supporters">सभी समर्थक देखें</a> · <a href="../../SPONSORS.md">एक प्रायोजक बनें</a></sub>
 </p>
 
 ```text

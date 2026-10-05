@@ -15,7 +15,7 @@ import sys
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "README.md"
 LANGS = ("es", "fr", "pt", "de", "it", "zh", "ja", "ko", "hi", "ar", "ru", "tr")
-FENCE = re.compile(r"^\s*(```|~~~)")
+FENCE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 MD_LINK = re.compile(r"\]\(([^)]+)\)")
 HTML_TARGET = re.compile(r'\b(?:href|srcset|src)="([^"]+)"')
 HTML_TEXT = re.compile(r">([^<>]+)<")
@@ -47,13 +47,26 @@ def link_targets(text: str) -> Counter[str]:
     return Counter(unlocalize_target(t) for t in MD_LINK.findall(text) + HTML_TARGET.findall(text))
 
 
+def fence_step(line: str, opener: str | None) -> tuple[bool, str | None]:
+    match = FENCE.match(line)
+    if match is None:
+        return False, opener
+    run, rest = match.groups()
+    if opener is None:
+        if run[0] == "`" and "`" in rest:
+            return False, None
+        return True, run
+    if run[0] == opener[0] and len(run) >= len(opener) and not rest.strip():
+        return True, None
+    return False, opener
+
+
 def outside_fences(text: str) -> str:
     lines = []
-    inside = False
+    opener = None
     for line in text.splitlines():
-        if FENCE.match(line):
-            inside = not inside
-        elif not inside:
+        fence, opener = fence_step(line, opener)
+        if not fence and opener is None:
             lines.append(line)
     return "\n".join(lines)
 
@@ -79,17 +92,19 @@ def local_link_errors(text: str, lang: str) -> list[str]:
 def fenced_blocks(text: str) -> list[str]:
     blocks: list[str] = []
     current: list[str] = []
-    inside = False
+    opener = None
     for line in text.splitlines():
-        if FENCE.match(line):
+        fence, new_opener = fence_step(line, opener)
+        if opener is None:
+            if fence:
+                current = [line]
+        else:
             current.append(line)
-            inside = not inside
-            if not inside:
+            if fence:
                 blocks.append("\n".join(current))
                 current = []
-        elif inside:
-            current.append(line)
-    if inside:
+        opener = new_opener
+    if opener is not None:
         raise ValueError("unclosed fenced code block")
     return blocks
 

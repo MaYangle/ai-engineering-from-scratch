@@ -34,16 +34,13 @@
 
 ### Sponsoren
 
-<a href="https://serpapi.com/ai-engineering-from-scratch">
-  <img align="left" src="../../assets/sponsors/serpapi-banner.png" alt="SerpApi. Websuch-API für KI-Anwendungen, verfügbar in Markdown und JSON für jede Integration." width="600">
-</a>
+<p align="center">
+  <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi. Websuch-API für KI-Anwendungen, verfügbar in Markdown und JSON für jede Integration." width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack. Entwickelt mit NitroStack produktionsreife MCP-Apps. Eine durchgängige Entwicklungsplattform zum Entwickeln, Testen, Debuggen und Bereitstellen produktionsreifer MCP-Server und -Anwendungen. Klickt, um mehr zu erfahren." width="440"></picture></a>
+</p>
 
-<p><br><b>Vielen Dank an unsere Sponsoren.</b></p>
-<p>Dank eurer Unterstützung bleiben alle Lektionen kostenlos und Open Source.</p>
-<p>
-  <a href="#supporters">Alle Unterstützer ansehen</a><br>
-  <a href="../../SPONSORS.md">Sponsor werden</a>
-  <br clear="all">
+<p align="center">
+  <sub><span>Dank eurer Unterstützung bleiben alle Lektionen kostenlos und Open Source.</span> <a href="#supporters">Alle Unterstützer ansehen</a> · <a href="../../SPONSORS.md">Sponsor werden</a></sub>
 </p>
 
 ```text
