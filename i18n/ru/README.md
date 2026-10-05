@@ -34,16 +34,13 @@
 
 ### Спонсоры
 
-<a href="https://serpapi.com/ai-engineering-from-scratch">
-  <img align="left" src="../../assets/sponsors/serpapi-banner.png" alt="SerpApi — API веб-поиска для приложений на базе ИИ; поддерживает Markdown и JSON для интеграции." width="600">
-</a>
+<p align="center">
+  <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi — API веб-поиска для приложений на базе ИИ; поддерживает Markdown и JSON для интеграции." width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack. Создавайте с NitroStack приложения MCP, готовые к работе в производственной среде. Платформа полного цикла для создания, тестирования, отладки и развёртывания серверов и приложений MCP, готовых к работе в производственной среде. Нажмите, чтобы узнать больше." width="440"></picture></a>
+</p>
 
-<p><br><b>Спасибо нашим спонсорам.</b></p>
-<p>Благодаря вашей поддержке все уроки остаются бесплатными и открытыми.</p>
-<p>
-  <a href="#supporters">Все, кто поддерживает проект</a><br>
-  <a href="../../SPONSORS.md">Стать спонсором</a>
-  <br clear="all">
+<p align="center">
+  <sub><span>Благодаря вашей поддержке все уроки остаются бесплатными и открытыми.</span> <a href="#supporters">Все, кто поддерживает проект</a> · <a href="../../SPONSORS.md">Стать спонсором</a></sub>
 </p>
 
 ```text

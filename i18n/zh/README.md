@@ -34,16 +34,13 @@
 
 ### 赞助方
 
-<a href="https://serpapi.com/ai-engineering-from-scratch">
-  <img align="left" src="../../assets/sponsors/serpapi-banner.png" alt="SerpApi。面向 AI 应用的网页搜索 API，可为任何集成提供 Markdown 和 JSON 格式。" width="600">
-</a>
+<p align="center">
+  <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi。面向 AI 应用的网页搜索 API，可为任何集成提供 Markdown 和 JSON 格式。" width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack。使用 NitroStack 构建可用于生产环境的 MCP 应用。这是一款端到端开发平台，支持构建、测试、调试和部署可用于生产环境的 MCP 服务器及应用。点击了解更多。" width="440"></picture></a>
+</p>
 
-<p><br><b>感谢我们的赞助方。</b></p>
-<p>你的支持让每节课都能保持免费和开源。</p>
-<p>
-  <a href="#supporters">查看所有支持者</a><br>
-  <a href="../../SPONSORS.md">成为赞助方</a>
-  <br clear="all">
+<p align="center">
+  <sub><span>你的支持让每节课都能保持免费和开源。</span> <a href="#supporters">查看所有支持者</a> · <a href="../../SPONSORS.md">成为赞助方</a></sub>
 </p>
 
 ```text

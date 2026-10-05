@@ -17,7 +17,7 @@ function between(text, start, end, file) {
   return placement;
 }
 
-test('sponsor placement uses approved artwork and destination without a tier label', () => {
+test('sponsor placements preserve copy, destinations, and local artwork without tier labels', () => {
   const placements = [
     ['README.md', '### Sponsors\n', '### Use every lesson the same way'],
     ['SPONSORS.md', '## Sponsor\n', '## How to sponsor'],
@@ -36,17 +36,41 @@ test('sponsor placement uses approved artwork and destination without a tier lab
   assert.match(sponsors, /<img src="https:\/\/serpapi\.com\/assets\/media_kit\/logo-with-wordmark\.svg" alt="SerpApi" width="180">/);
   const readme = read('README.md');
   const placement = between(readme, '### Sponsors\n', '### Use every lesson the same way', 'README.md');
-  const banner = `<a href="${sponsorUrl}">\n  <img align="left" src="assets/sponsors/serpapi-banner.png" alt="SerpApi. ${description}" width="600">\n</a>`;
-  assert.ok(placement.includes(banner));
-  assert.ok(placement.includes('Thank you to our sponsors.'));
+  const banners = [...placement.matchAll(/<a href="([^"]+)">\s*<picture><source\b([^>]+)><img\b([^>]+)><\/picture>\s*<\/a>/g)];
+  const expectedBanners = [
+    {
+      url: sponsorUrl,
+      src: 'assets/sponsors/serpapi-banner-compact.png',
+      alt: `SerpApi. ${description}`,
+    },
+    {
+      url: 'https://nitrostack.ai/referral/aiengineeringfromscratch',
+      src: 'assets/sponsors/nitrostack-banner.png',
+      alt: 'NitroStack. Build Production Ready MCP Apps with NitroStack. An end-to-end development platform for building, testing, debugging, and deploying production-ready MCP servers and applications. Click to know more.',
+    },
+  ];
+  assert.equal(banners.length, expectedBanners.length);
+  for (const expected of expectedBanners) {
+    const banner = banners.find(match => match[1] === expected.url);
+    assert.ok(banner, expected.url);
+    const source = Object.fromEntries([...banner[2].matchAll(/([\w-]+)="([^"]*)"/g)].map(match => [match[1], match[2]]));
+    assert.equal(source.media, '(min-width: 768px)');
+    assert.equal(source.srcset, expected.src);
+    assert.equal(source.width, '48%');
+    const attrs = Object.fromEntries([...banner[3].matchAll(/([\w-]+)="([^"]*)"/g)].map(match => [match[1], match[2]]));
+    assert.equal(attrs.src, expected.src);
+    assert.equal(attrs.alt, expected.alt);
+    assert.ok(Number(attrs.width) > 0 && Number(attrs.width) <= 440);
+    const image = fs.readFileSync(path.join(root, attrs.src));
+    assert.equal(image.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+    assert.ok(image.readUInt32BE(20) > 0);
+    assert.ok(image.readUInt32BE(16) / image.readUInt32BE(20) >= 3);
+  }
+  assert.doesNotMatch(placement, /nitrostack\.ai\/referral\/aiengineeringfromscratch\/analytics/);
+  assert.ok(placement.includes('Your support keeps every lesson free and open source.'));
   assert.ok(placement.includes('href="#supporters"'));
   assert.ok(placement.includes('href="SPONSORS.md"'));
-  assert.ok(placement.includes('<br clear="all">'));
   assert.ok(readme.includes('\n## Sponsor the work\n'));
-  const image = fs.readFileSync(path.join(root, 'assets/sponsors/serpapi-banner.png'));
-  assert.equal(image.subarray(1, 4).toString(), 'PNG');
-  assert.equal(image.readUInt32BE(16), 2172);
-  assert.equal(image.readUInt32BE(20), 724);
   assert.doesNotMatch(readme, /### Current sponsors|\| Tier \|/);
   assert.match(readme, /<p align="center"><sub><b>[\d,]+<\/b> readers/);
 });
@@ -87,6 +111,12 @@ test('supporter navigation survives translated README headings', () => {
       assert.equal(sponsorLink[2], 'Become a sponsor');
     } else {
       assert.notEqual(sponsorLink[2], 'Become a sponsor', file);
+    }
+    const sources = [...text.matchAll(/<source media="\(min-width: 768px\)" srcset="([^"]+)" width="48%">/g)];
+    assert.equal(sources.length, 2, file);
+    for (const [, src] of sources) {
+      assert.ok(fs.statSync(path.resolve(root, path.dirname(file), src)).isFile(), file);
+      assert.ok(text.includes(`<img src="${src}"`), file);
     }
     if (file !== 'README.md') {
       assert.doesNotMatch(

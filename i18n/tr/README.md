@@ -34,16 +34,13 @@
 
 ### Sponsorlar
 
-<a href="https://serpapi.com/ai-engineering-from-scratch">
-  <img align="left" src="../../assets/sponsors/serpapi-banner.png" alt="SerpApi. Yapay zekâ uygulamalarınıza web araması ekleyen API; her entegrasyon için Markdown ve JSON çıktısı sunar." width="600">
-</a>
+<p align="center">
+  <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi. Yapay zekâ uygulamalarınıza web araması ekleyen API; her entegrasyon için Markdown ve JSON çıktısı sunar." width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack. NitroStack ile üretime hazır MCP uygulamaları geliştirin. Üretime hazır MCP sunucuları ve uygulamaları geliştirmek, test etmek, hata ayıklamak ve dağıtmak için uçtan uca bir geliştirme platformu. Daha fazla bilgi için tıklayın." width="440"></picture></a>
+</p>
 
-<p><br><b>Sponsorlarımıza teşekkür ederiz.</b></p>
-<p>Desteğiniz, tüm derslerin ücretsiz ve açık kaynaklı kalmasını sağlar.</p>
-<p>
-  <a href="#supporters">Tüm destekçileri görün</a><br>
-  <a href="../../SPONSORS.md">Sponsor olun</a>
-  <br clear="all">
+<p align="center">
+  <sub><span>Desteğiniz, tüm derslerin ücretsiz ve açık kaynaklı kalmasını sağlar.</span> <a href="#supporters">Tüm destekçileri görün</a> · <a href="../../SPONSORS.md">Sponsor olun</a></sub>
 </p>
 
 ```text

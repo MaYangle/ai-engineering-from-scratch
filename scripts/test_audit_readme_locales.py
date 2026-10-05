@@ -6,7 +6,7 @@ import unittest
 
 from audit_readme_locales import (
     BOLD_COUNT, FACT, HTML_ALT, ISO_DATE, ROOT, SOURCE, body, check, check_document,
-    landing_facts, outside_fences, sync_stats_facts,
+    fenced_blocks, landing_facts, outside_fences, sync_stats_facts,
 )
 
 
@@ -24,6 +24,16 @@ class ReadmeLocaleAuditTest(unittest.TestCase):
     def test_current_chinese_structure(self):
         self.assertEqual(check(self.source, self.chinese, "zh"), [])
         self.assertEqual(check_document(self.source, self.chinese_document, "zh"), [])
+
+    def test_fence_closes_only_with_matching_character_and_length(self):
+        text = "before\n````text\n```\n~~~\n```` trailing\n````\nafter"
+        self.assertEqual(outside_fences(text), "before\nafter")
+        self.assertEqual(fenced_blocks(text), ["````text\n```\n~~~\n```` trailing\n````"])
+
+    def test_tilde_fence_ignores_backticks_and_short_closers(self):
+        text = "before\n~~~~text\n```\n~~~\n~~~~\nafter"
+        self.assertEqual(outside_fences(text), "before\nafter")
+        self.assertEqual(fenced_blocks(text), ["~~~~text\n```\n~~~\n~~~~"])
 
     def test_canonical_english_link_is_required(self):
         changed = self.chinese_document.replace('href="../../README.md"', 'href="README.md"', 1)
