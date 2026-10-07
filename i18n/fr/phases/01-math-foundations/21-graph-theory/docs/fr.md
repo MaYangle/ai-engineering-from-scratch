@@ -500,6 +500,7 @@ où A_hat = A + I (adjacence plus auto-loops) et D_hat est la matrice de degrés
 ## Pour en savoir plus
 
 - **Kipf & Welling (2017)**-- "Classification semi-surveillée avec des réseaux convolutifs graphiques". Le document qui a lancé les GNN modernes.
+- [Gilmer et al. (2017). Neural Message Passing for Quantum Chemistry](https://proceedings.mlr.press/v70/gilmer17a.html)-- forme le message, les mises à jour et les étapes de lecture. Comparer avec le graphique de jouets à deux couches de l'exercice 4.
 - **Spielman (2012)**-- notes de conférence sur la théorie des graphes spectraux. L'introduction définitive aux Laplaciens, aux lacunes spectrales et à la partition des graphes.
 - **Hamilton (2020)**-- "L'apprentissage de la représentation graphique". Livre couvrant les GNN des fondamentaux aux applications.
 - **Bronstein et al. (2021)**-- "L'apprentissage géométrique en profondeur: réseaux, groupes, graphiques, géodésiques et gauges". Le document de cadre unificateur.
