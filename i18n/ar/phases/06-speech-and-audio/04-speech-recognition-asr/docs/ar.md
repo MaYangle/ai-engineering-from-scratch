@@ -163,6 +163,7 @@ for chunk in streaming_audio():
 1. **Easy.**أركض`code/main.py`. إنه يفكّر بفارق طموح مصدر CTC يدوياً ويحسب WER مع مرجع
 2. **Medium.**قم بتنفيذ البحث عن شعاع الشجرة في الخطوة 2 بشكل صحيح (حسب قاعدة الاندماج الفارغ). مقارنة مع الفلسفة على مجموعة بيانات صناعية من 10 أمثلة.
 3. **Hard.**استخدام`whisper-large-v3-turbo`على[LibriSpeech test-clean](https://www.openslr.org/12)-حسب WER على أول 100 تصريح. مقارنة مع الأرقام المنشورة.
+4. **Paper check.**اقرأ * الخطاب العميق 2 * واطلق اسم اثنين من أجزاء نظام تدريب الكلام الحقيقي خارج لعبة تشفير CTC في هذه الدروس. ما هي الدليل الذي ستحتاج إليه قبل أن تدعي أن اللعبة قد نسخت WER الورقة؟
 
 ## الشروط الرئيسية
 
@@ -179,6 +180,7 @@ for chunk in streaming_audio():
 ## المزيد من القراءة
 
 - [Graves et al. (2006). Connectionist Temporal Classification](https://www.cs.toronto.edu/~graves/icml_2006.pdf)ورقة "سي تي سي"
+- [Amodei et al. (2016). Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://proceedings.mlr.press/v48/amodei16.html) نظام ASR واسع النطاق يستخدم CTC؛ مقارنة تجاربها مع ممارسة فك التشفير الصغيرة أعلاه.
 - [Graves (2012). Sequence Transduction with RNNs](https://arxiv.org/abs/1211.3711)ورقة RNN-T
 - [Radford et al. / OpenAI (2022). Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) ورقة القنونية 2022؛ التوسع v3-turbo في 2024.
 - [NVIDIA NeMo — Parakeet-TDT card](https://huggingface.co/nvidia/parakeet-tdt-1.1b) 2026 قائد قائمة المنظمات المفتوحة للشركات.
