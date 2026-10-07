@@ -36,7 +36,7 @@
 
 <p align="center">
   <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi。面向 AI 应用的网页搜索 API，可为任何集成提供 Markdown 和 JSON 格式。" width="440"></picture></a>
-  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack。使用 NitroStack 构建可用于生产环境的 MCP 应用。这是一款端到端开发平台，支持构建、测试、调试和部署可用于生产环境的 MCP 服务器及应用。点击了解更多。" width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner-equal.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner-equal.png" alt="NitroStack。10 分钟内构建并部署 MCP 应用。通过免费的云端部署，将产品上架到 ChatGPT 和 Claude 的应用市场。" width="440"></picture></a>
 </p>
 
 <p align="center">

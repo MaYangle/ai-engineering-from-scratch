@@ -7,6 +7,9 @@ const root = path.resolve(__dirname, '..');
 const read = name => fs.readFileSync(path.join(root, name), 'utf8').replace(/\r\n/g, '\n');
 const sponsorUrl = 'https://serpapi.com/ai-engineering-from-scratch';
 const description = 'Web Search API for your AI apps. Available in Markdown and JSON for any integration.';
+const nitroUrl = 'https://nitrostack.ai/referral/aiengineeringfromscratch';
+const nitroLogo = 'https://nitrostack.ai/logo.png';
+const nitroDescription = 'An end-to-end development platform for building, testing, debugging, and deploying production-ready MCP servers and applications.';
 const tierLabel = /\b(?:Backer|Bronze|Silver|Gold|Platinum|Diamond|Title Partner)\b/i;
 
 function between(text, start, end, file) {
@@ -34,6 +37,7 @@ test('sponsor placements preserve copy, destinations, and local artwork without 
   assert.ok(sponsors.includes(`href="${sponsorUrl}"`));
   assert.match(sponsors, /media="\(prefers-color-scheme: dark\)" srcset="https:\/\/serpapi\.com\/assets\/media_kit\/logo-with-wordmark-white\.svg"/);
   assert.match(sponsors, /<img src="https:\/\/serpapi\.com\/assets\/media_kit\/logo-with-wordmark\.svg" alt="SerpApi" width="180">/);
+  assert.ok(sponsors.includes(`<a href="${nitroUrl}"><img src="${nitroLogo}" alt="NitroStack" width="56"></a> **NitroStack** | ${nitroDescription}`));
   const readme = read('README.md');
   const placement = between(readme, '### Sponsors\n', '### Use every lesson the same way', 'README.md');
   const banners = [...placement.matchAll(/<a href="([^"]+)">\s*<picture><source\b([^>]+)><img\b([^>]+)><\/picture>\s*<\/a>/g)];
@@ -45,8 +49,8 @@ test('sponsor placements preserve copy, destinations, and local artwork without 
     },
     {
       url: 'https://nitrostack.ai/referral/aiengineeringfromscratch',
-      src: 'assets/sponsors/nitrostack-banner.png',
-      alt: 'NitroStack. Build Production Ready MCP Apps with NitroStack. An end-to-end development platform for building, testing, debugging, and deploying production-ready MCP servers and applications. Click to know more.',
+      src: 'assets/sponsors/nitrostack-banner-equal.png',
+      alt: 'NitroStack. Build and deploy your MCP app in 10 minutes. Get your product into ChatGPT and Claude marketplaces with free cloud deployment.',
     },
   ];
   assert.equal(banners.length, expectedBanners.length);
@@ -82,6 +86,7 @@ test('backer listings are reachable and preserve existing supporters', () => {
   const backers = read('BACKERS.md');
   assert.match(backers, /^# Backers\n/);
   assert.ok(backers.includes(`[SerpApi](${sponsorUrl})`));
+  assert.ok(backers.includes(`| [NitroStack](${nitroUrl}) | ${nitroDescription} |`));
   assert.ok(backers.includes('[SPONSORS.md](SPONSORS.md)'));
   for (const name of ['CodeRabbit', 'iii', 'Vercel Open Source Program']) {
     assert.ok(backers.includes(`[${name}](https://`), name);
@@ -138,8 +143,12 @@ test('sponsors page is rendered from SPONSORS.md at build time', () => {
     assert.ok(generated.includes(`href="#${anchor}"`), anchor);
   }
   assert.ok(generated.includes(`<a href="${sponsorUrl}" target="_blank" rel="noopener"><picture><source media="(prefers-color-scheme: dark)" srcset="https://serpapi.com/assets/media_kit/logo-with-wordmark-white.svg">`));
+  assert.ok(generated.includes(`<a href="${nitroUrl}" target="_blank" rel="noopener"><img src="${nitroLogo}" alt="NitroStack" width="56"></a> <strong>NitroStack</strong></td><td>${nitroDescription}</td>`));
   assert.ok(generated.includes('href="https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/BACKERS.md" target="_blank" rel="noopener"'));
-  assert.ok(generated.includes('<td class="align-right">114,584 (+4%)</td>'));
+  assert.ok(generated.includes('<td class="align-right">521,690</td>'));
+  assert.ok(generated.includes('<td class="align-right">280,632</td>'));
+  assert.ok(generated.includes('<td class="align-right">65,223</td>'));
+  assert.ok(generated.includes('<td class="align-right">11,000+</td>'));
   assert.ok(generated.includes('<li><strong>Open-source baseline</strong>'));
   assert.doesNotMatch(generated, /\n\s*\[Babel\]/);
 });
