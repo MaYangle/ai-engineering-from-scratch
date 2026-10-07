@@ -203,6 +203,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 1. **Easy.**Implementação `softmax`Mascarar para que os tokens de enchimento no codificador tenham peso de atenção zero.
 2. **Medium.**Adicionar atenção multi-cabeça para o Luong `general`Forma.`d_h`em`n_heads`Grupos, atender por cabeça, concatenar, verificar se o caso de cabeça única coincide com a sua implementação anterior.
 3. **Hard.**Treinar um codificador-decodificador GRU com Bahdanau atenção na tarefa de cópia de brinquedo da lição 09. A precisão da trama vs comprimento da sequência. Comparar com a linha de base de falta de atenção. Você deve ver a lacuna aumentar à medida que o comprimento cresce, confirmando atenção levanta o gargalo de engarrafamento.
+4. **Reading transfer.**Leia *Redes de Ponto*. Se a entrada tem 5 posições, o seu decodificador pode apontar para o que em um passo?
 
 ## Termos-chave
 
@@ -217,6 +218,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 ## Mais leitura
 
 - [Bahdanau, Cho, Bengio (2014). Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)- O jornal.
+- [Vinyals et al. (2015). Pointer Networks](https://arxiv.org/abs/1506.03134) transforma a atenção sobre as posições de entrada numa distribuição de saída; utilize o exercício de leitura-transferência acima para verificar a distinção.
 - [Luong, Pham, Manning (2015). Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) as três variantes de pontuação e a sua comparação.
 - [Jain and Wallace (2019). Attention is not Explanation](https://arxiv.org/abs/1902.10186) a precaução de interpretação.
 - [Dive into Deep Learning — Bahdanau Attention](https://d2l.ai/chapter_attention-mechanisms-and-transformers/bahdanau-attention.html)- Passagem a pé com PyTorch.
