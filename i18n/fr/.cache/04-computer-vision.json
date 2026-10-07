@@ -5,7 +5,7 @@
   "phases/04-computer-vision/04-image-classification/docs/en.md": "1e1ade21c3e7dfe6025da6200e8d510bc64459c00714762c853d87923579eed0",
   "phases/04-computer-vision/05-transfer-learning/docs/en.md": "670f74b6d6cc2d6d61d56c868c50c482b9cd77fd3580dc427902dee9666c60a5",
   "phases/04-computer-vision/06-object-detection-yolo/docs/en.md": "2274e5867a4df25fb17a700b8ad129fa6a45b6eb1aebf0673af7a2bc95bb2a79",
-  "phases/04-computer-vision/07-semantic-segmentation-unet/docs/en.md": "7c1b00723a204bfc263ea5c3c3219b04b1549a7d2fc7e3297a4a6611609e54f1",
+  "phases/04-computer-vision/07-semantic-segmentation-unet/docs/en.md": "bad522360712fdd63588e489b7322f5bb4b429a92944a46623fc1fe3168d78e7",
   "phases/04-computer-vision/08-instance-segmentation-mask-rcnn/docs/en.md": "b7ced123dcc47406affd5cc13916ffb6954f8417a29d8b99526c61ec97a4168b",
   "phases/04-computer-vision/09-image-generation-gans/docs/en.md": "dcdc65b519fc2a23620cde11212f4d3269b63bd52d568d72ef08c04867c33409",
   "phases/04-computer-vision/10-image-generation-diffusion/docs/en.md": "596c04cae482ef2dd4aae5b11e7452c9fa9bfe74a44047286ed296a5ea5634cd",
