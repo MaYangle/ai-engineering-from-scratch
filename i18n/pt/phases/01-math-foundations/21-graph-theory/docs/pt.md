@@ -500,6 +500,7 @@ onde A_hat = A + I (adjacência mais auto-loops) e D_hat é a matriz de graus de
 ## Mais leitura
 
 - **Kipf & Welling (2017)**-- "Classificação semi-supervisada com redes de convolução gráfica". O artigo que lançou as GNNs modernas. Mostra que as convoluções espetais dos gráficos simplificam a passagem de mensagens.
+- [Gilmer et al. (2017). Neural Message Passing for Quantum Chemistry](https://proceedings.mlr.press/v70/gilmer17a.html)-- formaliza a mensagem, atualiza e lê as etapas. Compare-as com o gráfico de brinquedos de duas camadas do exercício 4.
 - **Spielman (2012)**- Notas de aula sobre "Teoria do Gráfico Espectrálico". A introdução definitiva aos Laplacianos, as lacunas espectrais e a partição do gráfico.
 - **Hamilton (2020)**-- "Ler de representação gráfica". Livro que abrange GNNs desde os fundamentos até as aplicações.
 - **Bronstein et al. (2021)**-- "A aprendizagem geométrica profunda: Grades, Grupos, Gráficos, Geodésicas e Medidores". O documento de enquadramento unificador.
