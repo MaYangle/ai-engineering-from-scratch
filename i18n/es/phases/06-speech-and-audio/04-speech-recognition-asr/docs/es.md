@@ -163,6 +163,7 @@ Salvo como`outputs/skill-asr-picker.md`Seleccionar el modelo, la estrategia de d
 1. **Easy.**- ¿ Qué ?`code/main.py`- Descifrará codiciosamente una salida CTC hecha a mano y calculará WER con una referencia.
 2. **Medium.**Implemente correctamente la búsqueda de haces de árbol de prefijo en el paso 2 (cuenta con la regla de fusión en blanco).
 3. **Hard.**Usar`whisper-large-v3-turbo`En el[LibriSpeech test-clean](https://www.openslr.org/12)Comparar con los números publicados.
+4. **Paper check.**En esta lección, lee *Deep Speech 2* y nombra dos partes de su sistema de formación del habla real más allá del juguete de decodificación CTC. ¿Qué pruebas necesitarías antes de afirmar que el juguete reprodujo el WER del papel?
 
 ## Términos clave
 
@@ -179,6 +180,7 @@ Salvo como`outputs/skill-asr-picker.md`Seleccionar el modelo, la estrategia de d
 ## Leer más
 
 - [Graves et al. (2006). Connectionist Temporal Classification](https://www.cs.toronto.edu/~graves/icml_2006.pdf) el documento del CTC.
+- [Amodei et al. (2016). Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://proceedings.mlr.press/v48/amodei16.html) un sistema de RAS a gran escala que utiliza CTC; compara sus experimentos con el pequeño ejercicio de decodificación anterior.
 - [Graves (2012). Sequence Transduction with RNNs](https://arxiv.org/abs/1211.3711) el papel RNN-T.
 - [Radford et al. / OpenAI (2022). Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) el documento canónico de 2022; extensión v3-turbo en 2024.
 - [NVIDIA NeMo — Parakeet-TDT card](https://huggingface.co/nvidia/parakeet-tdt-1.1b) Líder del Directorio de RAS Abiertos para 2026.
