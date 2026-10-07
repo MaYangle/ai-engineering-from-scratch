@@ -500,6 +500,7 @@ H^(l+1) = sigma(D_hat^(-1/2) * A_hat * D_hat^(-1/2) * H^(l) * W^(l))
 ## 进一步阅读
 
 - **Kipf & Welling (2017)**报告中发现,光谱图的转变使信息传递变得简单.
+- [Gilmer et al. (2017). Neural Message Passing for Quantum Chemistry](https://proceedings.mlr.press/v70/gilmer17a.html)通过练习4的两层玩具图表来比较它们;练习不会复制分子实验.
 - **Spielman (2012)**关于"光谱图理论"的讲座说明. 关于拉普拉西亚人的最终介绍,
 - **Hamilton (2020)**关于GNN从基础到应用的书.
 - **Bronstein et al. (2021)**基何学深度学习:网格,组,图形,地质学和测量器.
