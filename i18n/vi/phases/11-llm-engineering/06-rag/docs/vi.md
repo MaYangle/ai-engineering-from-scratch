@@ -427,7 +427,7 @@ Bài học này mang lại:
 
 ## Đọc thêm
 
-- Lewis et al., "Tổ thế tăng cường tìm kiếm cho các nhiệm vụ NLP chuyên sâu về kiến thức" (2020) - bài báo RAG ban đầu từ Nghiên cứu AI của Facebook đã chính thức hóa mô hình tìm kiếm sau đó tạo ra
+- [Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)-- bài báo RAG ban đầu từ nghiên cứu AI của Facebook đã chính thức hóa mô hình thu hồi và sau đó tạo ra
 - Tài liệu RAG của Anthropic (docs.anthropic.com) - hướng dẫn thực tế cho kích thước mảnh, xây dựng nhanh chóng và đánh giá
 - Trung tâm học tập Pinecone, "RAG là gì?" - những lời giải thích trực quan rõ ràng về đường ống dẫn RAG với các cân nhắc sản xuất
 - Câu-BERT: Reimers & Gurevych (2019) -- bài báo đằng sau các mô hình nhúng MiniLM, cho thấy cách đào tạo các bộ mã hóa hai cho sự tương đồng ngữ nghĩa
