@@ -527,6 +527,7 @@ Cette leçon donne:
 ## Pour en savoir plus
 
 - Srivastava et coll., "Dropout: Un moyen simple d'empêcher les réseaux neuronaux de trop se dépasser" (2014) -- le papier original de dépôt avec l'interprétation ensemble et des expériences étendues
+- [Zaremba, Sutskever, and Vinyals (2014). Recurrent Neural Network Regularization](https://arxiv.org/abs/1409.2329)-- s'applique à la déconnexion non récurrente; le masque générique de déconnexion de cette leçon n'est pas une recette pour la déconnexion de l'état récurrent.
 - Ioffe & Szegedy, " Batch Normalization: Accélérer la formation en réseau profond en réduisant le changement de couverture interne " (2015) -- introduit BatchNorm et sa procédure de formation, l'un des documents d'apprentissage profond les plus cités
 - Zhang & Sennrich, "Rot Mean Square Layer Normalization" (2019) -- a montré que RMSNorm correspond à la précision de LayerNorm avec un calcul réduit; adopté par LLaMA et Mistral
 - Zhang et coll., "Comprendre l'apprentissage profond nécessite une rééducation générale" (2017) -- le document historique montrant que les réseaux neuraux peuvent mémoriser des étiquettes aléatoires, défiant les vues traditionnelles de la généralisation
