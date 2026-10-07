@@ -399,5 +399,6 @@ model = smp.Unet(
 
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation (Ronneberger et al., 2015)](https://arxiv.org/abs/1505.04597) الورق الأصلي، والرقم الذي ينسخ كل شخص هو على الصفحة 2
 - [Fully Convolutional Networks (Long et al., 2015)](https://arxiv.org/abs/1411.4038) الورقة التي جعلت أول قسم مشكلة نهاية إلى نهاية
+- [Multi-Scale Context Aggregation by Dilated Convolutions (Yu and Koltun, 2015)](https://arxiv.org/abs/1511.07122) تنمو الحقل الاستقبالي دون جمع قرار مساحي؛ قارن هذا مع ملاحظة DeepLabV3+ أعلاه.
 - [segmentation_models_pytorch](https://github.com/qubvel/segmentation_models.pytorch) الإشارة لتقسيم الإنتاج؛ كل بنية قياسية بالإضافة إلى كل خسارة قياسية
 - [iafoss, Unet34 submission with TTA (Kaggle notebook)](https://www.kaggle.com/code/iafoss/unet34-submission-tta-0-699-new-public-lb) زيادة وقت الاختبار لشبكة U-Net في مسابقة تقسيم حقيقية
