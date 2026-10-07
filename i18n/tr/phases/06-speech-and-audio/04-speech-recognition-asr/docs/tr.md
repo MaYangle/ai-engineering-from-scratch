@@ -163,6 +163,7 @@ Akış ASR'nin parçalara ayrılmış kodlama dikkatini ve taşıma durumu gerek
 1. **Easy.**Çık .`code/main.py`- El yapımı bir CTC çıkışını açgözlülükle çözüyor ve WER'yi referans ile hesaplıyor.
 2. **Medium.**Adım 2'de önlük-taş ışın aramayı doğru şekilde uygulayın (boş birleştirme kuralını hesaplayın). 10 örnekteki sentetik veri kümesinde açgözlülükle karşılaştırın.
 3. **Hard.**Kullanım`whisper-large-v3-turbo`- Evet .[LibriSpeech test-clean](https://www.openslr.org/12)İlk 100 konuşma ile WER hesaplayın.
+4. **Paper check.***Deep Speech 2* okuyun ve bu dersde CTC kodlama oyuncağı dışında gerçek konuşma eğitimi sisteminin iki bölümünü isimlendirin.
 
 ## Anahtar Terimler
 
@@ -179,6 +180,7 @@ Akış ASR'nin parçalara ayrılmış kodlama dikkatini ve taşıma durumu gerek
 ## Daha Fazla Okumak
 
 - [Graves et al. (2006). Connectionist Temporal Classification](https://www.cs.toronto.edu/~graves/icml_2006.pdf) CTC kağıdı.
+- [Amodei et al. (2016). Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://proceedings.mlr.press/v48/amodei16.html) CTC kullanan büyük ölçekli bir ASR sistemi; deneylerini yukarıdaki küçük kodlama egzersizine karşılaştırın.
 - [Graves (2012). Sequence Transduction with RNNs](https://arxiv.org/abs/1211.3711)RNN-T kağıdı.
 - [Radford et al. / OpenAI (2022). Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) 2022 Kanonik Kağıdı; 2024'te v3-turbo uzantısı.
 - [NVIDIA NeMo — Parakeet-TDT card](https://huggingface.co/nvidia/parakeet-tdt-1.1b) 2026 Açık ASR Leaderboard lideri.
