@@ -427,7 +427,7 @@ Esta lição produz:
 
 ## Mais leitura
 
-- Lewis et al., "Generação de recuperação aumentada para tarefas de PNL intensivas em conhecimento" (2020) - o artigo original do RAG da Pesquisa de IA do Facebook que formalizou o padrão de recuperação e geração
+- [Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)-- o artigo original do RAG do Facebook AI Research que formalizou o padrão de recuperação e geração
 - Documentação RAG da Anthropic (docs.anthropic.com) - diretrizes práticas para tamanhos de peças, construção rápida e avaliação
 - Centro de Aprendizagem Pinecone, "O que é RAG?" - Explicações visuais claras do gasoduto RAG com considerações de produção
 - Sentença-BERT: Reimers & Gurevych (2019) -- o artigo por trás dos modelos de incorporação MiniLM, mostrando como treinar bi-encodadores para semântica semelhança
