@@ -203,6 +203,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 1. **Easy.**Mise en œuvre `softmax`masquer afin que les jetons de rembourrage dans l'encodeur obtiennent un poids d'attention zéro.
 2. **Medium.**Ajoutez une attention à la Luong `general`- La forme.`d_h`dans `n_heads`Vérifiez que le cas unique correspond à votre mise en œuvre antérieure.
 3. **Hard.**Prenez une formation GRU encodeur-décodeur avec Bahdanau attention sur la tâche de copie de jouet de la leçon 09. précision de la trace par rapport à la longueur de la séquence. Comparer avec la ligne de base de non-attention. Vous devriez voir l'écart s'élargir à mesure que la longueur augmente, confirmant attention soulève le goulet d'étranglement.
+4. **Reading transfer.**Lisez *Pointer Networks*. Si l'entrée a 5 positions, à quoi peut pointer son décodeur à une étape? Quels changements se produisent lorsque l'entrée a 8 positions?
 
 ## Les termes clés
 
@@ -217,6 +218,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 ## Pour en savoir plus
 
 - [Bahdanau, Cho, Bengio (2014). Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)- Le journal.
+- [Vinyals et al. (2015). Pointer Networks](https://arxiv.org/abs/1506.03134) transforme l'attention sur les positions d'entrée en une distribution de sortie; utilisez l'exercice de lecture-transfert ci-dessus pour vérifier la distinction.
 - [Luong, Pham, Manning (2015). Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) les trois variantes de score et leur comparaison.
 - [Jain and Wallace (2019). Attention is not Explanation](https://arxiv.org/abs/1902.10186) la précaution en matière d'interprétation.
 - [Dive into Deep Learning — Bahdanau Attention](https://d2l.ai/chapter_attention-mechanisms-and-transformers/bahdanau-attention.html) La marche à pied avec PyTorch.
