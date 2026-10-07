@@ -500,6 +500,7 @@ donde A_hat = A + I (adyacencia más auto-bucles) y D_hat es la matriz de grados
 ## Leer más
 
 - **Kipf & Welling (2017)**-- "Clasificación semisupervisada con redes convolutivas de gráficos". El documento que lanzó las GNNs modernas. Muestra que las convoluciones de gráficos espectrales simplifican el pasaje de mensajes.
+- [Gilmer et al. (2017). Neural Message Passing for Quantum Chemistry](https://proceedings.mlr.press/v70/gilmer17a.html)Compararlos con el gráfico de juguete de dos capas del ejercicio 4. El ejercicio no reproduce los experimentos moleculares.
 - **Spielman (2012)**-- "Teoría del gráfico espectral" notas de conferencia. La introducción definitiva a los laplacios, las lagunas espectral, y la partición del gráfico.
 - **Hamilton (2020)**-- "Aprendizaje de representación gráfica". Libro que abarca las GNN desde los fundamentos hasta las aplicaciones.
 - **Bronstein et al. (2021)**-- "Depth Learning Geometric: Grids, Groups, Graphs, Geodesics, and Gauges". El documento marco unificador.
