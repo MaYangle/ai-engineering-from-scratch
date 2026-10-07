@@ -567,6 +567,7 @@ def run_all_demos():
 - [Rajbhandari et al., 2020 -- "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"](https://arxiv.org/abs/1910.02054)根据深度速度的Zero论文,
 - [Shoeybi et al., 2020 -- "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism"](https://arxiv.org/abs/1909.08053)对于转变器的NVIDIA的子平行性
 - [Narayanan et al., 2021 -- "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM"](https://arxiv.org/abs/2104.04473)-- 3D平行结合数据,子和管道
+- [Huang et al. (2019). GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](https://arxiv.org/abs/1811.06965)微批管道时间表和激活再计算; 与练习2的1F1B管道梦时间表进行对比.
 - [Zhao et al., 2023 -- "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel"](https://arxiv.org/abs/2304.11277)-- PyTorch 的本地FSDP实现
 - [Llama 3 Technical Report](https://arxiv.org/abs/2407.21783)-- 16,384个GPU训练, 3D平行细节
 - [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)-- 如何使MoE架构降低培训成本
