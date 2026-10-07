@@ -163,6 +163,7 @@ La pile de 2026:
 1. **Easy.**On court .`code/main.py`Il décode avidement une sortie CTC fabriquée à la main et calcula WER par rapport à une référence.
 2. **Medium.**Appliquez correctement la recherche de faisceau de préfixe dans l'étape 2 (compte pour la règle de fusion en blanc).
 3. **Hard.**Utilisation `whisper-large-v3-turbo`sur[LibriSpeech test-clean](https://www.openslr.org/12)- Comparer les chiffres publiés avec les 100 premiers discours.
+4. **Paper check.**Lisez *Deep Speech 2* et nommez deux parties de son véritable système de formation de la parole au-delà du jouet de décoding CTC dans cette leçon.
 
 ## Les termes clés
 
@@ -179,6 +180,7 @@ La pile de 2026:
 ## Pour en savoir plus
 
 - [Graves et al. (2006). Connectionist Temporal Classification](https://www.cs.toronto.edu/~graves/icml_2006.pdf) le papier du CTC.
+- [Amodei et al. (2016). Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://proceedings.mlr.press/v48/amodei16.html) un système de référencement à grande échelle utilisant le CTC; comparez ses expériences avec le petit exercice de décoding ci-dessus.
 - [Graves (2012). Sequence Transduction with RNNs](https://arxiv.org/abs/1211.3711) le papier RNN-T.
 - [Radford et al. / OpenAI (2022). Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) le papier canonique de 2022; extension v3-turbo en 2024.
 - [NVIDIA NeMo — Parakeet-TDT card](https://huggingface.co/nvidia/parakeet-tdt-1.1b) Leader du tableau des priorités des RSA ouverts de 2026.
