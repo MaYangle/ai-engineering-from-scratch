@@ -567,6 +567,7 @@ Bài học này sẽ mang lại kết quả `outputs/prompt-distributed-training
 - [Rajbhandari et al., 2020 -- "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"](https://arxiv.org/abs/1910.02054)- giấy DeepSpeed ZeRO xác định ba giai đoạn phân mảnh
 - [Shoeybi et al., 2020 -- "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism"](https://arxiv.org/abs/1909.08053)-- NVIDIA's tensor parallelism for transformers
 - [Narayanan et al., 2021 -- "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM"](https://arxiv.org/abs/2104.04473)-- Sự song song 3D kết hợp dữ liệu, tensor và đường ống dẫn
+- [Huang et al. (2019). GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](https://arxiv.org/abs/1811.06965)-- lịch trình ống dẫn micro-batch và tính toán lại kích hoạt; so sánh nó với lịch trình PipeDream 1F1B của bài tập 2.
 - [Zhao et al., 2023 -- "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel"](https://arxiv.org/abs/2304.11277)-- Phân tích FSDP bản địa của PyTorch
 - [Llama 3 Technical Report](https://arxiv.org/abs/2407.21783)-- 16.384 GPU đào tạo với chi tiết song song 3D
 - [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)-- cách kiến trúc MoE làm giảm chi phí đào tạo bằng một thứ tự lớn
