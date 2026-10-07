@@ -4,7 +4,7 @@
   "phases/11-llm-engineering/03-structured-outputs/docs/en.md": "6d310ae5ce8f771c5668d8742f1d1b1c922e738c087225d7c4b31eed492e43d7",
   "phases/11-llm-engineering/04-embeddings/docs/en.md": "9c3115093f152ce871351f278f9e08a2322849bfaa9af54bb5339b5874f2b401",
   "phases/11-llm-engineering/05-context-engineering/docs/en.md": "778ebedaa18baad1af5409b500b174f1809d215fcc20a48960e8ad6324eb50a6",
-  "phases/11-llm-engineering/06-rag/docs/en.md": "03116a37ce0e9ea3f59d086a0c2cf40c621f16fd1b23351e74042d6329096419",
+  "phases/11-llm-engineering/06-rag/docs/en.md": "324f1afa73ef3122c494dc403a01d0d449b9fc6c512442bb5968db20ec9f62cc",
   "phases/11-llm-engineering/07-advanced-rag/docs/en.md": "e0f7bf9bf7a1fa40baf3017291881cf3eb995b93696db33178c424566bbfe801",
   "phases/11-llm-engineering/08-fine-tuning-lora/docs/en.md": "6e6752387e06906ae70b2300d8bf5f2457b2a4f25c85895b10c724db9bee083a",
   "phases/11-llm-engineering/09-function-calling/docs/en.md": "30695ec65c0ada92bac742cb5a287603a340c26ed7b1674767d886f54f591b29",

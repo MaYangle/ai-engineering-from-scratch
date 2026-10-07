@@ -427,7 +427,7 @@ Bu ders şunları ortaya çıkarır:
 
 ## Daha Fazla Okumak
 
-- Lewis et al., "Bilgi yoğun NLP görevleri için geri kazanma-yükseltilmiş nesil" (2020) -- Facebook AI Araştırması'ndan gelen orijinal RAG makalesi geri kazanma-sonra üretme örneğini resmileştirdi
+- [Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)-- Facebook AI Araştırma'nın orijinal RAG makalesinde, geri alın ve sonra oluşturma örneğini resmileştiren
 - Anthropic'in RAG belgeleri (docs.anthropic.com) - parça boyutları, hızlı inşaat ve değerlendirme için pratik rehberlik
 - Pinecone Öğrenme Merkezi, "RAG nedir?" -- RAG borusunun üretim düşünceleri ile ilgili net görsel açıklamalar
 - Ceza-BERT: Reimers & Gurevych (2019) -- tüm MiniLM gömleyici modellerinin arkasındaki makale, semantik benzerlik için iki kodlayıcıyı nasıl eğiteceğimizi gösterir
