@@ -163,6 +163,7 @@ for chunk in streaming_audio():
 1. **Easy.**दौड़ें`code/main.py`. यह लालची से हस्तनिर्मित सीटीसी आउटपुट को डिक्रिप्ट करता है और संदर्भ के साथ WER की गणना करता है।
 2. **Medium.**चरण 2 में पूर्वावलोकन-वृक्ष बीम खोज को ठीक से लागू करें (खाली विलय नियम की गणना करें) 10 उदाहरण सिंथेटिक डेटासेट पर लालच के साथ तुलना करें।
 3. **Hard.**उपयोग करें`whisper-large-v3-turbo`पर[LibriSpeech test-clean](https://www.openslr.org/12). पहले 100 बयानों पर WER की गणना करें. प्रकाशित संख्याओं की तुलना करें.
+4. **Paper check.***Deep Speech 2* पढ़ें और इस पाठ में CTC डिकोडिंग खिलौना के अलावा इसके वास्तविक भाषण प्रशिक्षण प्रणाली के दो हिस्सों का नाम दें। खिलौना ने पेपर के WER को पुनः प्रस्तुत करने का दावा करने से पहले आपको किस सबूत की आवश्यकता होगी?
 
 ## प्रमुख शर्तें
 
@@ -179,6 +180,7 @@ for chunk in streaming_audio():
 ## आगे पढ़ना
 
 - [Graves et al. (2006). Connectionist Temporal Classification](https://www.cs.toronto.edu/~graves/icml_2006.pdf) सीटीसी पेपर।
+- [Amodei et al. (2016). Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://proceedings.mlr.press/v48/amodei16.html) सीटीसी का उपयोग कर एक बड़े पैमाने पर एएसआर प्रणाली; उपरोक्त छोटे डिकोडिंग अभ्यास के साथ इसके प्रयोगों की तुलना करें।
 - [Graves (2012). Sequence Transduction with RNNs](https://arxiv.org/abs/1211.3711) आरएनएन-टी पेपर।
 - [Radford et al. / OpenAI (2022). Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) 2022 के कैनोनिकल पेपर; 2024 में v3-turbo विस्तार।
 - [NVIDIA NeMo — Parakeet-TDT card](https://huggingface.co/nvidia/parakeet-tdt-1.1b) 2026 ओपन एएसआर लीडरबोर्ड का नेता।
