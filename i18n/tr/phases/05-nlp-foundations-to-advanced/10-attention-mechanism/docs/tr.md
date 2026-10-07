@@ -203,6 +203,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 1. **Easy.**Uygulama`softmax`Kodlayıcıdaki tokenleri kapatmak için dikkat ağırlığı sıfır.
 2. **Medium.**Luong ' a çok kişilik dikkat katın .`general`- Şekil.`d_h`- ...`n_heads`Tek başlı olayın daha önceki uygulamalarınızla uyumlu olduğunu kontrol edin.
 3. **Hard.**9. ders'ten bahdanau dikkatini oyuncak kopyası görevi için GRU kodlayıcı-dekodörünü eğit.
+4. **Reading transfer.*** Pointer Networks'i okuyun.* Eğer giriş 5 pozisyonda ise, dekodörü bir adımda neyi işaret edebilir? Giriş 8 pozisyonda olduğunda neler değişir? Bunu sabit bir kelime havuzundan bir token öngörmekle karşılaştırın.
 
 ## Anahtar Terimler
 
@@ -217,6 +218,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 ## Daha Fazla Okumak
 
 - [Bahdanau, Cho, Bengio (2014). Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)- Gazete.
+- [Vinyals et al. (2015). Pointer Networks](https://arxiv.org/abs/1506.03134) giriş konumları üzerinde dikkatini çıkış dağılımına çevirir; ayrımı kontrol etmek için yukarıdaki okuma-gelirme egzersizini kullanın.
 - [Luong, Pham, Manning (2015). Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) üç puan variansı ve karşılaştırmaları.
 - [Jain and Wallace (2019). Attention is not Explanation](https://arxiv.org/abs/1902.10186) yorumlanabilirlik uyarısı.
 - [Dive into Deep Learning — Bahdanau Attention](https://d2l.ai/chapter_attention-mechanisms-and-transformers/bahdanau-attention.html)PyTorch ile yürüyüşe geçebilir.
