@@ -3,7 +3,7 @@
   "phases/10-llms-from-scratch/02-building-a-tokenizer/docs/en.md": "3e2af805d324028b1c673be3bebad6f17dc74ca2ffa0f1f050aa2d5d56d61da1",
   "phases/10-llms-from-scratch/03-data-pipelines/docs/en.md": "75ed5890977f72a36387b7cbea1db9b67a90ca4ba784223ec2f69e4b8cd37a44",
   "phases/10-llms-from-scratch/04-pre-training-mini-gpt/docs/en.md": "5c3f2214d795c44638f037e6b2493e3190516a5bf89202060467298dc2f39dbb",
-  "phases/10-llms-from-scratch/05-scaling-distributed/docs/en.md": "b9ae0ccea1f097aa7d3715f6578a007b167d065be32530ebb83dec516b2ca406",
+  "phases/10-llms-from-scratch/05-scaling-distributed/docs/en.md": "fc3a1315d0edcc9c469e73efa4cc7f78baf3f86c9f9a26844732fc2c3ed7c145",
   "phases/10-llms-from-scratch/06-instruction-tuning-sft/docs/en.md": "a0413c8311b56776f7368253cda3e0a3d8183a6acc4d8e612df8809ecf995e4b",
   "phases/10-llms-from-scratch/07-rlhf/docs/en.md": "0e599cb378e8f0291f17d037d75f07cde24451c27ac335a1dbfa49f026524090",
   "phases/10-llms-from-scratch/08-dpo/docs/en.md": "a295d8092c3cba3c2595bbddb731802cc062d9e9cb686b6a5e7196e2eba4d4ed",

@@ -567,6 +567,7 @@ def run_all_demos():
 - [Rajbhandari et al., 2020 -- "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"](https://arxiv.org/abs/1910.02054)-- ورقة DeepSpeed ZeRO التي حددت ثلاث مراحل شقق
 - [Shoeybi et al., 2020 -- "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism"](https://arxiv.org/abs/1909.08053)-- التوازي التنسوري لـ NVIDIA للمتحولات
 - [Narayanan et al., 2021 -- "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM"](https://arxiv.org/abs/2104.04473)-- التوازي الثلاثي الأبعاد يجمع بين البيانات والخضوع والخط الأنابيب
+- [Huang et al. (2019). GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](https://arxiv.org/abs/1811.06965)-- جدول خط الأنابيب المكون من مجموعات صغيرة وإعادة حساب التشغيل؛ قم بتقارنة ذلك مع جدول التدريب 2 1F1B PipeDream.
 - [Zhao et al., 2023 -- "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel"](https://arxiv.org/abs/2304.11277)-- تنفيذ FSDP الأصلي لـ PyTorch
 - [Llama 3 Technical Report](https://arxiv.org/abs/2407.21783)-- 16,384 تدريبات GPU مع تفاصيل التوازي 3D
 - [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)-- كيف أن الهندسة المعمارية للدراسة تخفض تكلفة التدريب بأمر من حيث حجم
