@@ -527,6 +527,7 @@ Bu ders şunları ortaya çıkarır:
 ## Daha Fazla Okumak
 
 - Srivastava et al., "Dropout: Neural Networks'in Aşırı Uygunluktan Korunması İçin Basit Bir Yolu" (2014) -- Ensemble interpretasyonu ve kapsamlı deneyler ile orijinal bırakma kağıdı
+- [Zaremba, Sutskever, and Vinyals (2014). Recurrent Neural Network Regularization](https://arxiv.org/abs/1409.2329)-- tekrarlanmayan bağlantılara bırakma uygulaması; bu dersin genel bırakma maskası tekrarlı durumdan atılmak için bir tarif değildir.
 - Ioffe & Szegedy, "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift" (2015) -- BatchNorm ve eğitim prosedürünü, en çok alıntılanan derin öğrenme makaleleri arasında bir tanesi olarak tanıttı
 - Zhang & Sennrich, "Root Mean Square Layer Normalization" (2019) -- RMSNorm'un LayerNorm doğruluğuna az hesaplama ile eşleştiğini gösterdi; LLaMA ve Mistral tarafından kabul edildi
 - Zhang et al., "Deep Learning Understanding Requires Rethinking Generalization" (2017) - nöral ağların rastgele etiketleri ezberleyebileceğini gösteren önemli bir makale, genelleşme hakkında geleneksel görüşlere meydan okuyarak
