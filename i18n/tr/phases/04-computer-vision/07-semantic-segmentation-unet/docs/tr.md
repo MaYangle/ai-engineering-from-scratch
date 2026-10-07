@@ -399,5 +399,6 @@ Bu ders şunları ortaya çıkarır:
 
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation (Ronneberger et al., 2015)](https://arxiv.org/abs/1505.04597) orijinal kağıt; herkesin kopyaladığı resim 2. sayfada
 - [Fully Convolutional Networks (Long et al., 2015)](https://arxiv.org/abs/1411.4038) ilk olarak segmentasyonu sonundan sonuna kadar bir konfor sorunu yapan kağıt
+- [Multi-Scale Context Aggregation by Dilated Convolutions (Yu and Koltun, 2015)](https://arxiv.org/abs/1511.07122) alan çözünürlüğünü birleştirmeden kabul alanını büyütmek; bunu yukarıdaki DeepLabV3+ notu ile karşılaştırın.
 - [segmentation_models_pytorch](https://github.com/qubvel/segmentation_models.pytorch) üretim segmentasyonu için referans; her standart mimarlık artı her standart kaybı
 - [iafoss, Unet34 submission with TTA (Kaggle notebook)](https://www.kaggle.com/code/iafoss/unet34-submission-tta-0-699-new-public-lb) Gerçek bir segmentasyon yarışmasında U-Net için test zamanının artırılması
