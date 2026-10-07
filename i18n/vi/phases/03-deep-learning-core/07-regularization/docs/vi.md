@@ -527,6 +527,7 @@ Bài học này mang lại:
 ## Đọc thêm
 
 - Srivastava et al., "Dropout: Một cách đơn giản để ngăn chặn mạng thần kinh bị quá phù hợp" (2014) - bài báo ban đầu về việc bỏ qua với việc giải thích tập thể và các thí nghiệm rộng lớn
+- [Zaremba, Sutskever, and Vinyals (2014). Recurrent Neural Network Regularization](https://arxiv.org/abs/1409.2329)-- áp dụng việc bỏ qua cho các kết nối không lặp lại; mặt nạ bỏ qua chung của bài học này không phải là công thức để bỏ ra trạng thái lặp lại.
 - Ioffe & Szegedy, "Battery Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift" (2015) -- giới thiệu BatchNorm và quy trình đào tạo của nó, một trong những bài báo học sâu được trích dẫn nhiều nhất
 - Zhang & Sennrich, "Root Mean Square Layer Normalization" (2019) -- cho thấy RMSNorm phù hợp với độ chính xác LayerNorm với tính toán giảm; được LLaMA và Mistral chấp nhận
 - Zhang et al., "Hiểu học sâu đòi hỏi phải suy nghĩ lại về tổng quát" (2017) - bài báo mang tính bước ngoặt cho thấy các mạng thần kinh có thể ghi nhớ các nhãn ngẫu nhiên, thách thức quan điểm truyền thống về tổng quát
