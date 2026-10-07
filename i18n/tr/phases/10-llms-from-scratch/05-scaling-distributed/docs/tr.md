@@ -567,6 +567,7 @@ Bu ders bize çok yararlı .`outputs/prompt-distributed-training-planner.md`-- b
 - [Rajbhandari et al., 2020 -- "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"](https://arxiv.org/abs/1910.02054)- DeepSpeed ZeRO kağıdı üç parçalanma aşamasını tanımladı
 - [Shoeybi et al., 2020 -- "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism"](https://arxiv.org/abs/1909.08053)-- NVIDIA'nın transformörler için tensor paralelliği
 - [Narayanan et al., 2021 -- "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM"](https://arxiv.org/abs/2104.04473)- Verileri, tenzorları ve boru hattını birleştiren 3 boyutlu paralellik
+- [Huang et al. (2019). GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](https://arxiv.org/abs/1811.06965)-- mikro seri boru hattı programı ve etkinleştirme yeniden hesaplama; bunu Egzersiz 2'nin 1F1B PipeDream programıyla karşılaştırın.
 - [Zhao et al., 2023 -- "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel"](https://arxiv.org/abs/2304.11277)-- PyTorch'in yerel FSDP uygulaması
 - [Llama 3 Technical Report](https://arxiv.org/abs/2407.21783)-- 16.384 GPU eğitim 3D paralellik detayları ile
 - [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)-- MoE mimarisi eğitim maliyetini büyüklük bir sıraya düşürüyor
