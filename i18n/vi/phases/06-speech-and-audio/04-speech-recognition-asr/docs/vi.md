@@ -163,6 +163,7 @@ Cứ như `outputs/skill-asr-picker.md`Chọn mô hình, giải mã chiến lư�
 1. **Easy.**Đi chạy`code/main.py`Nó tham lam giải mã một đầu ra CTC được làm bằng tay và tính WER với một tham chiếu.
 2. **Medium.**Thực hiện tìm kiếm chùm cây tiền tố trong bước 2 một cách đúng đắn (tự tính quy tắc hợp nhất trống). So sánh với tham lam trên một tập dữ liệu tổng hợp 10 ví dụ.
 3. **Hard.**Sử dụng `whisper-large-v3-turbo`[LibriSpeech test-clean](https://www.openslr.org/12)- Xét WER trên 100 phát biểu đầu tiên. So sánh với số lượng được công bố.
+4. **Paper check.**Đọc * Deep Speech 2* và đặt tên hai phần của hệ thống đào tạo ngôn ngữ thực sự của nó ngoài đồ chơi giải mã CTC trong bài học này.
 
 ## Các điều khoản chính
 
@@ -179,6 +180,7 @@ Cứ như `outputs/skill-asr-picker.md`Chọn mô hình, giải mã chiến lư�
 ## Đọc thêm
 
 - [Graves et al. (2006). Connectionist Temporal Classification](https://www.cs.toronto.edu/~graves/icml_2006.pdf) giấy tờ CTC.
+- [Amodei et al. (2016). Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://proceedings.mlr.press/v48/amodei16.html) một hệ thống ASR quy mô lớn sử dụng CTC; so sánh các thí nghiệm của nó với bài tập giải mã nhỏ ở trên.
 - [Graves (2012). Sequence Transduction with RNNs](https://arxiv.org/abs/1211.3711) tờ RNN-T.
 - [Radford et al. / OpenAI (2022). Whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://arxiv.org/abs/2212.04356) giấy phép năm 2022; v3-turbo mở rộng vào năm 2024.
 - [NVIDIA NeMo — Parakeet-TDT card](https://huggingface.co/nvidia/parakeet-tdt-1.1b) 2026 Open ASR Leaderboard dẫn đầu.
