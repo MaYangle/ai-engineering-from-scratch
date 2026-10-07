@@ -203,6 +203,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 1. **Easy.**تنفيذ`softmax`اختبار على مجموعة مع تسلسلات طول متغير.
 2. **Medium.**إضافة الاهتمام متعدد الرؤوس إلى لونغ `general`شكل. تقسيم `d_h`في`n_heads`مجموعة، إشغال الاهتمام لكل رأس، إشغال المجموعة، تأكد من أن قضية رأس واحد تتطابق مع تنفيذك السابق.
 3. **Hard.**قم بتدريب جهاز تشفير-تشفير GRU مع اهتمام Bahdanau على مهمة نسخ اللعبة من الدروس 09. دقة اللقطة مقابل طول التسلسل. مقارنة مع خط الأساس من عدم الاهتمام. يجب أن ترى الفجوة توسع مع نمو الطول، مؤكدة الاهتمام يرفع عنق الزجاجة.
+4. **Reading transfer.**اقرأ * شبكات المؤشر. إذا كانت المدخلة لديها 5 مواقع، ما الذي يمكن أن يشير إليه مُشفِّرها في خطوة واحدة؟ ما الذي يتغير عندما يكون المدخل لديه 8 مواقع؟ قم بتقارن هذا مع توقع رمز من مخزون لغوي ثابت.
 
 ## الشروط الرئيسية
 
@@ -217,6 +218,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 ## المزيد من القراءة
 
 - [Bahdanau, Cho, Bengio (2014). Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)-الورقة
+- [Vinyals et al. (2015). Pointer Networks](https://arxiv.org/abs/1506.03134) يحول الانتباه على مواقع المدخل إلى توزيع خروجي؛ استخدم ممارسة نقل القراءة أعلاه للتحقق من التمييز.
 - [Luong, Pham, Manning (2015). Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) ثلاثة فترات النتيجة ومقارنتها.
 - [Jain and Wallace (2019). Attention is not Explanation](https://arxiv.org/abs/1902.10186) تحذير التفسير
 - [Dive into Deep Learning — Bahdanau Attention](https://d2l.ai/chapter_attention-mechanisms-and-transformers/bahdanau-attention.html) ممر قابل للجري مع PyTorch.
