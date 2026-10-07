@@ -527,6 +527,7 @@ Esta lição produz:
 ## Mais leitura
 
 - Srivastava et al., "Dropout: Uma maneira simples de evitar redes neurais de sobreajuste" (2014) -- o papel original de abandono com a interpretação do conjunto e extensas experiências
+- [Zaremba, Sutskever, and Vinyals (2014). Recurrent Neural Network Regularization](https://arxiv.org/abs/1409.2329)-- aplica o abandono a conexões não recorrentes; a máscara genérica de abandono desta lição não é uma receita para deixar de estar recorrente.
 - Ioffe & Szegedy, "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift" (2015) -- apresentou BatchNorm e seu procedimento de treinamento, um dos trabalhos de aprendizagem profunda mais citados
 - Zhang & Sennrich, "Root Mean Square Layer Normalization" (2019) -- mostrou que o RMSNorm corresponde à precisão do LayerNorm com computação reduzida; adotado pela LLaMA e Mistral
 - Zhang et al., "Compreender Deep Learning Requere Re-Pensar Generalização" (2017) - o documento histórico que mostra que as redes neurais podem memorizar rótulos aleatórios, desafiando as visões tradicionais da generalização
