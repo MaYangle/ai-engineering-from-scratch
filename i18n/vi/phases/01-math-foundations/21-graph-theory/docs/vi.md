@@ -500,6 +500,7 @@ nơi A_hat = A + I (đối diện cộng với tự vòng lặp) và D_hat là c
 ## Đọc thêm
 
 - **Kipf & Welling (2017)**-- "Hình phân loại bán giám sát với mạng lưới hình ảnh biến động". Bài báo đưa ra các GNN hiện đại.
+- [Gilmer et al. (2017). Neural Message Passing for Quantum Chemistry](https://proceedings.mlr.press/v70/gilmer17a.html)-- hình thức hóa thông điệp, cập nhật và đọc các bước. So sánh chúng với biểu đồ đồ đồ chơi hai lớp của bài tập 4. bài tập không tái tạo các thí nghiệm phân tử.
 - **Spielman (2012)**-- "Thi lý đồ thị quang phổ" bài giảng ghi chú.
 - **Hamilton (2020)**-- "Thiết học đại diện đồ thị". Cuốn sách bao gồm GNN từ cơ bản đến ứng dụng.
 - **Bronstein et al. (2021)**-- "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges". Bài báo khung thống nhất.
