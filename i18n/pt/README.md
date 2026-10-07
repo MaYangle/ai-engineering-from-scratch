@@ -34,7 +34,7 @@
 
 <p align="center">
   <a href="https://serpapi.com/ai-engineering-from-scratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/serpapi-banner-compact.png" width="48%"><img src="../../assets/sponsors/serpapi-banner-compact.png" alt="SerpApi. API de busca na Web para seus aplicativos de IA. Disponível em Markdown e JSON para qualquer integração." width="440"></picture></a>
-  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner.png" alt="NitroStack. Crie aplicativos MCP prontos para produção com NitroStack. Uma plataforma completa de desenvolvimento para criar, testar, depurar e implantar servidores e aplicativos MCP prontos para produção. Clique para saber mais." width="440"></picture></a>
+  <a href="https://nitrostack.ai/referral/aiengineeringfromscratch"><picture><source media="(min-width: 768px)" srcset="../../assets/sponsors/nitrostack-banner-equal.png" width="48%"><img src="../../assets/sponsors/nitrostack-banner-equal.png" alt="NitroStack. Crie e implante seu aplicativo MCP em 10 minutos. Leve seu produto aos marketplaces do ChatGPT e do Claude com implantação gratuita na nuvem." width="440"></picture></a>
 </p>
 
 <p align="center">
