@@ -427,7 +427,7 @@ Esta lección produce:
 
 ## Leer más
 
-- Lewis et al., "Generación de recuperación aumentada para tareas de PNL intensivas en conocimiento" (2020) -- el documento original de RAG de Facebook AI Research que formalizó el patrón de recuperación y luego generación
+- [Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)-- el original de RAG papel de Facebook AI Research que formalizó el patrón de recuperación y luego generación
 - Documentación RAG de Anthropic (docs.anthropic.com) - directrices prácticas para el tamaño de las piezas, la construcción rápida y la evaluación
 - Centro de Aprendizaje Pinecone, "¿Qué es RAG?" - explicaciones visuales claras de la tubería RAG con consideraciones de producción
 - Sentencia-BERT: Reimers & Gurevych (2019) -- el documento detrás de los modelos de incorporación de MiniLM, que muestra cómo entrenar los bi-encodadores para la similitud semántica
