@@ -500,6 +500,7 @@ A_hat = A + I (ekşilik artı kendi-süküller) ve D_hat A_hat'ın dereceleri ma
 ## Daha Fazla Okumak
 
 - **Kipf & Welling (2017)**-- "Grafik Konvolyasyon Ağları ile Yarım Denetimli Sınıflandırma". Modern GNN'leri başlatan makale. Spektral grafik konvolyasyonlarının mesaj geçişini basitleştirdiğini gösterir.
+- [Gilmer et al. (2017). Neural Message Passing for Quantum Chemistry](https://proceedings.mlr.press/v70/gilmer17a.html)-- mesajı resmileştirir, güncelleştirir ve okur adımları. Onları Egzersiz 4'ün iki katlı oyuncak grafikleriyle karşılaştırın; egzersiz moleküler deneyleri yeniden üretmez.
 - **Spielman (2012)**-- "Spektral Graf Teorisi" ders notları. Laplaklar, spektral boşluklar ve grafik bölünmesi hakkında kesin bir giriş.
 - **Hamilton (2020)**-- "Grafik Temsil Öğrenimi". GNN'leri temellerden uygulamalara kadar kapsar.
 - **Bronstein et al. (2021)**-- "Jometri Derin Öğrenimi: Gridler, Gruplar, Grafikler, Jeodetik ve Ölçüler".
