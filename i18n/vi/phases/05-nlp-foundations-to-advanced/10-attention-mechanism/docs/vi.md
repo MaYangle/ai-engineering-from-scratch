@@ -203,6 +203,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 1. **Easy.**Thực hiện`softmax`che giấu để mã hóa mã thông báo trong mã hóa nhận được trọng lượng chú ý bằng không.
 2. **Medium.**Thêm nhiều đầu chú ý đến Luong `general`hình dạng. chia.`d_h`vào`n_heads`nhóm, chạy sự chú ý mỗi đầu, kết nối.
 3. **Hard.**Trén một bộ mã hóa-chế lập GRU với sự chú ý Bahdanau vào nhiệm vụ sao chép đồ chơi từ bài học 09. Độ chính xác của bản vẽ so với chiều dài chuỗi. So sánh với đường cơ sở không chú ý. Bạn nên thấy khoảng cách mở rộng khi chiều dài tăng lên, xác nhận sự chú ý nâng nút thắt.
+4. **Reading transfer.**Đọc * Pointer Networks*. Nếu đầu vào có 5 vị trí, decoder của nó có thể chỉ ra gì trong một bước?
 
 ## Các điều khoản chính
 
@@ -217,6 +218,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 ## Đọc thêm
 
 - [Bahdanau, Cho, Bengio (2014). Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)- Báo.
+- [Vinyals et al. (2015). Pointer Networks](https://arxiv.org/abs/1506.03134) chuyển sự chú ý qua các vị trí đầu vào vào phân phối đầu ra; sử dụng bài tập chuyển đọc ở trên để kiểm tra sự phân biệt.
 - [Luong, Pham, Manning (2015). Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) ba biến thể điểm số và so sánh của chúng.
 - [Jain and Wallace (2019). Attention is not Explanation](https://arxiv.org/abs/1902.10186) cảnh báo về khả năng giải thích.
 - [Dive into Deep Learning — Bahdanau Attention](https://d2l.ai/chapter_attention-mechanisms-and-transformers/bahdanau-attention.html) chạy qua với PyTorch.
