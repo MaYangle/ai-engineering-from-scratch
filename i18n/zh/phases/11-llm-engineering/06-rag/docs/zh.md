@@ -427,7 +427,7 @@ results = collection.query(
 
 ## 进一步阅读
 
-- 路易斯等人",知识密集型NLP任务的恢复增强代" (2020) - - 来自Facebook人工智能研究的原始RAG论文,正式化了恢复然后生成模式
+- [Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)-- 根据Facebook人工智能研究的原始RAG论文,
 - 关于"人类"的RAG文档 (docs.anthropic.com) - - 关于零件尺寸,快速构建和评估的实际指南
 - 松学习中心"RAG是什么?" - - 清晰的视觉解释RAG管道与生产考虑
 - 句子-BERT:Reimers & Gurevych (2019) -- 全 MiniLM 嵌入模型背后的论文,展示如何训练双码码器以实现语义相似性
