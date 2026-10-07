@@ -567,6 +567,7 @@ Cette leçon produit `outputs/prompt-distributed-training-planner.md`-- une requ
 - [Rajbhandari et al., 2020 -- "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"](https://arxiv.org/abs/1910.02054)-- le papier ZeRO DeepSpeed qui définit les trois étapes de déchiquetage
 - [Shoeybi et al., 2020 -- "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism"](https://arxiv.org/abs/1909.08053)-- Le parallélisme tensoriel de NVIDIA pour les transformateurs
 - [Narayanan et al., 2021 -- "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM"](https://arxiv.org/abs/2104.04473)-- Parallélisme 3D combinant données, tensor et pipeline
+- [Huang et al. (2019). GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](https://arxiv.org/abs/1811.06965)-- le calendrier de pipeline micro-partie et le recomptage d'activation; le contraste avec le calendrier du 1F1B PipeDream de l'exercice 2.
 - [Zhao et al., 2023 -- "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel"](https://arxiv.org/abs/2304.11277)-- La mise en œuvre FSDP native de PyTorch
 - [Llama 3 Technical Report](https://arxiv.org/abs/2407.21783)-- 16.384 GPU entraînement avec des détails de parallélisme 3D
 - [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437)-- comment l'architecture du MoE réduit le coût de la formation d'un ordre de grandeur
