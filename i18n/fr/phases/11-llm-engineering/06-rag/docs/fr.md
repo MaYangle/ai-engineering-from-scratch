@@ -427,7 +427,7 @@ Cette leçon donne:
 
 ## Pour en savoir plus
 
-- Lewis et coll., "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (2020) -- le document RAG original de Facebook AI Research qui a formalisé le modèle de récupération puis génération
+- [Lewis et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)-- le document RAG original de Facebook AI Research qui formait le modèle de récupération puis génération
 - Documentation RAG d'Anthropic (docs.anthropic.com) - lignes directrices pratiques pour les tailles de pièces, la construction rapide et l'évaluation
 - Le centre d'apprentissage Pinecone, "Qu'est-ce que le RAG?" -- explications visuelles claires du pipeline RAG avec des considérations de production
 - Sentence-BERT: Reimers & Gurevych (2019) -- le document derrière les modèles intégrés MiniLM, montrant comment former les bi-encoders pour une similitude sémantique
