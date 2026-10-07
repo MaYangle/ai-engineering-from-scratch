@@ -203,6 +203,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 1. **Easy.**实施`softmax`测试一批具有变长序列的批量.
 2. **Medium.**增加多头关注的路昂`general`形式,分开`d_h`进入`n_heads`检查单头案例是否符合您的早期实施.
 3. **Hard.**训练一个GRU编码器-解码器,用巴哈达纳注意力从第09课开始的玩具复制任务. 剧情精度与序列长度. 与没有注意力基线相比较.随着长度的增加,你应该看到差距扩大,确认注意力提高了瓶.
+4. **Reading transfer.**读 *指针网络*.如果输入有5个位置,其解码器可以在一个步骤中指向什么?输入有8个位置时发生什么变化? 与预测一个代币从固定词汇库进行比较.
 
 ## 关键词
 
@@ -217,6 +218,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 ## 进一步阅读
 
 - [Bahdanau, Cho, Bengio (2014). Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)报纸.
+- [Vinyals et al. (2015). Pointer Networks](https://arxiv.org/abs/1506.03134)将注意力转移到输入位置,转化为输出分布;使用上述读取转移练习来检查区别.
 - [Luong, Pham, Manning (2015). Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025)三种分数变体及其比较.
 - [Jain and Wallace (2019). Attention is not Explanation](https://arxiv.org/abs/1902.10186)可解释性警告.
 - [Dive into Deep Learning — Bahdanau Attention](https://d2l.ai/chapter_attention-mechanisms-and-transformers/bahdanau-attention.html)可用 PyTorch 进行通行.
