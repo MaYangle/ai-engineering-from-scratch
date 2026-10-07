@@ -399,5 +399,6 @@ Esta lección produce:
 
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation (Ronneberger et al., 2015)](https://arxiv.org/abs/1505.04597) el papel original; la figura que todos copian está en la página 2
 - [Fully Convolutional Networks (Long et al., 2015)](https://arxiv.org/abs/1411.4038) el papel que primero hizo de la segmentación un problema de con-
+- [Multi-Scale Context Aggregation by Dilated Convolutions (Yu and Koltun, 2015)](https://arxiv.org/abs/1511.07122) aumentar el campo receptivo sin agrupar la resolución espacial; compare esto con la nota DeepLabV3+ anterior.
 - [segmentation_models_pytorch](https://github.com/qubvel/segmentation_models.pytorch) la referencia para la segmentación de la producción; cada arquitectura estándar más cada pérdida estándar
 - [iafoss, Unet34 submission with TTA (Kaggle notebook)](https://www.kaggle.com/code/iafoss/unet34-submission-tta-0-699-new-public-lb) Aumento del tiempo de prueba de una U-Net en una competencia de segmentación real
