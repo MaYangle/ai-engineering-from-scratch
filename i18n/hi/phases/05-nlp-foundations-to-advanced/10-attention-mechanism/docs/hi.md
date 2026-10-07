@@ -203,6 +203,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 1. **Easy.**कार्यान्वयन`softmax`कोडर में पैडिंग टोकन ध्यान वजन शून्य प्राप्त करने के लिए छिपाई। चर लंबाई अनुक्रमों के साथ एक बैच पर परीक्षण।
 2. **Medium.**लुओंग के लिए बहु-मुख्य ध्यान जोड़ें `general`फार्म। विभाजित`d_h`में`n_heads`समूहों, प्रति सिर ध्यान चलाओ, concatenate. सत्यापित करें कि एकल सिर मामले आपके पहले कार्यान्वयन से मेल खाता है.
 3. **Hard.**9. पाठ 09 से खिलौना कॉपी करने के कार्य पर बहदाऊ ध्यान के साथ एक GRU एन्कोडर-डेकोडर को प्रशिक्षित करें। प्लॉट सटीकता बनाम अनुक्रम लंबाई। ध्यान नहीं देने की मूल रेखा के साथ तुलना करें। आपको लंबाई बढ़ने के साथ अंतर का विस्तार देखना चाहिए, ध्यान की पुष्टि करते हुए बोतल की खाई को उठाता है।
+4. **Reading transfer.*** पॉइंटर नेटवर्क पढ़ें* यदि इनपुट में 5 स्थिति हैं, तो इसका डिकोडर एक चरण में किस चीज की ओर इशारा कर सकता है? इनपुट में 8 स्थिति होने पर क्या परिवर्तन होते हैं? इसे एक निश्चित शब्दावली से टोकन की भविष्यवाणी करने के विपरीत करें।
 
 ## प्रमुख शर्तें
 
@@ -217,6 +218,7 @@ For Bahdanau confusion, insist the decoder input is `s_{t-1}` (pre-step state). 
 ## आगे पढ़ना
 
 - [Bahdanau, Cho, Bengio (2014). Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) अखबार।
+- [Vinyals et al. (2015). Pointer Networks](https://arxiv.org/abs/1506.03134) इनपुट स्थितियों पर ध्यान को आउटपुट वितरण में बदल देता है; अंतर की जांच के लिए ऊपर दिए गए रीडिंग-ट्रान्सफर अभ्यास का उपयोग करें।
 - [Luong, Pham, Manning (2015). Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/abs/1508.04025) तीन स्कोर वेरिएंट और उनकी तुलना।
 - [Jain and Wallace (2019). Attention is not Explanation](https://arxiv.org/abs/1902.10186) व्याख्यात्मकता चेतावनी।
 - [Dive into Deep Learning — Bahdanau Attention](https://d2l.ai/chapter_attention-mechanisms-and-transformers/bahdanau-attention.html) PyTorch के साथ चलना योग्य पैदल।
