@@ -4,19 +4,40 @@
 </p>
 
 <p align="center">
-  <b>README’yi dilinizde okuyun:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 
 <p align="center">
@@ -49,7 +70,7 @@
 
 > **Öğrencilerin %84’ü yapay zekâ araçlarını zaten kullanıyor; ancak yalnızca %18’i bunları profesyonel düzeyde kullanmaya hazır hissediyor.** Bu müfredat aradaki farkı kapatıyor.
 >
-> 523 ders. 20 aşama. Yaklaşık 342 saat. Python, TypeScript, Rust, Julia. Her ders yeniden kullanılabilir bir çıktı sunar: bir istem, bir beceri, bir ajan veya bir MCP sunucusu. Ücretsiz, açık kaynaklı ve MIT lisanslı.
+> 523 ders. 20 aşama. ~342 saat. Python, TypeScript, Rust, Julia. Her ders yeniden kullanılabilir bir çıktı bırakır: bir prompt, bir skill, bir ajan, bir MCP sunucusu. Ücretsiz, açık kaynak, MIT.
 >
 > Yapay zekâyı sadece öğrenmiyorsunuz; onu baştan sona, kendi ellerinizle inşa ediyorsunuz.
 
@@ -57,36 +78,36 @@
 <p align="center"><sub><b>114,584</b> okuyucu &nbsp;·&nbsp; Son 30 günde <b>181,995</b> sayfa görüntüleme &nbsp;·&nbsp; 2026-08-29 itibarıyla</sub></p>
 <!-- STATS:END -->
 
-## Buradan başlayın: Ne geliştirmek istiyorsunuz?
+## Buradan başlayın: ne inşa etmek istediğinizi seçin
 
-Başlamadan önce 523 dersi tek tek incelemeniz gerekmez. Bir hedef seçin. Her bağlantı aynı müfredatı GitHub’da veya web sitesinde açar; iki sürümde de ders kodu aynıdır.
+Başlamadan önce 523 dersin hepsine göz atmanız gerekmez. Bir hedef seçin. Her bağlantı aynı müfredatı GitHub'da ya da web sitesinde açar; iki sürüm de aynı ders kodunu kullanır.
 
-| Hedefiniz | GitHub’da öğrenin | Web sitesinde öğrenin |
+| Hedefiniz | GitHub'da öğrenin | Web sitesinde öğrenin |
 |---|---|---|
-| Yeni başladım; sağlam bir temeli baştan sona edinmek istiyorum | [Aşama 0: Kurulum ve Araçlar](../../phases/00-setup-and-tooling/) | [Geliştirme Ortamı](https://aiengineeringfromscratch.com/lesson?path=phases/00-setup-and-tooling/01-dev-environment) |
-| Python biliyorum; matematik ve makine öğrenimi temellerini tamamlamak istiyorum | [Aşama 1: Matematik Temelleri](../../phases/01-math-foundations/) | [Lineer Cebire Sezgisel Yaklaşım](https://aiengineeringfromscratch.com/lesson?path=phases/01-math-foundations/01-linear-algebra-intuition) |
-| Üretim ortamına uygun LLM uygulamaları geliştirmek istiyorum | [Aşama 11: LLM Mühendisliği](../../phases/11-llm-engineering/) | [İstem Mühendisliği](https://aiengineeringfromscratch.com/lesson?path=phases/11-llm-engineering/01-prompt-engineering) |
+| Yeni başlıyorum ve temeli eksiksiz kurmak istiyorum | [Aşama 0: Kurulum ve Araçlar](../../phases/00-setup-and-tooling/) | [Geliştirme Ortamı](https://aiengineeringfromscratch.com/lesson?path=phases/00-setup-and-tooling/01-dev-environment) |
+| Python biliyorum, matematik ve makine öğrenmesi temellerini istiyorum | [Aşama 1: Matematik Temelleri](../../phases/01-math-foundations/) | [Lineer Cebir Sezgisi](https://aiengineeringfromscratch.com/lesson?path=phases/01-math-foundations/01-linear-algebra-intuition) |
+| Üretime hazır LLM uygulamaları geliştirmek istiyorum | [Aşama 11: LLM Mühendisliği](../../phases/11-llm-engineering/) | [Prompt Mühendisliği](https://aiengineeringfromscratch.com/lesson?path=phases/11-llm-engineering/01-prompt-engineering) |
 | Ajan geliştirmek istiyorum | [Aşama 14: Ajan Mühendisliği](../../phases/14-agent-engineering/) | [Ajan Döngüsü](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/01-the-agent-loop) |
-| Gerçek depolarda kodlama ajanlarını kullanmak istiyorum | [Ajan Destekli Mühendislik yolu](../../learning-paths/using-coding-agents.json) | [Ajan Destekli Mühendislik](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/31-agent-workbench-why-models-fail&learningPath=using-coding-agents) |
-| Uygulamaya geçmeden önce ne geliştireceğimi doğru biçimde belirlemek istiyorum | [Ürün Kararı ve Teslimat yolu](../../learning-paths/shaping-the-build.json) | [Ürün Kararı ve Teslimat](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/47-outcomes-before-output&learningPath=shaping-the-build) |
-| Model Context Protocol (MCP) ile uygulama geliştirmek istiyorum | [Model Context Protocol (MCP) yolu](../../phases/13-tools-and-protocols/README.md#model-context-protocol-mcp-path) | [Model Context Protocol (MCP) yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/06-mcp-fundamentals&learningPath=model-context-protocol) |
-| Agent Skills yazıp yayımlamak istiyorum | [Agent Skills odaklı yolu](../../phases/13-tools-and-protocols/README.md#agent-skills-fast-path) | [Agent Skills yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/22-skills-and-agent-sdks&learningPath=agent-skills) |
+| Kodlama ajanlarını gerçek depolarda kullanmak istiyorum | [Ajan Destekli Mühendislik yolu](../../learning-paths/using-coding-agents.json) | [Ajan Destekli Mühendislik](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/31-agent-workbench-why-models-fail&learningPath=using-coding-agents) |
+| Uygulamaya geçmeden önce doğru şeyi tasarlamak istiyorum | [Ürün Muhakemesi ve Teslimat yolu](../../learning-paths/shaping-the-build.json) | [Ürün Muhakemesi ve Teslimat](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/47-outcomes-before-output&learningPath=shaping-the-build) |
+| Model Context Protocol (MCP) ile geliştirmek istiyorum | [Model Context Protocol (MCP) rotası](../../phases/13-tools-and-protocols/README.md#model-context-protocol-mcp-path) | [Model Context Protocol (MCP) yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/06-mcp-fundamentals&learningPath=model-context-protocol) |
+| Agent Skills yazıp yayımlamak istiyorum | [Odaklı Agent Skills rotası](../../phases/13-tools-and-protocols/README.md#agent-skills-fast-path) | [Agent Skills yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/22-skills-and-agent-sdks&learningPath=agent-skills) |
 | Claude sertifikasına hazırlanmak istiyorum | [Sertifikaya başlangıç](../../certifications/claude/GETTING_STARTED.md) | [Sertifika Akademisi](https://aiengineeringfromscratch.com/certifications.html) |
-| MCP Associate (MCPA) sertifikasına hazırlanmak istiyorum | [MCPA başlangıç rehberi](../../certifications/mcpa/GETTING_STARTED.md) | [MCPA öğrenme yolu](https://aiengineeringfromscratch.com/certification?id=mcpa-f) |
+| MCP Associate (MCPA) sertifikasına hazırlanmak istiyorum | [MCPA'ya başlangıç](../../certifications/mcpa/GETTING_STARTED.md) | [MCPA programı](https://aiengineeringfromscratch.com/certification?id=mcpa-f) |
 
-Nereden başlayacağınızı bilemiyor musunuz? [`start-learning` seviye belirleme rehberini](../../skills/start-learning/SKILL.md) veya [web sitesindeki ön koşullar kılavuzunu](https://aiengineeringfromscratch.com/prereqs.html) kullanın.
+Nereden başlayacağınızdan emin değil misiniz? [`start-learning` seviye belirleme rehberini](../../skills/start-learning/SKILL.md) ya da [web sitesindeki ön koşullar kılavuzunu](https://aiengineeringfromscratch.com/prereqs.html) kullanın.
 
-Dört temel alanı ve altı kariyer yolunu [AI Engineering Learning Paths](https://aiengineeringfromscratch.com/learning-paths.html) sayfasında karşılaştırın.
+[AI Engineering öğrenme yollarında](https://aiengineeringfromscratch.com/learning-paths.html) dört temel alanı ve altı kariyer rotasını karşılaştırın.
 
-### Her derste aynı yöntemi izleyin
+### Her derse aynı şekilde çalışın
 
-1. **Okuyun:** `docs/en.md` dosyasını okuyup temel fikri kendi sözlerinizle açıklayın.
-2. **Yazıp kurun:** Kod bloğunu süs olarak görmek yerine önemli kodu kendiniz yazın ve çalıştırın.
-3. **Çalıştırın:** Ders komutunu `README.md` ve `phases/` klasörlerinin bulunduğu depo kökünden çalıştırın.
-4. **Kanıtı saklayın:** Komutu, çalışma dizinini, çıkış kodunu, anlamlı çıktıyı ve değiştirdiğiniz ya da ürettiğiniz eseri kaydedin.
-5. **Devam edin:** Çıktıyı açıklayabildiğiniz ve tahmin yürütmeden küçük bir değişiklik yapabildiğiniz zaman ilerleyin.
+1. **Okuyun:** `docs/en.md` dosyasını okuyun ve ana fikri kendi cümlelerinizle anlatın.
+2. **Yazın ve kurun:** Önemli kodu kendiniz yazın; kod bloğuna süs gibi bakmayın.
+3. **Çalıştırın:** Ders komutunu depo kökünden, yani `README.md` ve `phases/` klasörünün bulunduğu dizinden çalıştırın.
+4. **Kanıt saklayın:** Komutu, çalışma dizinini, çıkış kodunu, anlamlı çıktıyı ve değiştirdiğiniz ya da ürettiğiniz çıktıyı kaydedin.
+5. **Devam edin:** Ancak çıktıyı açıklayabildiğinizde ve tahmin etmeden küçük bir değişiklik yapabildiğinizde ilerleyin.
 
-Derslerdeki komutlar, derste açıkça dizin değiştirmeniz söylenmedikçe depo köküne göre verilmiştir. Birden çok dilde örnek varsa öğrendiğiniz dildeki uygulamayı çalıştırın.
+Ders sayfalarındaki komutlar, ders açıkça başka bir dizine geçmenizi söylemedikçe depo kökünden verilen yollardır. Bir ders birden fazla dil sunuyorsa öğrendiğiniz dilin uygulamasını çalıştırın.
 
 ### Depoyu klonlayın ve ilk kanıtınızı üretin
 
@@ -97,7 +118,7 @@ python3 phases/00-setup-and-tooling/01-dev-environment/code/verify.py --route be
 python3 phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
 ```
 
-Ön denetim, şimdi gereken araçlarla ileride gerekecek araçları birbirinden ayırır. Gerekli bir denetim başarısız olursa algılanan nedeni ve düzeltme komutunu gösterir. İkinci komut, bağımlılık gerektirmeyen bir dersi çalıştırır ve sinir ağı katmanının temel işleminin bir matrisi vektörle çarpmak olduğunu gösterir. Bu terminal çıktısını ilk öğrenme kanıtınız olarak saklayın.
+Ön kontrol, şimdi gereken gereksinimleri daha sonra gerekecek araçlardan ayırır. Her zorunlu hata, tespit edilen nedeni ve bir düzeltme komutunu gösterir. İkinci komut bağımlılık gerektirmeyen bir ders çalıştırır ve sonunda bir matrisi bir vektörle çarpmanın, bir sinir ağı katmanının içindeki işlem olduğunu gösterir. Bu terminal çıktısını ilk kanıtınız olarak saklayın.
 
 ## AI eğitmeninizi 30 saniyede ekleyin
 
@@ -119,7 +140,7 @@ npx skills add rohitg00/ai-engineering-from-scratch
 
 Çağrı biçimini host belirler; taşınabilir `SKILL.md` biçimi belirlemez:
 
-| Host | Müfredata başlama | Model Context Protocol (MCP) yoluna başlama | Agent Skills yoluna başlama | Aşama sınavını yapma |
+| Ana uygulama | Müfredata başlama | Model Context Protocol (MCP) yoluna başlama | Agent Skills yoluna başlama | Aşama sınavını yapma |
 |---|---|---|---|---|
 | Codex | `start-learning` yazın veya `/skills` içinden seçin | `learn-mcp` yazın veya `/skills` içinden seçin | `learn-agent-skills` yazın veya `/skills` içinden seçin | `check-understanding 13` yazın veya `/skills` içinden seçin |
 | Claude Code | `/start-learning` | `/learn-mcp` | `/learn-agent-skills` | `/check-understanding 13` |
@@ -152,25 +173,25 @@ Yirmi aşama birbiri üzerine kurulur: matematik temeldir; ajanlar ve üretim or
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
 flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
+  P0["Aşama 0: Kurulum ve Araçlar"] --> P1["Aşama 1 : Matematik Temelleri"]
+  P1 --> P2["Aşama 2 : Makine Öğrenimi Temelleri"]
+  P2 --> P3["Aşama 3 : Derin Öğrenmenin Temelleri"]
+  P3 --> P4["Aşama 4 : Bilgisayarlı Görü"]
+  P3 --> P5["Aşama 5 : NLP: Temellerden İleri Konulara"]
+  P3 --> P6["Aşama 6 : Konuşma ve Ses"]
+  P3 --> P9["Aşama 9 : Pekiştirmeli Öğrenme"]
+  P5 --> P7["Aşama 7 : Transformer’ları Derinlemesine İnceleme"]
+  P7 --> P8["Aşama 8 : Üretken Yapay Zekâ"]
+  P7 --> P10["Aşama 10 : LLM’leri Sıfırdan Geliştirme"]
+  P10 --> P11["Aşama 11 : LLM Mühendisliği"]
+  P10 --> P12["Aşama 12 : Çok Kipli Yapay Zekâ"]
+  P11 --> P13["Aşama 13 : Araçlar ve Protokoller"]
+  P13 --> P14["Aşama 14 : Ajan Mühendisliği"]
+  P14 --> P15["Aşama 15 : Özerk Sistemler"]
+  P15 --> P16["Aşama 16 : Çok Ajanlı Sistemler ve Sürü Mimarileri"]
+  P14 --> P17["Aşama 17 : Altyapı ve Üretim Ortamı"]
+  P15 --> P18["Aşama 18 : Etik, Güvenlik ve Hizalama"]
+  P16 --> P19["Aşama 19 : Bitirme Projeleri"]
   P17 --> P19
   P18 --> P19
 ```
@@ -196,11 +217,11 @@ Her ders altı adımdan oluşur. *Kendin İnşa Et / Kullan* yaklaşımı müfre
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
 flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
+  M["ANA FİKİR<br/><sub>tek satırda temel düşünce</sub>"] --> Pr["SORUN<br/><sub>somut bir güçlük</sub>"]
+  Pr --> C["KAVRAM<br/><sub>şemalar ve sezgi</sub>"]
+  C --> B["KENDİN YAP<br/><sub>temel matematik, çerçeve kullanmadan</sub>"]
+  B --> U["KULLAN<br/><sub>aynı işlem PyTorch / sklearn ile</sub>"]
+  U --> S["YAYIMLA<br/><sub>istem · beceri · ajan · MCP</sub>"]
 ```
 
 ## Başlarken
@@ -1271,7 +1292,7 @@ Bu başvuru kılavuzu size yardımcı olduysa depoya yıldız verin; bu, projeni
 
 ## Lisans
 
-MIT. İstediğiniz gibi kullanın: çatallayın, öğretin, satın veya yayımlayın. Atıf memnuniyetle karşılanır ancak zorunlu değildir.
+MIT. İstediğiniz gibi kullanın: fork'layın, öğretin, satın, yayımlayın. Atıf makbule geçer ama zorunlu değildir.
 
 [Rohit Ghumare](https://github.com/rohitg00) ve topluluk tarafından sürdürülmektedir.
 

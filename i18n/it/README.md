@@ -4,19 +4,40 @@
 </p>
 
 <p align="center">
-  <b>Leggi il README nella tua lingua:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 
 <p align="center">
@@ -119,7 +140,7 @@ npx skills add rohitg00/ai-engineering-from-scratch
 
 La sintassi di invocazione dipende dall’host, non dal formato portabile `SKILL.md`:
 
-| Host | Avvia il corso | Avvia il percorso Model Context Protocol (MCP) | Avvia il percorso Agent Skills | Fai un quiz di fase |
+| Applicazione ospitante | Avvia il corso | Avvia il percorso Model Context Protocol (MCP) | Avvia il percorso Agent Skills | Fai un quiz di fase |
 |---|---|---|---|---|
 | Codex | `start-learning` oppure selezionala da `/skills` | `learn-mcp` oppure selezionala da `/skills` | `learn-agent-skills` oppure selezionala da `/skills` | `check-understanding 13` oppure selezionala da `/skills` |
 | Claude Code | `/start-learning` | `/learn-mcp` | `/learn-agent-skills` | `/check-understanding 13` |
@@ -152,25 +173,25 @@ Le venti fasi si costruiscono l’una sull’altra. La matematica è la base; gl
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
 flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
+  P0["Fase 0: Configurazione e strumenti"] --> P1["Fase 1 : Fondamenti matematici"]
+  P1 --> P2["Fase 2 : Fondamenti di machine learning"]
+  P2 --> P3["Fase 3 : Fondamenti di deep learning"]
+  P3 --> P4["Fase 4 : Visione artificiale"]
+  P3 --> P5["Fase 5 : Elaborazione del linguaggio naturale: dalle basi agli argomenti avanzati"]
+  P3 --> P6["Fase 6 : Voce e audio"]
+  P3 --> P9["Fase 9 : Reinforcement learning"]
+  P5 --> P7["Fase 7 : Approfondimento sui Transformer"]
+  P7 --> P8["Fase 8 : IA generativa"]
+  P7 --> P10["Fase 10 : Costruire LLM da zero"]
+  P10 --> P11["Fase 11 : Ingegneria degli LLM"]
+  P10 --> P12["Fase 12 : IA multimodale"]
+  P11 --> P13["Fase 13 : Strumenti e protocolli"]
+  P13 --> P14["Fase 14 : Ingegneria degli agenti"]
+  P14 --> P15["Fase 15 : Sistemi autonomi"]
+  P15 --> P16["Fase 16 : Sistemi multi-agente e sciami"]
+  P14 --> P17["Fase 17 : Infrastruttura e produzione"]
+  P15 --> P18["Fase 18 : Etica, sicurezza e allineamento"]
+  P16 --> P19["Fase 19 : Progetti conclusivi"]
   P17 --> P19
   P18 --> P19
 ```
@@ -196,11 +217,11 @@ Ogni lezione segue sei passaggi. La sequenza *Build It / Use It* ne è il fulcro
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
 flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
+  M["IDEA CHIAVE<br/><sub>il principio in una riga</sub>"] --> Pr["PROBLEMA<br/><sub>una difficoltà concreta</sub>"]
+  Pr --> C["CONCETTO<br/><sub>diagrammi e intuizione</sub>"]
+  C --> B["COSTRUISCILO<br/><sub>matematica di base, senza framework</sub>"]
+  B --> U["USALO<br/><sub>lo stesso in PyTorch / sklearn</sub>"]
+  U --> S["PUBBLICALO<br/><sub>istruzione · abilità · agente · MCP</sub>"]
 ```
 
 ## Come iniziare
@@ -250,7 +271,7 @@ Il programma è un materiale di studio indipendente basato sugli obiettivi d’e
 
 ### Le skill di apprendimento
 
-| Skill | Funzione |
+| Abilità | Funzione |
 |---|---|
 | [`start-learning`](../../skills/start-learning/SKILL.md) | Onboarding iniziale: perché studi, quiz di orientamento e piano personalizzato salvato in `LEARNING.md`. |
 | [`learn`](../../skills/learn/SKILL.md) | Il ciclo del tutor: ripasso iniziale, lezione successiva insegnata in modo interattivo, quindi quiz; registra i progressi e gli argomenti da ripassare. |
@@ -272,7 +293,7 @@ Il programma di base in 20 fasi, contenuto in `phases/`, è pubblicato anche in 
 
 I programmi di certificazione non vengono convertiti in libri: il tutor IA, i laboratori eseguibili, le figure interattive, le prove diagnostiche e le simulazioni a tempo restano disponibili su GitHub e sul sito web.
 
-| Vol. | Titolo | Fasi | Download |
+| Vol. | Titolo | Fasi | Scaricamento |
 |-----|-------|--------|----------|
 | 1 | Fondamenti · Matematica, strumenti e machine learning classico | 00-02 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.pdf) |
 | 2 | Deep learning · Reti, visione e linguaggio | 03, 04, 06 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.pdf) |

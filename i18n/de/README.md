@@ -4,19 +4,40 @@
 </p>
 
 <p align="center">
-  <b>Diese README auf Deutsch lesen:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 
 <p align="center">
@@ -119,7 +140,7 @@ npx skills add rohitg00/ai-engineering-from-scratch
 
 Die Aufrufsyntax hängt vom Host ab; sie gehört nicht zum portablen Format `SKILL.md`:
 
-| Host | Kurs starten | Model Context Protocol (MCP) starten | Agent Skills starten | Quiz zu einer Phase starten |
+| Host-Anwendung | Kurs starten | Model Context Protocol (MCP) starten | Agent Skills starten | Quiz zu einer Phase starten |
 |---|---|---|---|---|
 | Codex | `start-learning` oder über `/skills` auswählen | `learn-mcp` oder über `/skills` auswählen | `learn-agent-skills` oder über `/skills` auswählen | `check-understanding 13` oder über `/skills` auswählen |
 | Claude Code | `/start-learning` | `/learn-mcp` | `/learn-agent-skills` | `/check-understanding 13` |
@@ -152,25 +173,25 @@ Die 20 Phasen bauen aufeinander auf. Mathematik bildet das Fundament, Agenten un
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
 flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
+  P0["Phase 0: Einrichtung und Werkzeuge"] --> P1["Phase 1 : Mathematische Grundlagen"]
+  P1 --> P2["Phase 2 : ML-Grundlagen"]
+  P2 --> P3["Phase 3 : Kern des Deep Learning"]
+  P3 --> P4["Phase 4 : Computer Vision"]
+  P3 --> P5["Phase 5 : NLP: Grundlagen bis zum fortgeschrittenen Niveau"]
+  P3 --> P6["Phase 6 : Sprache und Audio"]
+  P3 --> P9["Phase 9 : Reinforcement Learning"]
+  P5 --> P7["Phase 7 : Transformer im Detail"]
+  P7 --> P8["Phase 8 : Generative KI"]
+  P7 --> P10["Phase 10 : LLMs von Grund auf"]
+  P10 --> P11["Phase 11 : LLM-Engineering"]
+  P10 --> P12["Phase 12 : Multimodale KI"]
+  P11 --> P13["Phase 13 : Werkzeuge und Protokolle"]
+  P13 --> P14["Phase 14 : Agent-Engineering"]
+  P14 --> P15["Phase 15 : Autonome Systeme"]
+  P15 --> P16["Phase 16 : Multi-Agenten-Systeme und Schwärme"]
+  P14 --> P17["Phase 17 : Infrastruktur und Produktion"]
+  P15 --> P18["Phase 18 : Ethik, Sicherheit und Alignment"]
+  P16 --> P19["Phase 19 : Abschlussprojekte"]
   P17 --> P19
   P18 --> P19
 ```
@@ -196,11 +217,11 @@ Jede Lektion folgt sechs Schritten. Das Prinzip *Build It / Use It* bildet das R
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
 flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
+  M["LEITGEDANKE<br/><sub>die Kernidee in einem Satz</sub>"] --> Pr["PROBLEMSTELLUNG<br/><sub>eine konkrete Schwierigkeit</sub>"]
+  Pr --> C["KONZEPT<br/><sub>Diagramme und Intuition</sub>"]
+  C --> B["SELBST BAUEN<br/><sub>reine Mathematik, keine Frameworks</sub>"]
+  B --> U["ANWENDEN<br/><sub>dasselbe in PyTorch / sklearn</sub>"]
+  U --> S["VERÖFFENTLICHEN<br/><sub>Anweisung · Fähigkeit · Agent · MCP</sub>"]
 ```
 
 ## Erste Schritte
@@ -250,7 +271,7 @@ Dieser Lehrplan ist ein unabhängiges Lernangebot auf Grundlage öffentlicher Pr
 
 ### Lern-Skills
 
-| Skill | Funktion |
+| Fähigkeit | Funktion |
 |---|---|
 | [`start-learning`](../../skills/start-learning/SKILL.md) | Einmaliger Einstieg: Lernziel klären, Einstufungstest absolvieren und persönlichen Lernplan in `LEARNING.md` speichern. |
 | [`learn`](../../skills/learn/SKILL.md) | Der Tutor-Ablauf: Wissen zum Einstieg auffrischen, die nächste Lektion interaktiv bearbeiten, das Quiz absolvieren und Fortschritt sowie Wiederholungsbedarf festhalten. |
@@ -272,7 +293,7 @@ Der 20-phasige Kernlehrplan unter `phases/` wird zu einer sechsbändigen Buchrei
 
 Die Zertifizierungslehrpläne werden bewusst nicht in die Bücher übernommen. Ihr KI-Tutor-Fortschritt, die ausführbaren Labs, interaktiven Abbildungen, Diagnosetests und zeitlich begrenzten Übungsprüfungen bleiben auf GitHub und der Website verfügbar.
 
-| Vol. | Titel | Phasen | Download |
+| Vol. | Titel | Phasen | Herunterladen |
 |-----|-------|--------|----------|
 | 1 | Grundlagen · Mathematik, Werkzeuge und klassisches maschinelles Lernen | 00-02 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.pdf) |
 | 2 | Deep Learning · Netze, Computer Vision und Sprache | 03, 04, 06 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.pdf) |
@@ -293,8 +314,8 @@ Andere Lehrpläne enden mit *„Glückwunsch, du hast X gelernt.“* Jede Lektio
 
 <table>
 <tr>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A Prompts"/><br/><sub>FIG_001 · A</sub><br/><b>PROMPTS</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B Skills"/><br/><sub>FIG_001 · B</sub><br/><b>SKILLS</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A Anweisungen"/><br/><sub>FIG_001 · A</sub><br/><b>ANWEISUNGEN</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B Fähigkeiten"/><br/><sub>FIG_001 · B</sub><br/><b>FÄHIGKEITEN</b></th>
 <th align="left" width="25%"><img src="../../site/assets/figures/001-c-agents.svg" width="120" height="120" alt="FIG_001.C Agenten"/><br/><sub>FIG_001 · C</sub><br/><b>AGENTEN</b></th>
 <th align="left" width="25%"><img src="../../site/assets/figures/001-d-mcp-servers.svg" width="120" height="120" alt="FIG_001.D MCP-Server"/><br/><sub>FIG_001 · D</sub><br/><b>MCP-SERVER</b></th>
 </tr>
@@ -974,7 +995,7 @@ Die Lektionen 31–46 bilden den [Pfad für agentengestütztes Engineering](../.
 | 20 | [Bias und Schaden durch verzerrte Repräsentation](../../phases/18-ethics-safety-alignment/20-bias-representational-harm/) | Umsetzen | Python |
 | 21 | [Fairness-Kriterien: Gruppen-, Individual- und kontrafaktische Fairness](../../phases/18-ethics-safety-alignment/21-fairness-criteria-group-individual-counterfactual/) | Lernen | Python |
 | 22 | [Differential Privacy für LLMs](../../phases/18-ethics-safety-alignment/22-differential-privacy-for-llms/) | Umsetzen | Python |
-| 23 | [Watermarking: SynthID, Stable Signature, C2PA](../../phases/18-ethics-safety-alignment/23-watermarking-synthid-stable-signature-c2pa/) | Umsetzen | Python |
+| 23 | [Wasserzeichen: SynthID, Stable Signature, C2PA](../../phases/18-ethics-safety-alignment/23-watermarking-synthid-stable-signature-c2pa/) | Umsetzen | Python |
 | 24 | [Regulierungsrahmen: EU, USA, Großbritannien, Korea](../../phases/18-ethics-safety-alignment/24-regulatory-frameworks-eu-us-uk-korea/) | Lernen | Python |
 | 25 | [EchoLeak und CVEs für KI](../../phases/18-ethics-safety-alignment/25-echoleak-cves-for-ai/) | Lernen | Python |
 | 26 | [Model-, System- und Dataset-Cards](../../phases/18-ethics-safety-alignment/26-model-system-dataset-cards/) | Umsetzen | Python |

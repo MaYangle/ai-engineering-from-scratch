@@ -4,19 +4,40 @@
 </p>
 
 <p align="center">
-  <b>다른 언어로 읽기:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 
 <p align="center">
@@ -304,7 +325,7 @@ python3 phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
 <tr>
 <td valign="top" width="50%">
 
-**`code/agent_loop.py`** &nbsp; <sub><i>그것을 만들</i></sub>
+**`code/agent_loop.py`** &nbsp; <sub><i>직접 만들기</i></sub>
 
 ```python
 def run(query, tools):
@@ -322,7 +343,7 @@ def run(query, tools):
 </td>
 <td valign="top" width="50%">
 
-**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>배가</i></sub>
+**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>배포하기</i></sub>
 
 ```markdown
 ---
@@ -352,11 +373,10 @@ the agent went wrong and explain why...
 
 ## 목차
 
-20단계, 모든단계를 클릭해서 수업 목록을 확장하세요.
+총 20단계입니다. 각 단계를 클릭하면 레슨 목록이 펼쳐집니다.
 
 <a id="phase-0"></a>
-### 0단계: 설정 및 도구
-12개 레슨
+### 0단계: 설정 및 도구 `12개 레슨`
 
 > 앞으로 진행할 모든 내용을 위해 개발 환경을 준비하세요.
 
@@ -367,7 +387,7 @@ the agent went wrong and explain why...
 | 03 | [GPU 설정과 클라우드](../../phases/00-setup-and-tooling/03-gpu-setup-and-cloud/) | 구현 | Python |
 | 04 | [API와 키](../../phases/00-setup-and-tooling/04-apis-and-keys/) | 구현 | Python |
 | 05 | [Jupyter 노트북](../../phases/00-setup-and-tooling/05-jupyter-notebooks/) | 구현 | Python |
-| 06 | [Python 환경](../../phases/00-setup-and-tooling/06-python-environments/) | 구현 | 껍질 |
+| 06 | [Python 환경](../../phases/00-setup-and-tooling/06-python-environments/) | 구현 | Shell |
 | 07 | [AI용 Docker](../../phases/00-setup-and-tooling/07-docker-for-ai/) | 구현 | Docker |
 | 08 | [에디터 설정](../../phases/00-setup-and-tooling/08-editor-setup/) | 구현 | — |
 | 09 | [데이터 관리](../../phases/00-setup-and-tooling/09-data-management/) | 구현 | Python |
@@ -826,9 +846,7 @@ the agent went wrong and explain why...
 
 14단계의 각 워크벤치 레슨(31–42)은 `mission.md` 브리핑으로 에이전트에 임무를 안내합니다. 에이전트는 레슨 문서 전체를 열기 전에 이 브리핑을 확인합니다.
 
-레슨 31–46은 [에이전트 지원 엔지니어링 경로](../../learning-paths/using-coding-agents.json)를 이룹니다. 매니페스트 순서는 워크벤치 기반에 작업 구체화, 계획, 위임, 지속 가능한 피드백을 결합합니다.
-
-레슨 47–54는 [제품 판단 및 전달 경로](../../learning-paths/shaping-the-build.json)를 이룹니다. 성과 정의부터 근거, 위험, 범위, 측정, 단계적 출시, 피드백 책임까지 다룹니다.
+레슨 31–46은 [에이전트 지원 엔지니어링 경로](../../learning-paths/using-coding-agents.json)를 이룹니다. 매니페스트 순서는 워크벤치 기반에 작업 구체화, 계획, 위임, 지속 가능한 피드백을 결합합니다. 레슨 47–54는 [제품 판단 및 전달 경로](../../learning-paths/shaping-the-build.json)를 이룹니다. 성과 정의부터 근거, 위험, 범위, 측정, 단계적 출시, 피드백 책임까지 다룹니다.
 
 </details>
 
@@ -997,7 +1015,7 @@ the agent went wrong and explain why...
 | 16 | [GitHub 이슈에서 PR까지 처리하는 자율 에이전트](../../phases/19-capstone-projects/16-github-issue-to-pr-agent/) | P11 P13 P14 P15 P17 | Python |
 | 17 | [개인용 AI 튜터(적응형, 멀티모달)](../../phases/19-capstone-projects/17-personal-ai-tutor/) | P5 P6 P11 P12 P14 P17 P18 | Python |
 
-**깊이 있는 트랙** 처음부터 완전한 하위 시스템을 구축하는 다중 수업 시리즈.
+**심화 구현 트랙**: 여러 레슨에 걸쳐 완전한 하위 시스템을 처음부터 구축합니다.
 
 | # | 프로젝트 | 결합 단계 | 언어 |
 |:---:|---------|----------|------|
@@ -1156,6 +1174,7 @@ python3 scripts/lesson_run.py --strict         # exit 1 if any lesson fails
 python3 scripts/lesson_run.py --execute        # actually run, 10s timeout per lesson
 ```
 `--execute`는 각 레슨의 `code/main.py`(또는 첫 번째 `.py` 파일)를 실행하며 레슨당 10초 제한이 있습니다. 시작 파일의 첫 부분에 `# requires: pkg1, pkg2`처럼 표준 라이브러리가 아닌 의존성을 적은 주석이 있으면 해당 레슨은 `needs <deps>` 사유와 함께 건너뜁니다. 이 스크립트는 선택 기능이며 CI에는 연결되어 있지 않습니다.
+
 링크 검사는 표준 라이브러리만 사용하며 Python 3.10 이상이 필요합니다. `LINK_CHECK_SKIP=domain1,domain2`로 기본 제외 도메인(`twitter.com`, `x.com`, `linkedin.com`, `instagram.com`, `medium.com`)을 바꿀 수 있습니다. 이 도메인들은 자동화된 HEAD/GET 요청을 적극적으로 차단합니다.
 
 ## 어디서 시작할까요
@@ -1215,21 +1234,21 @@ python3 scripts/lesson_run.py --execute        # actually run, 10s timeout per l
 
 | 목표 | 읽으세요 |
 |---|---|
-| 교훈이나 수정 | [CONTRIBUTING.md](../../CONTRIBUTING.md) |
+| 레슨 추가 또는 수정에 기여하기 | [CONTRIBUTING.md](../../CONTRIBUTING.md) |
 | 팀이나 학교를 위한 포크 | [FORKING.md](../../FORKING.md) |
-| 수업 템플릿 | [LESSON_TEMPLATE.md](../../LESSON_TEMPLATE.md) |
-| 진전을 추적 | [ROADMAP.md](../../ROADMAP.md) |
-| 문장 | [문장/어.md](../../glossary/terms.md) |
+| 레슨 템플릿 | [LESSON_TEMPLATE.md](../../LESSON_TEMPLATE.md) |
+| 진행 상황 확인하기 | [ROADMAP.md](../../ROADMAP.md) |
+| 용어집 | [glossary/terms.md](../../glossary/terms.md) |
 | 행동 규범 | [CODE_OF_CONDUCT.md](../../CODE_OF_CONDUCT.md) |
 
-수업을 제출하기 전에, 변함없는 점검을 실행하십시오.
+레슨을 제출하기 전에 필수 조건 검사를 실행하세요.
 
 ```bash
 python3 scripts/audit_lessons.py           # full curriculum
 python3 scripts/audit_lessons.py --phase 14  # single phase
 python3 scripts/audit_lessons.py --json    # CI-friendly output
 ```
-출력 코드는 어떤 규칙이 실패할 때 0이 아닙니다. 규칙 (L001L010) 은 디렉토리 모양을 유효하게합니다. `docs/en.md` 존재 + H1 `code/` 비공개함 `quiz.json` schema (유산을 거부한다 `q/choices/answer` 문제 #102의 원인이 된 키와 수업 문서 내부의 상대적인 링크.
+규칙 하나라도 통과하지 못하면 종료 코드가 0이 아닙니다. 규칙 L001–L010은 디렉터리 구조, `docs/en.md`와 H1 제목의 존재, 비어 있지 않은 `code/`, `quiz.json` 스키마, 레슨 문서의 상대 링크를 검사합니다. 문제 #102를 일으킨 이전 형식의 `q/choices/answer` 키는 허용하지 않습니다.
 
 ```text
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
@@ -1245,7 +1264,7 @@ python3 scripts/audit_lessons.py --json    # CI-friendly output
 ```text
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
 ```
-이 설명서가 도움이 된다면, 리포를 주연으로 만들어서 프로젝트를 계속 유지해 주세요.
+이 안내서가 도움이 되었다면 저장소에 별표를 눌러 주세요. 프로젝트를 지속하는 데 힘이 됩니다.
 
 ## 라이선스
 
@@ -1254,7 +1273,7 @@ MIT. 원하는 대로 쓰세요. 포크하고, 가르치고, 팔고, 배포하�
 [Rohit Ghumare](https://github.com/rohitg00) 와 커뮤니티가 관리합니다.
 
 <sub>
-  <a href="https://x.com/ghumare64">@Ghumare64</a> &nbsp;·&nbsp;
-  <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com에서</a> &nbsp;·&nbsp;
+  <a href="https://x.com/ghumare64">@ghumare64</a> &nbsp;·&nbsp;
+  <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a> &nbsp;·&nbsp;
   <a href="https://github.com/rohitg00/ai-engineering-from-scratch/issues/new/choose">보고 / 제안</a>
 </sub>

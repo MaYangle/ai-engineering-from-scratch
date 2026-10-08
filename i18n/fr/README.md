@@ -4,19 +4,40 @@
 </p>
 
 <p align="center">
-  <b>Lisez le README dans votre langue :</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 
 <p align="center">
@@ -152,25 +173,25 @@ Les vingt phases s’appuient les unes sur les autres. Les mathématiques en for
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
 flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
+  P0["Phase 0 : Installation et outils"] --> P1["Phase 1 : Fondements mathématiques"]
+  P1 --> P2["Phase 2 : Fondements de l’apprentissage automatique"]
+  P2 --> P3["Phase 3 : Fondements de l’apprentissage profond"]
+  P3 --> P4["Phase 4 : Vision par ordinateur"]
+  P3 --> P5["Phase 5 : Traitement automatique du langage : des bases aux sujets avancés"]
+  P3 --> P6["Phase 6 : Parole et audio"]
+  P3 --> P9["Phase 9 : Apprentissage par renforcement"]
+  P5 --> P7["Phase 7 : Transformers : étude approfondie"]
+  P7 --> P8["Phase 8 : IA générative"]
+  P7 --> P10["Phase 10 : Construire des LLM depuis zéro"]
+  P10 --> P11["Phase 11 : Ingénierie des LLM"]
+  P10 --> P12["Phase 12 : IA multimodale"]
+  P11 --> P13["Phase 13 : Outils et protocoles"]
+  P13 --> P14["Phase 14 : Ingénierie des agents"]
+  P14 --> P15["Phase 15 : Systèmes autonomes"]
+  P15 --> P16["Phase 16 : Multi-agents et essaims"]
+  P14 --> P17["Phase 17 : Infrastructure et mise en production"]
+  P15 --> P18["Phase 18 : Éthique, sécurité et alignement"]
+  P16 --> P19["Phase 19 : Projets de synthèse"]
   P17 --> P19
   P18 --> P19
 ```
@@ -196,11 +217,11 @@ Chaque leçon suit six étapes. La séquence *Build It / Use It* en est le cœur
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
 flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
+  M["IDÉE CLÉ<br/><sub>le principe en une phrase</sub>"] --> Pr["PROBLÈME<br/><sub>une difficulté concrète</sub>"]
+  Pr --> C["NOTION<br/><sub>schémas et intuition</sub>"]
+  C --> B["CONSTRUIRE<br/><sub>les mathématiques, sans framework</sub>"]
+  B --> U["UTILISER<br/><sub>la même chose dans PyTorch / sklearn</sub>"]
+  U --> S["PUBLIER<br/><sub>invite · compétence · agent · MCP</sub>"]
 ```
 
 ## Premiers pas
@@ -250,7 +271,7 @@ Ce programme est un support d’étude indépendant fondé sur les objectifs d�
 
 ### Les skills d’apprentissage
 
-| Skill | Fonction |
+| Compétence | Fonction |
 |---|---|
 | [`start-learning`](../../skills/start-learning/SKILL.md) | Bilan de départ : vos objectifs, un quiz d’orientation et un plan personnalisé enregistré dans `LEARNING.md`. |
 | [`learn`](../../skills/learn/SKILL.md) | Le cycle du tuteur : bref rappel, enseignement interactif de la leçon suivante, puis quiz ; suivi des progrès et liste de révision à l’appui. |
@@ -293,9 +314,9 @@ Les autres cursus se terminent par : *« Félicitations, vous avez appris X. »*
 
 <table>
 <tr>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A prompts"/><br/><sub>FIG_001 · A</sub><br/><b>PROMPTS</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B skills"/><br/><sub>FIG_001 · B</sub><br/><b>SKILLS</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-c-agents.svg" width="120" height="120" alt="FIG_001.C agents"/><br/><sub>FIG_001 · C</sub><br/><b>AGENTS</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A invites"/><br/><sub>FIG_001 · A</sub><br/><b>INVITES</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B compétences"/><br/><sub>FIG_001 · B</sub><br/><b>COMPÉTENCES</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-c-agents.svg" width="120" height="120" alt="FIG_001.C agents autonomes"/><br/><sub>FIG_001 · C</sub><br/><b>AGENTS AUTONOMES</b></th>
 <th align="left" width="25%"><img src="../../site/assets/figures/001-d-mcp-servers.svg" width="120" height="120" alt="FIG_001.D serveurs MCP"/><br/><sub>FIG_001 · D</sub><br/><b>SERVEURS MCP</b></th>
 </tr>
 <tr>

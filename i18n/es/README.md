@@ -3,19 +3,40 @@
   <img src="../../assets/banner.svg" alt="Banner del manual de referencia de ingeniería de IA desde cero" width="100%">
 </p>
 <p align="center">
-  <b>Lee el README en tu idioma:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 <p align="center">
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-1a1a1a?style=flat-square&labelColor=fafaf5" alt="Licencia del MIT"></a>
@@ -117,7 +138,7 @@ npx skills add rohitg00/ai-engineering-from-scratch
 
 La sintaxis de invocación depende del host, no del formato portable `SKILL.md`:
 
-| Host | Empieza el curso | Inicia Model Context Protocol (MCP) | Inicia Agent Skills | Haz el cuestionario de una fase |
+| Aplicación anfitriona | Empieza el curso | Inicia Model Context Protocol (MCP) | Inicia Agent Skills | Haz el cuestionario de una fase |
 |---|---|---|---|---|
 | Codex | `start-learning`, o elegir entre `/skills` | `learn-mcp`, o elegir entre `/skills` | `learn-agent-skills`, o elegir entre `/skills` | `check-understanding 13`, o elegir entre `/skills` |
 | Claude Code | `/start-learning` | `/learn-mcp` | `/learn-agent-skills` | `/check-understanding 13` |
@@ -150,25 +171,25 @@ Las veinte fases se construyen unas sobre otras. Las matemáticas son los cimien
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
 flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
+  P0["Fase 0: Configuración y herramientas"] --> P1["Fase 1 : Fundamentos matemáticos"]
+  P1 --> P2["Fase 2 : Fundamentos de ML"]
+  P2 --> P3["Fase 3 : Fundamentos del aprendizaje profundo"]
+  P3 --> P4["Fase 4 : Visión por computador"]
+  P3 --> P5["Fase 5 : PLN: de los fundamentos a lo avanzado"]
+  P3 --> P6["Fase 6 : Voz y audio"]
+  P3 --> P9["Fase 9 : Aprendizaje por refuerzo"]
+  P5 --> P7["Fase 7 : Transformers en profundidad"]
+  P7 --> P8["Fase 8 : IA generativa"]
+  P7 --> P10["Fase 10 : LLM desde cero"]
+  P10 --> P11["Fase 11 : Ingeniería de LLM"]
+  P10 --> P12["Fase 12 : IA multimodal"]
+  P11 --> P13["Fase 13 : Herramientas y protocolos"]
+  P13 --> P14["Fase 14 : Ingeniería de agentes"]
+  P14 --> P15["Fase 15 : Sistemas autónomos"]
+  P15 --> P16["Fase 16 : Sistemas multiagente y enjambres"]
+  P14 --> P17["Fase 17 : Infraestructura y producción"]
+  P15 --> P18["Fase 18 : Ética, seguridad y alineación"]
+  P16 --> P19["Fase 19 : Proyectos finales"]
   P17 --> P19
   P18 --> P19
 ```
@@ -194,11 +215,11 @@ Cada lección tiene seis etapas. La secuencia *Constrúyelo / Úsalo* es la colu
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
 flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
+  M["IDEA CENTRAL<br/><sub>la esencia en una línea</sub>"] --> Pr["PROBLEMA<br/><sub>una dificultad concreta</sub>"]
+  Pr --> C["CONCEPTO<br/><sub>diagramas e intuición</sub>"]
+  C --> B["CONSTRÚYELO<br/><sub>matemáticas desde cero, sin frameworks</sub>"]
+  B --> U["ÚSALO<br/><sub>lo mismo en PyTorch / sklearn</sub>"]
+  U --> S["PUBLÍCALO<br/><sub>instrucción · habilidad · agente · MCP</sub>"]
 ```
 
 ## Primeros pasos
@@ -248,7 +269,7 @@ Este plan de estudios es material de estudio independiente basado en los objetiv
 
 ### Skills de aprendizaje
 
-| Skill | Qué hace |
+| Habilidad | Qué hace |
 |---|---|
 | [`start-learning`](../../skills/start-learning/SKILL.md) | Incorporación inicial: define por qué aprendes, responde el cuestionario de nivelación y guarda un plan personalizado en `LEARNING.md`. |
 | [`learn`](../../skills/learn/SKILL.md) | Ciclo del tutor: repaso inicial, siguiente lección interactiva y su cuestionario; registra el progreso y una lista de repaso. |
@@ -291,8 +312,8 @@ Otros planes de estudio terminan con «¡Felicidades, aprendiste X!». Aquí, ca
 
 <table>
 <tr>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A Prompts"/><br/><sub>FIG_001 · A</sub><br/><b>PROMPTS</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B Skills"/><br/><sub>FIG_001 · B</sub><br/><b>SKILLS</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A Instrucciones"/><br/><sub>FIG_001 · A</sub><br/><b>INSTRUCCIONES</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B Habilidades"/><br/><sub>FIG_001 · B</sub><br/><b>HABILIDADES</b></th>
 <th align="left" width="25%"><img src="../../site/assets/figures/001-c-agents.svg" width="120" height="120" alt="FIG_001.C Agentes"/><br/><sub>FIG_001 · C</sub><br/><b>Agentes</b></th>
 <th align="left" width="25%"><img src="../../site/assets/figures/001-d-mcp-servers.svg" width="120" height="120" alt="FIG_001.D Servidores MCP"/><br/><sub>FIG_001 · D</sub><br/><b>SERVIDORES MCP</b></th>
 </tr>
@@ -333,7 +354,7 @@ def run(query, tools):
 </td>
 <td valign="top" width="50%">
 
-**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>- ¿Por qué no?</i></sub>
+**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>Publícalo</i></sub>
 
 ```markdown
 ---
@@ -381,7 +402,7 @@ Veinte fases. Haz clic en cualquier fase para ampliar su lista de lecciones.
 | 03 | [Configuración de GPU y servicios en la nube](../../phases/00-setup-and-tooling/03-gpu-setup-and-cloud/) | Construir | Python |
 | 04 | [APIs y claves](../../phases/00-setup-and-tooling/04-apis-and-keys/) | Construir | Python |
 | 05 | [Cuadernos de Jupyter](../../phases/00-setup-and-tooling/05-jupyter-notebooks/) | Construir | Python |
-| 06 | [Entornos de Python](../../phases/00-setup-and-tooling/06-python-environments/) | Construir | Cárpido |
+| 06 | [Entornos de Python](../../phases/00-setup-and-tooling/06-python-environments/) | Construir | Shell |
 | 07 | [Docker para IA](../../phases/00-setup-and-tooling/07-docker-for-ai/) | Construir | Docker |
 | 08 | [Configuración del editor](../../phases/00-setup-and-tooling/08-editor-setup/) | Construir | — |
 | 09 | [Gestión de datos](../../phases/00-setup-and-tooling/09-data-management/) | Construir | Python |
@@ -1194,6 +1215,9 @@ Solo usa la biblioteca estándar; requiere Python 3.10 o posterior. Define `LINK
 >
 > *«Los modelos seguirán mejorando. La habilidad que se vuelve más valiosa con el tiempo es **saber qué construir**».*<br/>
 > — Consenso del sector, 2026
+
+</td>
+<td valign="top">
 
 - *Attention Is All You Need* — Vaswani et al., 2017 → [Fase 7](#phase-7)
 - *Language Models are Few-Shot Learners* (GPT-3) → [Fase 10](#phase-10)

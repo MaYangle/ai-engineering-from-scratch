@@ -20,6 +20,14 @@ function between(text, start, end, file) {
   return placement;
 }
 
+function checkSponsorLink(text, file) {
+  const sponsorLink = text.match(/href="([^"]*SPONSORS\.md)">([^<]+)<\/a>/);
+  assert.ok(sponsorLink, file);
+  assert.equal(path.resolve(root, path.dirname(file), sponsorLink[1]), path.join(root, 'SPONSORS.md'), file);
+  assert.ok(sponsorLink[2].trim(), file);
+  if (file === 'README.md') assert.equal(sponsorLink[2], 'Become a sponsor');
+}
+
 test('sponsor placements preserve copy, destinations, and local artwork without tier labels', () => {
   const placements = [
     ['README.md', '### Sponsors\n', '### Use every lesson the same way'],
@@ -109,14 +117,7 @@ test('supporter navigation survives translated README headings', () => {
     const text = read(file);
     assert.ok(text.includes('href="#supporters"'), file);
     assert.ok(text.includes('<a id="supporters"></a>'), file);
-    const sponsorLink = text.match(/href="([^"]*SPONSORS\.md)">([^<]+)<\/a>/);
-    assert.ok(sponsorLink, file);
-    assert.equal(path.resolve(root, path.dirname(file), sponsorLink[1]), path.join(root, 'SPONSORS.md'), file);
-    if (file === 'README.md') {
-      assert.equal(sponsorLink[2], 'Become a sponsor');
-    } else {
-      assert.notEqual(sponsorLink[2], 'Become a sponsor', file);
-    }
+    checkSponsorLink(text, file);
     const sources = [...text.matchAll(/<source media="\(min-width: 768px\)" srcset="([^"]+)" width="48%">/g)];
     assert.equal(sources.length, 2, file);
     for (const [, src] of sources) {
@@ -130,6 +131,14 @@ test('supporter navigation survives translated README headings', () => {
       );
     }
   }
+});
+
+test('sponsor navigation accepts translated labels without accepting broken targets', () => {
+  const file = 'i18n/he/README.md';
+  checkSponsorLink('<a href="../../SPONSORS.md">Become a sponsor</a>', file);
+  checkSponsorLink('<a href="../../SPONSORS.md">תמכו בפרויקט</a>', file);
+  assert.throws(() => checkSponsorLink('<a href="SPONSORS.md">תמכו בפרויקט</a>', file));
+  assert.throws(() => checkSponsorLink('<a href="../../SPONSORS.md"> </a>', file));
 });
 
 test('sponsors page is rendered from SPONSORS.md at build time', () => {

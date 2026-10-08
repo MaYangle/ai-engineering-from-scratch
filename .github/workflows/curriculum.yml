@@ -35,6 +35,7 @@ on:
       - "languages.json"
       - "README.md"
       - "i18n/*/README.md"
+      - "i18n/readme-source.sha256"
       - "docs/i18n.md"
       - "CONTRIBUTING.md"
       - "SPONSORS.md"
@@ -82,6 +83,7 @@ on:
       - "languages.json"
       - "README.md"
       - "i18n/*/README.md"
+      - "i18n/readme-source.sha256"
       - "docs/i18n.md"
       - "CONTRIBUTING.md"
       - "SPONSORS.md"
@@ -144,6 +146,8 @@ jobs:
         run: node --test scripts/test_agent_negotiation.js
       - name: static preview routes stay navigable
         run: node --test site/test_static_preview_routes.js
+      - name: synced writing keeps full articles and canonical metadata
+        run: node --test site/test_portfolio_sync.js site/test_writing_mirror.js site/test_portfolio_cache.js site/test_writing_seo.js
       - name: learning paths links and routes stay valid
         run: node --test site/test_learning_paths.js
       - name: sponsor placement preserves approved artwork and ownership
@@ -158,7 +162,7 @@ jobs:
         run: python3 scripts/debias_certification_questions.py --check
       - name: README translations are in sync with English
         run: python3 scripts/build_readme_i18n.py --check
-      - name: README locale audit detects structural drift
+      - name: README locale audit detects untranslated text and structural drift
         run: python3 scripts/test_audit_readme_locales.py
       - name: translation workflow publisher retries safely
         run: python3 scripts/test_translate_workflow.py

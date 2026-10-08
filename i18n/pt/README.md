@@ -3,19 +3,40 @@
   <img src="../../assets/banner.svg" alt="Banner do manual de referência de engenharia de IA do zero" width="100%">
 </p>
 <p align="center">
-  <b>Leia o README no seu idioma:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 <p align="center">
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-1a1a1a?style=flat-square&labelColor=fafaf5" alt="Licença MIT"></a>
@@ -117,7 +138,7 @@ npx skills add rohitg00/ai-engineering-from-scratch
 
 A sintaxe de invocação pertence ao host, não ao formato portátil `SKILL.md`:
 
-| Host | Comece o curso | Inicie Model Context Protocol (MCP) | Inicie Agent Skills | Faça o quiz de uma fase |
+| Aplicação hospedeira | Comece o curso | Inicie Model Context Protocol (MCP) | Inicie Agent Skills | Faça o quiz de uma fase |
 |---|---|---|---|---|
 | Codex | `start-learning`, ou escolher entre `/skills` | `learn-mcp`, ou escolher entre `/skills` | `learn-agent-skills`, ou escolher entre `/skills` | `check-understanding 13`, ou escolher entre `/skills` |
 | Claude Code | `/start-learning` | `/learn-mcp` | `/learn-agent-skills` | `/check-understanding 13` |
@@ -150,25 +171,25 @@ As vinte fases se constroem umas sobre as outras. A matemática é a base; agent
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
 flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
+  P0["Fase 0: Configuração e ferramentas"] --> P1["Fase 1 : Fundamentos matemáticos"]
+  P1 --> P2["Fase 2 : Fundamentos de ML"]
+  P2 --> P3["Fase 3 : Núcleo de aprendizado profundo"]
+  P3 --> P4["Fase 4 : Visão computacional"]
+  P3 --> P5["Fase 5 : PLN: dos fundamentos ao avançado"]
+  P3 --> P6["Fase 6 : Fala e áudio"]
+  P3 --> P9["Fase 9 : Aprendizado por reforço"]
+  P5 --> P7["Fase 7 : Transformers em profundidade"]
+  P7 --> P8["Fase 8 : IA generativa"]
+  P7 --> P10["Fase 10 : LLMs do zero"]
+  P10 --> P11["Fase 11 : Engenharia de LLM"]
+  P10 --> P12["Fase 12 : IA multimodal"]
+  P11 --> P13["Fase 13 : Ferramentas e protocolos"]
+  P13 --> P14["Fase 14 : Engenharia de agentes"]
+  P14 --> P15["Fase 15 : Sistemas autônomos"]
+  P15 --> P16["Fase 16 : Sistemas multiagentes e enxames"]
+  P14 --> P17["Fase 17 : Infraestrutura e produção"]
+  P15 --> P18["Fase 18 : Ética, segurança e alinhamento"]
+  P16 --> P19["Fase 19 : Projetos finais"]
   P17 --> P19
   P18 --> P19
 ```
@@ -194,11 +215,11 @@ Cada lição tem seis etapas. A sequência *Construa / Use* é a espinha dorsal:
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
 flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
+  M["IDEIA CENTRAL<br/><sub>a essência numa linha</sub>"] --> Pr["PROBLEMA<br/><sub>uma dificuldade concreta</sub>"]
+  Pr --> C["CONCEITO<br/><sub>diagramas e intuição</sub>"]
+  C --> B["CONSTRUA<br/><sub>matemática do zero, sem frameworks</sub>"]
+  B --> U["USE<br/><sub>o mesmo em PyTorch / sklearn</sub>"]
+  U --> S["PUBLIQUE<br/><sub>instrução · habilidade · agente · MCP</sub>"]
 ```
 
 ## Primeiros passos
@@ -248,7 +269,7 @@ Este currículo é material de estudo independente baseado nos objetivos públic
 
 ### Skills de aprendizagem
 
-| Skill | O que faz |
+| Habilidade | O que faz |
 |---|---|
 | [`start-learning`](../../skills/start-learning/SKILL.md) | Integração inicial: defina por que está aprendendo, responda ao questionário de nivelamento e salve um plano personalizado em `LEARNING.md`. |
 | [`learn`](../../skills/learn/SKILL.md) | Ciclo do tutor: revisão inicial, próxima lição interativa e seu questionário; registra o progresso e uma fila de revisão. |
@@ -270,7 +291,7 @@ O currículo principal de 20 fases em `phases/` também é publicado em uma sér
 
 Os currículos de certificação não são incluídos nos livros. O estado do tutor de IA, os laboratórios executáveis, as figuras interativas, os diagnósticos e os simulados cronometrados continuam disponíveis no GitHub e no site.
 
-| Vol. | Título | Fases | Download |
+| Vol. | Título | Fases | Transferência |
 |-----|-------|--------|----------|
 | 1 | Fundamentos · Matemática, ferramentas e aprendizado de máquina clássico | 00-02 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.pdf) |
 | 2 | Aprendizado profundo · Redes, visão e fala | 03, 04, 06 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.pdf) |
@@ -291,16 +312,16 @@ Outros currículos terminam com “Parabéns, você aprendeu X”. Aqui, cada li
 
 <table>
 <tr>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A Prompts"/><br/><sub>FIG_001 · A</sub><br/><b>PROMPTS</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B Skills"/><br/><sub>FIG_001 · B</sub><br/><b>SKILLS</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A Instruções"/><br/><sub>FIG_001 · A</sub><br/><b>INSTRUÇÕES</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B Habilidades"/><br/><sub>FIG_001 · B</sub><br/><b>HABILIDADES</b></th>
 <th align="left" width="25%"><img src="../../site/assets/figures/001-c-agents.svg" width="120" height="120" alt="FIG_001.C Agentes"/><br/><sub>FIG_001 · C</sub><br/><b>Agentes</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-d-mcp-servers.svg" width="120" height="120" alt="FIG_001.D Servidores MCP"/><br/><sub>FIG_001 · D</sub><br/><b>MCP Servidores</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-d-mcp-servers.svg" width="120" height="120" alt="FIG_001.D Servidores MCP"/><br/><sub>FIG_001 · D</sub><br/><b>Servidores MCP</b></th>
 </tr>
 <tr>
 <td valign="top">Cole o conteúdo em qualquer assistente de IA para obter ajuda especializada em uma tarefa específica.</td>
 <td valign="top">Instale-a no Claude, Cursor, Codex, OpenClaw, Hermes ou em qualquer agente que leia <code>SKILL.md</code>.</td>
-<td valign="top">Envolve-te como um trabalhador autônomo.</td>
-<td valign="top">Conectar a qualquer MCPConstruído de ponta a ponta na Fase 13.</td>
+<td valign="top">Implemente como trabalhadores autônomos. Na Fase 14, você escreveu o ciclo do agente por conta própria.</td>
+<td valign="top">Conecte a qualquer cliente compatível com MCP. Construído de ponta a ponta na Fase 13.</td>
 </tr>
 </table>
 
@@ -314,7 +335,7 @@ Fase 14, lição 1: o ciclo do agente. Cerca de 120 linhas de Python puro, sem d
 <tr>
 <td valign="top" width="50%">
 
-**`code/agent_loop.py`** &nbsp; <sub><i>Construí-lo</i></sub>
+**`code/agent_loop.py`** &nbsp; <sub><i>Construa</i></sub>
 
 ```python
 def run(query, tools):
@@ -333,7 +354,7 @@ def run(query, tools):
 </td>
 <td valign="top" width="50%">
 
-**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>- Envia-o .</i></sub>
+**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>Publique</i></sub>
 
 ```markdown
 ---
@@ -381,7 +402,7 @@ the agent went wrong and explain why...
 | 03 | [Configuração de GPU e da nuvem](../../phases/00-setup-and-tooling/03-gpu-setup-and-cloud/) | Construir | Python |
 | 04 | [APIs e chaves](../../phases/00-setup-and-tooling/04-apis-and-keys/) | Construir | Python |
 | 05 | [Notebooks Jupyter](../../phases/00-setup-and-tooling/05-jupyter-notebooks/) | Construir | Python |
-| 06 | [Ambientes Python](../../phases/00-setup-and-tooling/06-python-environments/) | Construir | Galpão |
+| 06 | [Ambientes Python](../../phases/00-setup-and-tooling/06-python-environments/) | Construir | Shell |
 | 07 | [Docker para IA](../../phases/00-setup-and-tooling/07-docker-for-ai/) | Construir | Docker |
 | 08 | [Configuração do editor](../../phases/00-setup-and-tooling/08-editor-setup/) | Construir | — |
 | 09 | [Gerenciamento de dados](../../phases/00-setup-and-tooling/09-data-management/) | Construir | Python |
@@ -404,7 +425,7 @@ the agent went wrong and explain why...
 | 07 | [Teorema de Bayes e Pensamento Estatístico](../../phases/01-math-foundations/07-bayes-theorem/) | Construir | Python |
 | 08 | [Otimização: métodos de descida do gradiente](../../phases/01-math-foundations/08-optimization/) | Construir | Python |
 | 09 | [Teoria da informação: entropia e divergência KL](../../phases/01-math-foundations/09-information-theory/) | Aprender | Python |
-| 10 | [Dimensionalização Reduzida: PCA, t-SNE, UMAP](../../phases/01-math-foundations/10-dimensionality-reduction/) | Construir | Python |
+| 10 | [Redução de dimensionalidade: PCA, t-SNE, UMAP](../../phases/01-math-foundations/10-dimensionality-reduction/) | Construir | Python |
 | 11 | [Decomposição em valores singulares](../../phases/01-math-foundations/11-singular-value-decomposition/) | Construir | Python, Julia |
 | 12 | [Operações com tensores](../../phases/01-math-foundations/12-tensor-operations/) | Construir | Python |
 | 13 | [Estabilidade numérica](../../phases/01-math-foundations/13-numerical-stability/) | Construir | Python |
@@ -940,7 +961,7 @@ As lições 31–46 formam a [trilha de engenharia assistida por agentes](../../
 | 03 | [Família de otimização direta de preferências](../../phases/18-ethics-safety-alignment/03-direct-preference-optimization-family/) | Aprender | Python |
 | 04 | [Bajulação como amplificação de RLHF](../../phases/18-ethics-safety-alignment/04-sycophancy-rlhf-amplification/) | Aprender | Python |
 | 05 | [IA constitucional e RLAIF](../../phases/18-ethics-safety-alignment/05-constitutional-ai-rlaif/) | Aprender | Python |
-| 06 | [Otimização de mesa e alinhamento enganoso](../../phases/18-ethics-safety-alignment/06-mesa-optimization-deceptive-alignment/) | Aprender | Python |
+| 06 | [Otimização interna (mesa-optimization) e alinhamento enganoso](../../phases/18-ethics-safety-alignment/06-mesa-optimization-deceptive-alignment/) | Aprender | Python |
 | 07 | [Agentes adormecidos — engano persistente](../../phases/18-ethics-safety-alignment/07-sleeper-agents-persistent-deception/) | Aprender | Python |
 | 08 | [Estratégias ocultas em contexto em modelos de fronteira](../../phases/18-ethics-safety-alignment/08-in-context-scheming-frontier-models/) | Aprender | Python |
 | 09 | [Fingimento de alinhamento](../../phases/18-ethics-safety-alignment/09-alignment-faking/) | Aprender | Python |
@@ -971,7 +992,7 @@ As lições 31–46 formam a [trilha de engenharia assistida por agentes](../../
 <summary><b>Fase 19 — Projetos finais</b> &nbsp;<code>85 lições</code>&nbsp; <em>17 produtos de ponta a ponta + 9 trilhas de construção aprofundada. 20–40 horas por projeto; 4–12 lições por trilha.</em></summary>
 <br/>
 
-| # | Lição | Tipo | Idioma |
+| # | Projeto | Fases utilizadas | Linguagem |
 |:---:|---------|----------|------|
 | 01 | [Agente de programação nativo do terminal](../../phases/19-capstone-projects/01-terminal-native-coding-agent/) | P0 P5 P7 P10 P11 P13 P14 P15 P17 P18 | Python |
 | 02 | [RAG em bases de código (busca semântica entre repositórios)](../../phases/19-capstone-projects/02-rag-over-codebase/) | P5 P7 P11 P13 P17 | Python |
@@ -993,7 +1014,7 @@ As lições 31–46 formam a [trilha de engenharia assistida por agentes](../../
 
 **Trilhas de construção aprofundada.** Cada trilha reúne várias lições para construir do zero um subsistema completo.
 
-| # | Lição | Tipo | Idioma |
+| # | Lição | Trilha | Linguagem |
 |:---:|---------|----------|------|
 | 20 | [Contrato do ciclo do harness de agentes](../../phases/19-capstone-projects/20-agent-harness-loop-contract/) | A. Harness de agentes | Python |
 | 21 | [Registro de ferramentas com validação de esquema](../../phases/19-capstone-projects/21-tool-registry-schema-validation/) | A. Harness de agentes | Python |
@@ -1004,7 +1025,7 @@ As lições 31–46 formam a [trilha de engenharia assistida por agentes](../../
 | 26 | [Executor em sandbox com lista de bloqueio e isolamento de caminhos](../../phases/19-capstone-projects/26-sandbox-runner-denylist/) | A. Harness de agentes | Python |
 | 27 | [Harness de avaliação com tarefas de teste](../../phases/19-capstone-projects/27-eval-harness-fixture-tasks/) | A. Harness de agentes | Python |
 | 28 | [Observabilidade com spans do OpenTelemetry GenAI e métricas do Prometheus](../../phases/19-capstone-projects/28-observability-otel-traces/) | A. Harness de agentes | Python |
-| 29 | [Agente de codificação de ponta a ponta no arnes](../../phases/19-capstone-projects/29-end-to-end-coding-task-demo/) | A. Harness de agentes | Python |
+| 29 | [Agente de programação de ponta a ponta no harness](../../phases/19-capstone-projects/29-end-to-end-coding-task-demo/) | A. Harness de agentes | Python |
 | 30 | [Tokenizador BPE do zero](../../phases/19-capstone-projects/30-bpe-tokenizer-from-scratch/) | B. NLP LLM | Python |
 | 31 | [Conjunto de dados tokenizado com janela deslizante](../../phases/19-capstone-projects/31-tokenized-dataset-sliding-window/) | B. NLP LLM | Python |
 | 32 | [Embeddings de tokens e posicionais](../../phases/19-capstone-projects/32-token-positional-embeddings/) | B. NLP LLM | Python |
@@ -1194,6 +1215,9 @@ Usa apenas a biblioteca padrão; requer Python 3.10 ou posterior. Defina `LINK_C
 >
 > *“Os modelos continuarão melhorando. A habilidade que se valoriza cada vez mais é **saber o que construir**.”*<br/>
 > — Consenso do setor, 2026
+
+</td>
+<td valign="top">
 
 - *Attention Is All You Need* — Vaswani et al., 2017 → [Fase 7](#phase-7)
 - *Language Models are Few-Shot Learners* (GPT-3) → [Fase 10](#phase-10)

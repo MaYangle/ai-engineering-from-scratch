@@ -4,19 +4,40 @@
 </p>
 
 <p align="center">
-  <b>各言語版:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 
 <p align="center">
@@ -183,7 +204,7 @@ phases/<NN>-<phase-name>/<NN>-<lesson-name>/
 │   └── en.md  レッスンの解説
 └── outputs/   レッスンで作成するプロンプト、スキル、エージェント、MCPサーバー
 ```
-各レッスンは6つの段階で進みます。中核となるのは*Build It / Use It*の流れです。まずアルゴリズムをゼロから実装し、その後、本番用ライブラリで同じ処理を実行します。小さな実装を自分で書いているので、フレームワークの動作を理解できます。
+各レッスンは6つの段階で進みます。中核となるのは*自分で実装する / ライブラリで使う*の流れです。まずアルゴリズムをゼロから実装し、その後、本番用ライブラリで同じ処理を実行します。小さな実装を自分で書いているので、フレームワークの動作を理解できます。
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
@@ -304,7 +325,7 @@ python3 phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
 <tr>
 <td valign="top" width="50%">
 
-**`code/agent_loop.py`** &nbsp; <sub><i>築き上げ</i></sub>
+**`code/agent_loop.py`** &nbsp; <sub><i>作る</i></sub>
 
 ```python
 def run(query, tools):
@@ -322,7 +343,7 @@ def run(query, tools):
 </td>
 <td valign="top" width="50%">
 
-**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>運ぶ</i></sub>
+**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>公開する</i></sub>
 
 ```markdown
 ---
@@ -352,11 +373,10 @@ the agent went wrong and explain why...
 
 ## 目次
 
-20段階 授業のリストを拡大するには どの段階でもクリックしてください
+全20フェーズです。各フェーズをクリックすると、レッスン一覧が開きます。
 
 <a id="phase-0"></a>
-### フェーズ0：セットアップとツール
-12 レッスン
+### フェーズ0：セットアップとツール `12 レッスン`
 
 > これから学ぶ内容に備えて、開発環境を整えましょう。
 
@@ -367,7 +387,7 @@ the agent went wrong and explain why...
 | 03 | [GPUのセットアップとクラウド](../../phases/00-setup-and-tooling/03-gpu-setup-and-cloud/) | 制作 | Python |
 | 04 | [APIとキー](../../phases/00-setup-and-tooling/04-apis-and-keys/) | 制作 | Python |
 | 05 | [Jupyter Notebook](../../phases/00-setup-and-tooling/05-jupyter-notebooks/) | 制作 | Python |
-| 06 | [Python環境](../../phases/00-setup-and-tooling/06-python-environments/) | 制作 | シェル |
+| 06 | [Python環境](../../phases/00-setup-and-tooling/06-python-environments/) | 制作 | Shell |
 | 07 | [AIのためのDocker](../../phases/00-setup-and-tooling/07-docker-for-ai/) | 制作 | Docker |
 | 08 | [エディターのセットアップ](../../phases/00-setup-and-tooling/08-editor-setup/) | 制作 | — |
 | 09 | [データ管理](../../phases/00-setup-and-tooling/09-data-management/) | 制作 | Python |
@@ -826,9 +846,7 @@ the agent went wrong and explain why...
 
 フェーズ14の各ワークベンチレッスン（31–42）は`mission.md`でエージェントに事前ブリーフィングを与えます。エージェントはレッスンの全文資料を開く前にこれを確認します。
 
-レッスン31–46が[エージェント支援エンジニアリングのパス](../../learning-paths/using-coding-agents.json)を構成します。マニフェストの順序では、ワークベンチの基礎に、タスクの定義、計画、委任、継続的なフィードバックを組み合わせます。
-
-レッスン47–54が[プロダクト判断とデリバリーのパス](../../learning-paths/shaping-the-build.json)を構成します。成果の定義から、証拠、リスク、スコープ、測定、段階的なリリース、フィードバックの責任までを扱います。
+レッスン31–46が[エージェント支援エンジニアリングのパス](../../learning-paths/using-coding-agents.json)を構成します。マニフェストの順序では、ワークベンチの基礎に、タスクの定義、計画、委任、継続的なフィードバックを組み合わせます。 レッスン47–54が[プロダクト判断とデリバリーのパス](../../learning-paths/shaping-the-build.json)を構成します。成果の定義から、証拠、リスク、スコープ、測定、段階的なリリース、フィードバックの責任までを扱います。
 
 </details>
 
@@ -997,7 +1015,7 @@ the agent went wrong and explain why...
 | 16 | [GitHubのIssueからPRを作成する自律エージェント](../../phases/19-capstone-projects/16-github-issue-to-pr-agent/) | P11 P13 P14 P15 P17 | Python |
 | 17 | [個人向けAIチューター（適応型、マルチモーダル）](../../phases/19-capstone-projects/17-personal-ai-tutor/) | P5 P6 P11 P12 P14 P17 P18 | Python |
 
-**深い建物の軌跡** 完全サブシステムをゼロから構築する多レッスンシリーズ
+**本格的な実装トラック**：複数のレッスンを通じて、サブシステム全体をゼロから構築します。
 
 | # | プロジェクト | 組み合わせるフェーズ | 言語 |
 |:---:|---------|----------|------|
@@ -1067,7 +1085,7 @@ the agent went wrong and explain why...
 | 83 | [プロンプトインジェクション検出器](../../phases/19-capstone-projects/83-prompt-injection-detector/) | I. 安全性ハーネス | Python |
 | 84 | [拒否応答の評価](../../phases/19-capstone-projects/84-refusal-evaluation/) | I. 安全性ハーネス | Python |
 | 85 | [コンテンツ分類器の統合](../../phases/19-capstone-projects/85-content-classifier-integration/) | I. 安全性ハーネス | Python |
-| 86 | [Constitutional AIのルールエンジン](../../phases/19-capstone-projects/86-constitutional-rules-engine/) | I. 安全性ハーネス | Python |
+| 86 | [Constitutional AIのルールエンジン](../../phases/19-capstone-projects/86-constitutional-rules-engine/) | I. 安全性ハーネス | Python, YAML |
 | 87 | [エンドツーエンドの安全性ゲート](../../phases/19-capstone-projects/87-end-to-end-safety-gate/) | I. 安全性ハーネス | Python |
 
 </details>
@@ -1156,6 +1174,7 @@ python3 scripts/lesson_run.py --strict         # exit 1 if any lesson fails
 python3 scripts/lesson_run.py --execute        # actually run, 10s timeout per lesson
 ```
 `--execute`は各レッスンの`code/main.py`（または最初の`.py`ファイル）を実行し、レッスンごとに10秒でタイムアウトします。エントリーファイルの冒頭に`# requires: pkg1, pkg2`のように標準ライブラリ以外の依存関係を列挙したコメントがある場合、そのレッスンは`needs <deps>`を理由にスキップします。このスクリプトは任意実行で、CIには組み込まれていません。
+
 リンクチェックは標準ライブラリのみで動作し、Python 3.10以降が必要です。`LINK_CHECK_SKIP=domain1,domain2`で既定のスキップ対象（`twitter.com`、`x.com`、`linkedin.com`、`instagram.com`、`medium.com`）を変更できます。これらのドメインは自動化されたHEAD/GETリクエストを強く制限します。
 
 ## どこから始めるか
@@ -1215,21 +1234,21 @@ python3 scripts/lesson_run.py --execute        # actually run, 10s timeout per l
 
 | 目標 | 読み |
 |---|---|
-| 授業を教えたり 修正したりする | [CONTRIBUTING.md](../../CONTRIBUTING.md) |
+| レッスンの追加・修正に貢献する | [CONTRIBUTING.md](../../CONTRIBUTING.md) |
 | チームや学校のためのフォーク | [FORKING.md](../../FORKING.md) |
-| 授業の模様 | [LESSON_TEMPLATE.md](../../LESSON_TEMPLATE.md) |
-| 進展を追跡する | [ROADMAP.md](../../ROADMAP.md) |
-| 文庫 | [文庫/用語.md](../../glossary/terms.md) |
+| レッスンのテンプレート | [LESSON_TEMPLATE.md](../../LESSON_TEMPLATE.md) |
+| 進捗を確認する | [ROADMAP.md](../../ROADMAP.md) |
+| 用語集 | [glossary/terms.md](../../glossary/terms.md) |
 | 行動規範 | [CODE_OF_CONDUCT.md](../../CODE_OF_CONDUCT.md) |
 
-授業を提出する前に,不変数をチェックしてください.
+レッスンを提出する前に、必須条件のチェックを実行してください。
 
 ```bash
 python3 scripts/audit_lessons.py           # full curriculum
 python3 scripts/audit_lessons.py --phase 14  # single phase
 python3 scripts/audit_lessons.py --json    # CI-friendly output
 ```
-ルール (L001L010) はディレクトリ形状を検証する. `docs/en.md` 存在 + H1 `code/` 虚空性 `quiz.json` schema (遺産を拒絶する) `q/choices/answer` 授業文書の内にある相対的なリンクです
+いずれかのルールに違反すると、終了コードは0以外になります。ルール（L001–L010）は、ディレクトリ構成、`docs/en.md`とH1見出しの存在、`code/`が空でないこと、`quiz.json`のスキーマ、レッスン文書内の相対リンクを検証します。問題#102の原因となった旧形式の`q/choices/answer`キーは受け付けません。
 
 ```text
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
@@ -1245,7 +1264,7 @@ python3 scripts/audit_lessons.py --json    # CI-friendly output
 ```text
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
 ```
-このマニュアルが助かったなら プロジェクトを生きてるように 準備してください
+このマニュアルが役に立ったら、リポジトリにスターを付けてください。プロジェクトを続ける支えになります。
 
 ## ライセンス
 
@@ -1254,7 +1273,7 @@ MIT。好きなように使ってください。フォークする、教える�
 [Rohit Ghumare](https://github.com/rohitg00) とコミュニティが保守しています。
 
 <sub>
-  <a href="https://x.com/ghumare64">ガンマール64</a> &nbsp;·&nbsp;
-  <a href="https://aiengineeringfromscratch.com">機械技術 (fromscratch.com)</a> &nbsp;·&nbsp;
+  <a href="https://x.com/ghumare64">@ghumare64</a> &nbsp;·&nbsp;
+  <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a> &nbsp;·&nbsp;
   <a href="https://github.com/rohitg00/ai-engineering-from-scratch/issues/new/choose">報告/提案</a>
 </sub>

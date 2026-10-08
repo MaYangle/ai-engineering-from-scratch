@@ -4,19 +4,40 @@
 </p>
 
 <p align="center">
-  <b>اقرأ README بلغتك:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <a href="../../README.md">🇬🇧 English</a> ·
+  <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> ·
+  <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> ·
+  <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> ·
+  <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> ·
+  <a href="../../i18n/pt/README.md">🇵🇹 Português</a> ·
+  <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="../../i18n/es/README.md">🇪🇸 Español</a> ·
+  <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> ·
+  <a href="../../i18n/fr/README.md">🇫🇷 Français</a> ·
+  <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> ·
+  <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> ·
+  <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> ·
+  <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> ·
+  <a href="../../i18n/ro/README.md">🇷🇴 Română</a> ·
+  <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> ·
+  <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> ·
+  <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> ·
+  <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> ·
+  <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> ·
+  <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> ·
+  <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> ·
+  <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> ·
+  <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> ·
+  <a href="../../i18n/he/README.md">🇮🇱 עברית</a> ·
+  <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> ·
+  <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> ·
+  <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> ·
+  <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> ·
+  <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> ·
+  <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> ·
+  <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> ·
+  <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> ·
+  <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
 
 <p align="center">
@@ -152,25 +173,25 @@ npx skills add rohitg00/ai-engineering-from-scratch
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
 flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
+  P0["المرحلة 0: الإعداد والأدوات"] --> P1["المرحلة 1 : أسس الرياضيات"]
+  P1 --> P2["المرحلة 2 : أساسيات ML"]
+  P2 --> P3["المرحلة 3 : أساسيات التعلّم العميق"]
+  P3 --> P4["المرحلة 4 : الرؤية الحاسوبية"]
+  P3 --> P5["المرحلة 5 : NLP: من الأساسيات إلى المتقدم"]
+  P3 --> P6["المرحلة 6 : الكلام والصوت"]
+  P3 --> P9["المرحلة 9 : التعلّم المعزّز"]
+  P5 --> P7["المرحلة 7 : التعمق في Transformers"]
+  P7 --> P8["المرحلة 8 : الذكاء الاصطناعي التوليدي"]
+  P7 --> P10["المرحلة 10 : بناء LLM من الصفر"]
+  P10 --> P11["المرحلة 11 : هندسة LLM"]
+  P10 --> P12["المرحلة 12 : الذكاء الاصطناعي متعدد الوسائط"]
+  P11 --> P13["المرحلة 13 : الأدوات والبروتوكولات"]
+  P13 --> P14["المرحلة 14 : هندسة الوكلاء"]
+  P14 --> P15["المرحلة 15 : الأنظمة المستقلة"]
+  P15 --> P16["المرحلة 16 : الوكلاء المتعددون والأسراب"]
+  P14 --> P17["المرحلة 17 : البنية التحتية والإنتاج"]
+  P15 --> P18["المرحلة 18 : الأخلاقيات والسلامة والمواءمة"]
+  P16 --> P19["المرحلة 19 : المشاريع الختامية"]
   P17 --> P19
   P18 --> P19
 ```
@@ -196,11 +217,11 @@ phases/<NN>-<phase-name>/<NN>-<lesson-name>/
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
 flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
+  M["الفكرة الأساسية<br/><sub>خلاصة في سطر واحد</sub>"] --> Pr["المشكلة<br/><sub>صعوبة محددة</sub>"]
+  Pr --> C["المفهوم<br/><sub>مخططات وفهم حدسي</sub>"]
+  C --> B["ابنِه بنفسك<br/><sub>رياضيات مباشرة بلا أطر عمل</sub>"]
+  B --> U["استخدمه<br/><sub>التطبيق نفسه في PyTorch / sklearn</sub>"]
+  U --> S["انشره<br/><sub>موجّه · مهارة · وكيل · MCP</sub>"]
 ```
 
 ## كيف تبدأ
@@ -381,7 +402,7 @@ the agent went wrong and explain why...
 | 03 | [إعداد GPU والسحابة](../../phases/00-setup-and-tooling/03-gpu-setup-and-cloud/) | بناء | Python |
 | 04 | [واجهات API والمفاتيح](../../phases/00-setup-and-tooling/04-apis-and-keys/) | بناء | Python |
 | 05 | [دفاتر Jupyter](../../phases/00-setup-and-tooling/05-jupyter-notebooks/) | بناء | Python |
-| 06 | [بيئات Python](../../phases/00-setup-and-tooling/06-python-environments/) | بناء | القشرة |
+| 06 | [بيئات Python](../../phases/00-setup-and-tooling/06-python-environments/) | بناء | Shell |
 | 07 | [Docker للذكاء الاصطناعي](../../phases/00-setup-and-tooling/07-docker-for-ai/) | بناء | Docker |
 | 08 | [إعداد المحرر](../../phases/00-setup-and-tooling/08-editor-setup/) | بناء | — |
 | 09 | [إدارة البيانات](../../phases/00-setup-and-tooling/09-data-management/) | بناء | Python |
@@ -1079,7 +1100,7 @@ the agent went wrong and explain why...
 | 83 | [كاشف حقن الموجّهات](../../phases/19-capstone-projects/83-prompt-injection-detector/) | I. إطار السلامة| Python |
 | 84 | [تقييم الرفض](../../phases/19-capstone-projects/84-refusal-evaluation/) | I. إطار السلامة| Python |
 | 85 | [تكامل مصنّف المحتوى](../../phases/19-capstone-projects/85-content-classifier-integration/) | I. إطار السلامة| Python |
-| 86 | [محرك القواعد الدستورية](../../phases/19-capstone-projects/86-constitutional-rules-engine/) | I. إطار السلامة| Python, يامل |
+| 86 | [محرك القواعد الدستورية](../../phases/19-capstone-projects/86-constitutional-rules-engine/) | I. إطار السلامة| Python, YAML |
 | 87 | [بوابة سلامة متكاملة من البداية إلى النهاية](../../phases/19-capstone-projects/87-end-to-end-safety-gate/) | I. إطار السلامة| Python |
 
 </details>
@@ -1201,6 +1222,8 @@ python3 scripts/lesson_run.py --execute        # actually run, 10s timeout per l
 <th align="right" width="50%"><sub>FIG_003 · A</sub><br/><b>إشارة القطاع</b></th>
 <th align="right" width="50%"><sub>FIG_003 · B</sub><br/><b>الأبحاث الأساسية التي يغطيها المنهج</b></th>
 </tr>
+<tr>
+<td valign="top">
 
 > «أكثر لغات البرمجة الجديدة رواجًا هي الإنجليزية.»<br/> — **Andrej Karpathy** ([منشور](https://x.com/karpathy/status/1617979122625712128))
 >
@@ -1275,6 +1298,6 @@ MIT. استخدمه كيفما تشاء: أنشئ fork أو درّسه أو بِ
 
 <sub>
   <a href="https://x.com/ghumare64">@ghumare64</a> &nbsp;·&nbsp;
-  <a href="https://aiengineeringfromscratch.com">aiengineeringمن (موقع (Scratch.com)</a> &nbsp;·&nbsp;
+  <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a> &nbsp;·&nbsp;
   <a href="https://github.com/rohitg00/ai-engineering-from-scratch/issues/new/choose">تقرير / اقتراح</a>
 </sub>
