@@ -1,0 +1,78 @@
+{
+  "lesson": "01-the-tool-interface",
+  "title": "The Tool Interface — Why Agents Need Structured I/O",
+  "questions": [
+    {
+      "stage": "pre",
+      "question": "An LLM with no tools cannot reliably answer 'what is the weather in Bengaluru right now'. Why?",
+      "options": [
+        "It cannot read a JSON schema, so the provider rejects its tool payloads",
+        "Weather data is filtered out of most providers' training corpora",
+        "The host never re-invokes it, so its first answer is always the final one",
+        "It can only emit text tokens, so it has no way to act on the world"
+      ],
+      "correct": 3,
+      "explanation": "The output surface of a bare language model is a distribution over next tokens. It can describe an action but cannot take one; the tool interface is what closes that gap."
+    },
+    {
+      "stage": "check",
+      "question": "In the loop describe → decide → execute → observe, which step is owned by the model?",
+      "options": [
+        "describe",
+        "execute",
+        "decide",
+        "observe"
+      ],
+      "correct": 2,
+      "explanation": "The host describes tools, executes calls, and observes results. Only decide is the model's: it answers, calls one or more tools, or refuses."
+    },
+    {
+      "stage": "check",
+      "question": "What is the `id` field on a tool call for?",
+      "options": [
+        "Passing the argument object that the executor will receive at run time",
+        "Bounding how many times the host may re-run the same tool before it stops",
+        "Choosing which of the registered tools the host should run on this turn",
+        "Correlating a result with its call when parallel calls return out of order"
+      ],
+      "correct": 3,
+      "explanation": "name says which tool, arguments says how to call it, id says which call this is. Parallel calls are not guaranteed to return in order, and nothing in an {sum: 42} payload identifies its originating call."
+    },
+    {
+      "stage": "check",
+      "question": "A tool argument can hold any city on earth and cannot be enumerated. Which schema choice fits?",
+      "options": [
+        "Declare it as an open string, with the guidance in the description",
+        "Declare it with an enum listing the cities the executor supports",
+        "Set additionalProperties to false on the enclosing argument object",
+        "Mark it as required so the model always has to supply a value for it"
+      ],
+      "correct": 0,
+      "explanation": "An enum is a hard gate enforced by the validator, not a hint. Constrain a field only when you can enumerate its legal values; otherwise keep it an open string and teach selection in the description."
+    },
+    {
+      "stage": "post",
+      "question": "Which statement about pure and consequential tools is correct?",
+      "options": [
+        "Pure tools must be confirmed by the user before every speculative call the host makes",
+        "Pure tools are read-only and safe to re-run; consequential tools must be gated",
+        "Consequential tools are the ones whose outputs are too large for one context window",
+        "A tool counts as consequential only when it can move money within a single turn"
+      ],
+      "correct": 1,
+      "explanation": "Pure vs consequential is about whether the tool mutates the world. read_file is itself pure — it never mutates anything — even though its output can be sensitive, which is a separate axis."
+    },
+    {
+      "stage": "post",
+      "question": "Why does native function calling beat prompting the model to reply in JSON?",
+      "options": [
+        "It lets the model invoke tools without the host having to run any executor code",
+        "The call shape is trained in and constrained-decoded, so it validates out of band",
+        "It shrinks the system prompt, so every turn costs noticeably fewer input tokens",
+        "It removes the need to declare a JSON schema for each tool the model may choose"
+      ],
+      "correct": 1,
+      "explanation": "Free-text JSON fails 5-15% of the time on frontier models. Native calling trains the exact shape (98-99% valid in strict mode) and puts the payload in its own protocol slot, so it cannot leak into the user-visible reply and always validates."
+    }
+  ]
+}
