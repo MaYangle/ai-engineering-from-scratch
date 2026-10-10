@@ -32,7 +32,7 @@
     }
 
     .catalog-header h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(min(2rem, 10vw), 5vw, 3rem);
       margin-bottom: 8px;
     }
 
@@ -52,6 +52,7 @@
     .catalog-search {
       flex: 1;
       min-width: 200px;
+      max-width: 100%;
       font-family: var(--font-body);
       font-size: 1rem;
       padding: 12px 16px;
@@ -78,6 +79,7 @@
     }
 
     .catalog-filter {
+      max-width: 100%;
       font-family: var(--font-body);
       font-size: 1rem;
       padding: 12px 16px;
@@ -201,6 +203,14 @@
       background: var(--planned);
     }
 
+    .catalog-status-dot.in-progress {
+      background: var(--status-in-progress);
+    }
+
+    .catalog-status {
+      white-space: nowrap;
+    }
+
     .catalog-lang {
       font-family: var(--font-mono);
       font-size: 0.8rem;
@@ -228,6 +238,10 @@
       margin-top: 16px;
       padding-top: 16px;
       border-top: 1px solid var(--rule-soft);
+    }
+
+    .catalog-progressive-actions[hidden] {
+      display: none;
     }
 
     .catalog-progressive-note {
@@ -297,6 +311,10 @@
         padding: 8px 10px;
       }
 
+      .catalog-table td a {
+        overflow-wrap: anywhere;
+      }
+
       .catalog-progressive-actions {
         align-items: stretch;
         flex-direction: column;
@@ -358,8 +376,6 @@
         </select>
         <select class="catalog-filter" id="catalogStatus" aria-label="Filter by lesson status">
           <option value="">All Status</option>
-          <option value="complete">Complete</option>
-          <option value="planned">Planned</option>
         </select>
       </div>
       <div class="catalog-count" id="catalogCount" role="status" aria-live="polite" tabindex="-1">Loading lesson index...</div>
@@ -988,26 +1004,39 @@
           return;
         }
 
+        var STATUS_LABELS = { complete: 'Complete', 'in-progress': 'In progress', planned: 'Planned' };
+        var presentStatuses = Object.create(null);
+
+        function addOption(select, value, label) {
+          var option = document.createElement('option');
+          option.value = value;
+          option.textContent = label;
+          select.appendChild(option);
+        }
+
         for (var i = 0; i < PHASES.length; i++) {
           var p = PHASES[i];
-          var opt = document.createElement('option');
-          opt.value = String(p.id);
-          opt.textContent = String(p.id).padStart(2, '0') + ' - ' + p.name;
-          phaseSelect.appendChild(opt);
+          addOption(phaseSelect, String(p.id), String(p.id).padStart(2, '0') + ' - ' + p.name);
 
           for (var j = 0; j < p.lessons.length; j++) {
             var l = p.lessons[j];
+            var lessonStatus = l.status || 'planned';
+            presentStatuses[lessonStatus] = true;
             allRows.push({
               phase: p.id,
-              phaseName: p.name,
-              name: l.name,
-              type: l.type,
-              lang: l.lang,
-              status: l.status,
+              phaseName: p.name || '',
+              name: l.name || '',
+              type: l.type || '',
+              lang: l.lang || '',
+              status: lessonStatus,
               url: l.url || ''
             });
           }
         }
+
+        Object.keys(presentStatuses).sort().forEach(function (status) {
+          addOption(statusSelect, status, STATUS_LABELS[status] || status);
+        });
 
         var sortCol = 'phase';
         var sortDir = 1;
@@ -1038,7 +1067,15 @@
         function escapeHtml(str) {
           var div = document.createElement('div');
           div.textContent = str;
-          return div.innerHTML;
+          return div.innerHTML.replace(/"/g, '&quot;');
+        }
+
+        function formatCount(value) {
+          return (Number(value) || 0).toLocaleString('en');
+        }
+
+        function countLabel(value, singular, plural) {
+          return formatCount(value) + ' ' + (Number(value) === 1 ? singular : plural);
         }
 
         function render() {
@@ -1082,11 +1119,11 @@
           });
 
           var visibleRows = rows.slice(0, visibleLimit);
-          countEl.textContent = 'Showing ' + visibleRows.length + ' of ' + rows.length + ' matching lessons. ' + allRows.length + ' total.';
+          countEl.textContent = 'Showing ' + formatCount(visibleRows.length) + ' of ' + countLabel(rows.length, 'matching lesson', 'matching lessons') + '. ' + formatCount(allRows.length) + ' total.';
           tableWrap.setAttribute('aria-busy', 'false');
 
           if (rows.length === 0) {
-            bodyEl.innerHTML = '<tr><td colspan="5" class="catalog-empty">No lessons match your filters.</td></tr>';
+            bodyEl.innerHTML = '<tr><td colspan="5" class="catalog-empty">' + (allRows.length ? 'No lessons match your filters.' : 'No lessons are published yet.') + '</td></tr>';
             progressiveActions.hidden = true;
             return;
           }
@@ -1101,7 +1138,7 @@
           for (var i = 0; i < visibleRows.length; i++) {
             var r = visibleRows[i];
             if (sortCol === 'phase' && r.phase !== previousPhase) {
-              html += '<tr class="catalog-group-row"><th colspan="5" scope="rowgroup">Phase ' + String(r.phase).padStart(2, '0') + ': ' + escapeHtml(r.phaseName) + '<span class="catalog-group-count">' + phaseCounts[r.phase] + ' lessons</span></th></tr>';
+              html += '<tr class="catalog-group-row"><th colspan="5" scope="rowgroup">Phase ' + String(r.phase).padStart(2, '0') + ': ' + escapeHtml(r.phaseName) + '<span class="catalog-group-count">' + countLabel(phaseCounts[r.phase], 'lesson', 'lessons') + '</span></th></tr>';
               previousPhase = r.phase;
             }
             html += '<tr>';
@@ -1115,15 +1152,16 @@
             }
             html += '<td>' + escapeHtml(r.type) + '</td>';
             html += '<td><span class="catalog-lang">' + escapeHtml(r.lang) + '</span></td>';
-            html += '<td><span class="catalog-status-dot ' + r.status + '" aria-hidden="true"></span>' + r.status + '</td>';
+            var status = escapeHtml(r.status);
+            html += '<td class="catalog-status"><span class="catalog-status-dot ' + status + '" aria-hidden="true"></span>' + status + '</td>';
             html += '</tr>';
           }
           bodyEl.innerHTML = html;
 
           var remaining = rows.length - visibleRows.length;
           progressiveActions.hidden = remaining <= 0;
-          progressiveNote.textContent = remaining > 0 ? remaining + ' matching lessons remain.' : '';
-          showMoreButton.textContent = 'Show next ' + Math.min(PAGE_SIZE, remaining);
+          progressiveNote.textContent = remaining > 0 ? countLabel(remaining, 'matching lesson remains.', 'matching lessons remain.') : '';
+          showMoreButton.textContent = 'Show next ' + formatCount(Math.min(PAGE_SIZE, remaining));
           showMoreButton.hidden = remaining <= 0;
           showAllButton.hidden = remaining <= 0;
         }

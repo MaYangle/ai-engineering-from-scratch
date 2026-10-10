@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """Maintain localized README files against the canonical English README.
 
-The historical span-based renderer remains available for new or partial
-translations and for its existing callers. Complete localized READMEs are
-maintained as documents: this command checks their links, anchors, numeric
+The historical span-based renderer remains available to help prepare drafts.
+Published localized READMEs are maintained as documents: this command checks their links, anchors, numeric
 facts, tables, and code instead of overwriting editorial revisions.
 
     python3 scripts/build_readme_i18n.py --dump     # list translatable blocks
-    python3 scripts/build_readme_i18n.py            # sync stats, audit full locales; write partial ones
+    python3 scripts/build_readme_i18n.py            # sync stats and audit every locale
     python3 scripts/build_readme_i18n.py --check     # fail on structural drift
 
 Full locale documents in i18n/<lang>/README.md are committed to main (unlike
@@ -156,11 +155,11 @@ def render(text, lang, translations):
     return "\n".join(lines)
 
 
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--dump", action="store_true")
     ap.add_argument("--check", action="store_true")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
     text = README.read_text(encoding="utf-8")
 
     assert render(text, "en", {}) == text, "generator is not structure-lossless"
@@ -172,49 +171,40 @@ def main():
         print(f"\n{len(keys)} translatable blocks; round-trip identity OK", file=sys.stderr)
         return 0
 
-    from readme_translations import TRANSLATIONS, README_NOTE
     from audit_readme_locales import (
-        LANGS as FULL_LOCALES, check_document as audit_locale,
-        sync_stats_facts,
+        FULL_LOCALES, check_document as audit_locale,
+        source_review_errors, sync_stats_facts,
     )
 
+    review_errors = source_review_errors(text)
+    if review_errors:
+        for error in review_errors:
+            print(error, file=sys.stderr)
+        return 1
+
     stale = []
-    for lang in dict.fromkeys((*FULL_LOCALES, *TRANSLATIONS)):
+    for lang in FULL_LOCALES:
         dst = OUT_ROOT / lang / "README.md"
-        if lang in FULL_LOCALES:
-            if not dst.is_file():
-                stale.append(lang)
-                continue
-            content = dst.read_text(encoding="utf-8")
-            if not args.check:
-                try:
-                    updated = sync_stats_facts(text, content)
-                except ValueError as exc:
-                    stale.append(lang)
-                    print(f"{lang}: {exc}", file=sys.stderr)
-                    continue
-                if updated != content:
-                    dst.write_text(updated, encoding="utf-8")
-                    content = updated
-                    print(f"synced stats in {dst.relative_to(ROOT)}")
-            errors = audit_locale(text, content, lang)
-            if errors:
-                stale.append(lang)
-                for error in errors:
-                    print(f"{lang}: {error}", file=sys.stderr)
-            elif not args.check:
-                print(f"preserved full {dst.relative_to(ROOT)}")
+        if not dst.is_file():
+            stale.append(lang)
             continue
-        note = README_NOTE.get(lang, "")
-        body = localize_links(render(text, lang, TRANSLATIONS))
-        content = f"{note}\n{body}" if note else body
-        if args.check:
-            if not dst.is_file() or dst.read_text(encoding="utf-8") != content:
-                stale.append(lang)
-        else:
-            dst.parent.mkdir(parents=True, exist_ok=True)
-            dst.write_text(content, encoding="utf-8")
-            print(f"wrote {dst.relative_to(ROOT)}")
+        original = dst.read_text(encoding="utf-8")
+        try:
+            content = original if args.check else sync_stats_facts(text, original)
+        except ValueError as exc:
+            stale.append(lang)
+            print(f"{lang}: {exc}", file=sys.stderr)
+            continue
+        errors = audit_locale(text, content, lang)
+        if errors:
+            stale.append(lang)
+            for error in errors:
+                print(f"{lang}: {error}", file=sys.stderr)
+        elif not args.check:
+            if content != original:
+                dst.write_text(content, encoding="utf-8")
+                print(f"synced stats in {dst.relative_to(ROOT)}")
+            print(f"preserved full {dst.relative_to(ROOT)}")
     if stale:
         print(f"README translations need review: {stale}", file=sys.stderr)
         return 1

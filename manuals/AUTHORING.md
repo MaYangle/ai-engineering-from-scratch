@@ -45,7 +45,7 @@ The `<id>` is lowercase and hyphenated, such as `a2a-101`. It matches the direct
 | `palette` | the colour table: each `hue` and the one `meaning` it has in this manual |
 | `sources` | the ranked source list: `name`, `path`, `usedFor` |
 | `quoteSources` | map from a citation key such as `spec` to a vendored file, for quote checks; `null` declares a key whose quotes cannot be checked |
-| `capture` | `run` and `check` argv arrays, run from the manual directory |
+| `capture` | `run` and `check` argv arrays, run from the manual directory, and an optional `timeoutSeconds` for the check (default 300) |
 | `front` | the front matter file |
 | `plate` | the cover figure: `figure`, `title`, `caption` |
 | `parts` | ordered parts: `number`, `title`, `thesis`, `summary`, `accent`, `sections` |
@@ -244,6 +244,7 @@ Save it as `figures/src/fig-1-2.js` and run `node manuals/_shared/figkit.js buil
 
 - A JSON, HTTP, SSE, or JSONL block must be a `listing` with a `source`. The audit fails a `json` fence that is not a listing.
 - The capture kit lives in `capture/`. It runs offline, needs no network and no keys, and follows the repository dependency allowlist.
+- A subject that is a proprietary binary or a hosted service cannot run offline in CI. Its kit records on the author's machine with the pinned binaries installed. Its `check` compares stored outputs after masking, and when the subject is not installed it prints `skipped` with the reason and exits 0. The front matter names the captures recorded that way and the machine they were recorded on.
 - `capture.run` writes `capture/out/`. `capture.check` writes to a temporary directory and compares with `capture/out/` after masking values that change on every run, such as timestamps and generated ids. The audit runs `capture.check` and fails on drift.
 - A listing head names its source file, so a reader can open the full record.
 
@@ -283,7 +284,7 @@ node site/build-manuals.js --print dist/manuals
 npx --yes pagedjs-cli@0.4.3 dist/manuals/<id>/print.html -o dist/manuals/aiefs-manual-<id>.pdf
 ```
 
-`site/build-manuals.js` writes `site/manual-<id>.html`, the index `site/manuals.html`, and `site/manuals-data.js`. All three are generated on deploy and never committed. The index lists `ready` manuals only. Add `--drafts` to list drafts too when you preview locally. The PDF is built in CI and attached to each release as `aiefs-manual-<id>.pdf`.
+`site/build-manuals.js` writes `site/manual-<id>.html`, the index `site/manuals.html`, and `site/manuals-data.js`. All three are generated on deploy and never committed. The index lists `ready` manuals only. Add `--drafts` to list drafts too when you preview locally. The PDF is built in CI and attached to each release as `aiefs-manual-<id>.pdf`. To attach the PDFs to an existing release again, start the Manuals workflow by hand and give the release tag.
 
 ## Status and commits
 

@@ -1,36 +1,36 @@
 <p align="center"><sub>AI desteğiyle hazırlanmış Türkçe çeviri; esas metin için <a href="../../README.md">İngilizce sürüme</a> bakın.</sub></p>
-<p align="center">
-  <img src="../../assets/banner.svg" alt="AI Engineering from Scratch — başvuru kılavuzu afişi" width="100%">
-</p>
 
 <p align="center">
-  <b>README’yi dilinizde okuyun:</b>
-  <a href="../../i18n/es/README.md">Español</a> ·
-  <a href="../../i18n/fr/README.md">Français</a> ·
-  <a href="../../i18n/pt/README.md">Português</a> ·
-  <a href="../../i18n/de/README.md">Deutsch</a> ·
-  <a href="../../i18n/it/README.md">Italiano</a> ·
-  <a href="../../i18n/zh/README.md">简体中文</a> ·
-  <a href="../../i18n/ja/README.md">日本語</a> ·
-  <a href="../../i18n/ko/README.md">한국어</a> ·
-  <a href="../../i18n/hi/README.md">हिन्दी</a> ·
-  <a href="../../i18n/ar/README.md">العربية</a> ·
-  <a href="../../i18n/ru/README.md">Русский</a> ·
-  <a href="../../i18n/tr/README.md">Türkçe</a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/header-dark.svg">
+    <img src="../../assets/readme/header-light.svg" alt="Sıfırdan AI Mühendisliği" width="840">
+  </picture>
 </p>
+
+Modellerin iç mekanizmalarını, bilgi erişim işlem hatlarını ve ajan çalışma ortamlarını uygulayın. Bunları test edin, hataları inceleyin, kodu ve değerlendirme sonuçlarını saklayın.
+
+**[Öğrenmeye başlayın](https://aiengineeringfromscratch.com/lesson?path=phases/00-setup-and-tooling/01-dev-environment)** · **[Bir yol seçin](#learning-routes)** · **[Bir laboratuvar deneyin](#interactive-lab)** · **[Bir proje geliştirin](#project-challenges)** · **[Müfredatı inceleyin](#contents)**
+
+Ücretsiz, açık kaynaklı, MIT lisanslı. Web sitesinde, bir kodlama ajanıyla veya yerel kod çalıştırarak öğrenin.
+
+> 523 ders. 20 aşama. Python, TypeScript, Rust, Julia.
 
 <p align="center">
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/license-MIT-1a1a1a?style=flat-square&labelColor=fafaf5" alt="MIT Lisansı"></a>
   <a href="../../ROADMAP.md"><img src="https://img.shields.io/badge/lessons-523-3553ff?style=flat-square&labelColor=fafaf5" alt="523 ders"></a>
   <a href="#contents"><img src="https://img.shields.io/badge/phases-20-3553ff?style=flat-square&labelColor=fafaf5" alt="20 aşama"></a>
   <a href="https://github.com/rohitg00/ai-engineering-from-scratch/stargazers"><img src="https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat-square&labelColor=fafaf5&color=3553ff" alt="GitHub yıldızları"></a>
-  <a href="https://aiengineeringfromscratch.com"><img src="https://img.shields.io/badge/web-aiengineeringfromscratch.com-3553ff?style=flat-square&labelColor=fafaf5" alt="Kurs sitesi"></a>
-  <p align="center">
- <a href="https://www.star-history.com/rohitg00/ai-engineering-from-scratch">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=rohitg00/ai-engineering-from-scratch&type=rank&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=rohitg00/ai-engineering-from-scratch&type=rank" /><img alt="Star History sıralaması" src="https://api.star-history.com/badge?repo=rohitg00/ai-engineering-from-scratch&type=rank" /></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/badge?repo=rohitg00/ai-engineering-from-scratch&type=trending&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/badge?repo=rohitg00/ai-engineering-from-scratch&type=trending" /><img alt="Günün GitHub trend deposu" src="https://api.star-history.com/badge?repo=rohitg00/ai-engineering-from-scratch&type=trending" /></picture>
- </a>
+  <a href="https://aiengineeringfromscratch.com"><img src="https://img.shields.io/badge/web-aiengineeringfromscratch.com-3553ff?style=flat-square&labelColor=fafaf5" alt="Web sitesi"></a>
 </p>
+
+<details>
+<summary>Kendi dilinizde okuyun</summary>
+
+<p align="center">
+  <a href="../../README.md">🇬🇧 English</a> · <a href="../../i18n/zh/README.md">🇨🇳 简体中文</a> · <a href="../../i18n/zh-TW/README.md">🇹🇼 繁體中文（台灣）</a> · <a href="../../i18n/ja/README.md">🇯🇵 日本語</a> · <a href="../../i18n/ko/README.md">🇰🇷 한국어</a> · <a href="../../i18n/pt/README.md">🇵🇹 Português</a> · <a href="../../i18n/pt-BR/README.md">🇧🇷 Português (Brasil)</a> · <a href="../../i18n/es/README.md">🇪🇸 Español</a> · <a href="../../i18n/de/README.md">🇩🇪 Deutsch</a> · <a href="../../i18n/fr/README.md">🇫🇷 Français</a> · <a href="../../i18n/it/README.md">🇮🇹 Italiano</a> · <a href="../../i18n/nl/README.md">🇳🇱 Nederlands</a> · <a href="../../i18n/pl/README.md">🇵🇱 Polski</a> · <a href="../../i18n/cs/README.md">🇨🇿 Čeština</a> · <a href="../../i18n/ro/README.md">🇷🇴 Română</a> · <a href="../../i18n/hu/README.md">🇭🇺 Magyar</a> · <a href="../../i18n/el/README.md">🇬🇷 Ελληνικά</a> · <a href="../../i18n/sv/README.md">🇸🇪 Svenska</a> · <a href="../../i18n/da/README.md">🇩🇰 Dansk</a> · <a href="../../i18n/no/README.md">🇳🇴 Norsk</a> · <a href="../../i18n/fi/README.md">🇫🇮 Suomi</a> · <a href="../../i18n/ru/README.md">🇷🇺 Русский</a> · <a href="../../i18n/uk/README.md">🇺🇦 Українська</a> · <a href="../../i18n/tr/README.md">🇹🇷 Türkçe</a> · <a href="../../i18n/he/README.md">🇮🇱 עברית</a> · <a href="../../i18n/ar/README.md">🇸🇦 العربية</a> · <a href="../../i18n/fa/README.md">🇮🇷 فارسی</a> · <a href="../../i18n/hi/README.md">🇮🇳 हिन्दी</a> · <a href="../../i18n/bn/README.md">🇧🇩 বাংলা</a> · <a href="../../i18n/ur/README.md">🇵🇰 اردو</a> · <a href="../../i18n/th/README.md">🇹🇭 ไทย</a> · <a href="../../i18n/vi/README.md">🇻🇳 Tiếng Việt</a> · <a href="../../i18n/id/README.md">🇮🇩 Bahasa Indonesia</a> · <a href="../../i18n/tl/README.md">🇵🇭 Tagalog</a>
 </p>
+
+</details>
 
 ### Sponsorlar
 
@@ -43,65 +43,134 @@
   <sub><span>Desteğiniz, tüm derslerin ücretsiz ve açık kaynaklı kalmasını sağlar.</span> <a href="#supporters">Tüm destekçileri görün</a> · <a href="../../SPONSORS.md">Sponsor olun</a></sub>
 </p>
 
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
+<a id="see-what-you-will-build-and-keep"></a>
+<a id="learning-routes"></a>
 
-> **Öğrencilerin %84’ü yapay zekâ araçlarını zaten kullanıyor; ancak yalnızca %18’i bunları profesyonel düzeyde kullanmaya hazır hissediyor.** Bu müfredat aradaki farkı kapatıyor.
->
-> 523 ders. 20 aşama. Yaklaşık 342 saat. Python, TypeScript, Rust, Julia. Her ders yeniden kullanılabilir bir çıktı sunar: bir istem, bir beceri, bir ajan veya bir MCP sunucusu. Ücretsiz, açık kaynaklı ve MIT lisanslı.
->
-> Yapay zekâyı sadece öğrenmiyorsunuz; onu baştan sona, kendi ellerinizle inşa ediyorsunuz.
+## Öğrenme rotaları
 
-<!-- STATS:START (generated from site/stats.json by build.js — do not edit by hand) -->
-<p align="center"><sub><b>114,584</b> okuyucu &nbsp;·&nbsp; Son 30 günde <b>181,995</b> sayfa görüntüleme &nbsp;·&nbsp; 2026-08-29 itibarıyla</sub></p>
-<!-- STATS:END -->
+| Rota | Başlangıç dersi |
+|---|---|
+| Model temelleri | [Kurulum ve araçlar](https://aiengineeringfromscratch.com/lesson?path=phases/00-setup-and-tooling/01-dev-environment) |
+| LLM sistemleri | [İstem mühendisliği](https://aiengineeringfromscratch.com/lesson?path=phases/11-llm-engineering/01-prompt-engineering) |
+| Ajanlar ve sistem teslimi | [Ajan döngüsü](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/01-the-agent-loop) |
 
-## Buradan başlayın: Ne geliştirmek istiyorsunuz?
+[Kariyer yollarını karşılaştırın](https://aiengineeringfromscratch.com/learning-paths.html) · [Ön koşullar ve çalışma süresi](#study-guide)
 
-Başlamadan önce 523 dersi tek tek incelemeniz gerekmez. Bir hedef seçin. Her bağlantı aynı müfredatı GitHub’da veya web sitesinde açar; iki sürümde de ders kodu aynıdır.
+<a id="interactive-lab"></a>
 
-| Hedefiniz | GitHub’da öğrenin | Web sitesinde öğrenin |
-|---|---|---|
-| Yeni başladım; sağlam bir temeli baştan sona edinmek istiyorum | [Aşama 0: Kurulum ve Araçlar](../../phases/00-setup-and-tooling/) | [Geliştirme Ortamı](https://aiengineeringfromscratch.com/lesson?path=phases/00-setup-and-tooling/01-dev-environment) |
-| Python biliyorum; matematik ve makine öğrenimi temellerini tamamlamak istiyorum | [Aşama 1: Matematik Temelleri](../../phases/01-math-foundations/) | [Lineer Cebire Sezgisel Yaklaşım](https://aiengineeringfromscratch.com/lesson?path=phases/01-math-foundations/01-linear-algebra-intuition) |
-| Üretim ortamına uygun LLM uygulamaları geliştirmek istiyorum | [Aşama 11: LLM Mühendisliği](../../phases/11-llm-engineering/) | [İstem Mühendisliği](https://aiengineeringfromscratch.com/lesson?path=phases/11-llm-engineering/01-prompt-engineering) |
-| Ajan geliştirmek istiyorum | [Aşama 14: Ajan Mühendisliği](../../phases/14-agent-engineering/) | [Ajan Döngüsü](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/01-the-agent-loop) |
-| Gerçek depolarda kodlama ajanlarını kullanmak istiyorum | [Ajan Destekli Mühendislik yolu](../../learning-paths/using-coding-agents.json) | [Ajan Destekli Mühendislik](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/31-agent-workbench-why-models-fail&learningPath=using-coding-agents) |
-| Uygulamaya geçmeden önce ne geliştireceğimi doğru biçimde belirlemek istiyorum | [Ürün Kararı ve Teslimat yolu](../../learning-paths/shaping-the-build.json) | [Ürün Kararı ve Teslimat](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/47-outcomes-before-output&learningPath=shaping-the-build) |
-| Model Context Protocol (MCP) ile uygulama geliştirmek istiyorum | [Model Context Protocol (MCP) yolu](../../phases/13-tools-and-protocols/README.md#model-context-protocol-mcp-path) | [Model Context Protocol (MCP) yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/06-mcp-fundamentals&learningPath=model-context-protocol) |
-| Agent Skills yazıp yayımlamak istiyorum | [Agent Skills odaklı yolu](../../phases/13-tools-and-protocols/README.md#agent-skills-fast-path) | [Agent Skills yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/22-skills-and-agent-sdks&learningPath=agent-skills) |
-| Claude sertifikasına hazırlanmak istiyorum | [Sertifikaya başlangıç](../../certifications/claude/GETTING_STARTED.md) | [Sertifika Akademisi](https://aiengineeringfromscratch.com/certifications.html) |
-| MCP Associate (MCPA) sertifikasına hazırlanmak istiyorum | [MCPA başlangıç rehberi](../../certifications/mcpa/GETTING_STARTED.md) | [MCPA öğrenme yolu](https://aiengineeringfromscratch.com/certification?id=mcpa-f) |
+### Gradyan inişi
 
-Nereden başlayacağınızı bilemiyor musunuz? [`start-learning` seviye belirleme rehberini](../../skills/start-learning/SKILL.md) veya [web sitesindeki ön koşullar kılavuzunu](https://aiengineeringfromscratch.com/prereqs.html) kullanın.
+Yirmi başlangıç noktası, ikinci dereceden bir kayıp fonksiyonu üzerinde gradyan inişini izler. Grafik, her güncellemeden sonra konumlarını ve ortalama kaybı gösterir.
 
-Dört temel alanı ve altı kariyer yolunu [AI Engineering Learning Paths](https://aiengineeringfromscratch.com/learning-paths.html) sayfasında karşılaştırın.
+<p align="center">
+  <a href="https://aiengineeringfromscratch.com/lesson?path=phases/01-math-foundations/08-optimization#loss-landscape-visualization">
+    <picture>
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="../../assets/readme/101-gradient-mobile-dark.png">
+      <source media="(max-width: 600px) and (prefers-reduced-motion: reduce)" srcset="../../assets/readme/101-gradient-mobile-light.png">
+      <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: reduce)" srcset="../../assets/readme/101-gradient-dark.png">
+      <source media="(prefers-reduced-motion: reduce)" srcset="../../assets/readme/101-gradient-light.png">
+      <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="../../assets/readme/101-gradient-mobile-dark.gif">
+      <source media="(max-width: 600px)" srcset="../../assets/readme/101-gradient-mobile-light.gif">
+      <source media="(prefers-color-scheme: dark)" srcset="../../assets/readme/101-gradient-dark.gif">
+      <img src="../../assets/readme/101-gradient-light.gif" alt="Gradyan inişi, dağınık başlangıç noktalarını kayıp fonksiyonunun minimumuna doğru taşır. Ortalama kayıp her güncellemede azalır." width="840">
+    </picture>
+  </a>
+</p>
 
-### Her derste aynı yöntemi izleyin
+[Derste öğrenme oranını ayarlayın](https://aiengineeringfromscratch.com/lesson?path=phases/01-math-foundations/08-optimization#loss-landscape-visualization) · [Gradyan inişi, momentum ve Adam yöntemlerini kodda karşılaştırın](../../phases/01-math-foundations/08-optimization/code/optimizers.py)
 
-1. **Okuyun:** `docs/en.md` dosyasını okuyup temel fikri kendi sözlerinizle açıklayın.
-2. **Yazıp kurun:** Kod bloğunu süs olarak görmek yerine önemli kodu kendiniz yazın ve çalıştırın.
-3. **Çalıştırın:** Ders komutunu `README.md` ve `phases/` klasörlerinin bulunduğu depo kökünden çalıştırın.
-4. **Kanıtı saklayın:** Komutu, çalışma dizinini, çıkış kodunu, anlamlı çıktıyı ve değiştirdiğiniz ya da ürettiğiniz eseri kaydedin.
-5. **Devam edin:** Çıktıyı açıklayabildiğiniz ve tahmin yürütmeden küçük bir değişiklik yapabildiğiniz zaman ilerleyin.
+<a id="project-challenges"></a>
 
-Derslerdeki komutlar, derste açıkça dizin değiştirmeniz söylenmedikçe depo köküne göre verilmiştir. Birden çok dilde örnek varsa öğrendiğiniz dildeki uygulamayı çalıştırın.
+### Projeler
 
-### Depoyu klonlayın ve ilk kanıtınızı üretin
+Aşamalı başlangıç kodları, referans uygulamalar ve yerel değerlendirme araçları içeren üç proje. [kurulum](#local-setup) sonrasında komutları depo kökünden çalıştırın. Aşamaları uygulayana kadar başlangıç kodları kontrollerden geçmez.
+
+<details>
+<summary><strong>01 · Bilgi Getirme Değerlendirme Laboratuvarı</strong> · Python · Sıralama metrikleri ve regresyon kontrolleri</summary>
+
+Bir aday sistem ortalama NDCG’yi iyileştirirken bir sorgu en ilgili kanıtı sıralamada daha aşağı yerleştirir. Gerilemeyi raporlayan ve yayımlama kontrolünü başarısız kılabilen sorgu bazında bir karşılaştırma geliştirin.
+
+Python 3.10+ kullanın. [RAG](../../phases/11-llm-engineering/06-rag/docs/en.md) ve [model değerlendirmesi](../../phases/02-ml-fundamentals/09-model-evaluation/docs/en.md) konularını gözden geçirin. Sıralama doğrulamasını, precision ve recall hesaplarını, sıraya duyarlı metrikleri ve ardından sistem karşılaştırmasını uygulayın.
 
 ```bash
-git clone https://github.com/rohitg00/ai-engineering-from-scratch.git
-cd ai-engineering-from-scratch
-python3 phases/00-setup-and-tooling/01-dev-environment/code/verify.py --route beginner
-python3 phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
+python3 scripts/project_test.py retrieval-evaluation-lab \
+  --init learning-artifacts/retrieval-evaluation-lab
+python3 scripts/project_test.py retrieval-evaluation-lab \
+  --stage 1 --path learning-artifacts/retrieval-evaluation-lab --strict
+python3 scripts/project_test.py retrieval-evaluation-lab \
+  --all --path learning-artifacts/retrieval-evaluation-lab --strict
 ```
 
-Ön denetim, şimdi gereken araçlarla ileride gerekecek araçları birbirinden ayırır. Gerekli bir denetim başarısız olursa algılanan nedeni ve düzeltme komutunu gösterir. İkinci komut, bağımlılık gerektirmeyen bir dersi çalıştırır ve sinir ağı katmanının temel işleminin bir matrisi vektörle çarpmak olduğunu gösterir. Bu terminal çıktısını ilk öğrenme kanıtınız olarak saklayın.
+**Saklayın:** sorgu bazındaki farkları ve puanlama için kullanılan ilgililik değerlendirmelerini içeren, yeniden üretilebilir bir karşılaştırma. Metrikler bu değerlendirmeleri açıklar; yanıtın doğruluğunu kanıtlamaz.
 
-## AI eğitmeninizi 30 saniyede ekleyin
+[Projeye başlayın](https://aiengineeringfromscratch.com/project.html?id=retrieval-evaluation-lab) · [Referansı inceleyin](../../projects/retrieval-evaluation-lab/solution/) · [Kendi girdilerinizle çalıştırın](../../projects/retrieval-evaluation-lab/README.md#run-with-your-own-inputs)
 
-Node.js, `npx` ve Agent Skills destekleyen bir kodlama ajanı zaten yüklüyse, iki komutla ajanınızı ders eğitmenine dönüştürebilirsiniz. Eğitmen becerilerini yüklemek veya okumak için depoyu klonlamanız gerekmez. Odaklı yol laboratuvarlarını çalıştırmak için `python3` gerekir. Agent Skills laboratuvarlarında ayrıca bir host seçmeniz ve kullanıcı ya da proje kapsamında yazılabilir bir beceri dizini sağlamanız gerekir.
+</details>
+
+<details>
+<summary><strong>02 · Ajan İz Kaydı Hata Ayıklayıcısı</strong> · TypeScript · İz ayrıştırma ve süre ölçümü</summary>
+
+Verilen iz kaydı hâlâ 100 ms sürer, ancak toplam token kullanımı 200 artar ve bir span hata vermeye başlar. Örtüşen alt span çalışmalarını üst span yürütme süresinden ayırın, ardından değişikliği ortaya çıkaran bir rapor üretin.
+
+Node.js 22.18+ ve değerlendirici için Python 3 kullanın. JSONL ayrıştırmayı, üst span doğrulamasını, aralık aritmetiğini ve ardından incelenebilir bir zaman çizelgesini uygulayın.
+
+```bash
+python3 scripts/project_test.py agent-trace-debugger \
+  --init learning-artifacts/agent-trace-debugger
+python3 scripts/project_test.py agent-trace-debugger \
+  --stage 1 --path learning-artifacts/agent-trace-debugger --strict
+python3 scripts/project_test.py agent-trace-debugger \
+  --all --path learning-artifacts/agent-trace-debugger --strict
+```
+
+**Saklayın:** girdi iz kaydını, HTML zaman çizelgesini ve JSON gerileme raporunu. Üst ve alt span kullanımı iki kez sayılmasın diye her span’ın alt spanları içermeyen kendi token sayısını koruyun.
+
+[Projeye başlayın](https://aiengineeringfromscratch.com/project.html?id=agent-trace-debugger) · [Referansı inceleyin](../../projects/agent-trace-debugger/solution/) · [Zamanlamayı etkileşimli inceleyin](https://aiengineeringfromscratch.com/project.html?id=agent-trace-debugger&stage=03-timing)
+
+</details>
+
+<details>
+<summary><strong>03 · Araç Çağrısı Güvenlik Duvarı</strong> · Rust · Rol kontrolleri ve onay kayıtları</summary>
+
+Bir yazma işlemi incelemeden sonra değişir veya bir onay yeniden kullanılır. Çağrı zarfını doğrulayın, çağıranın rolünü ve yolu kontrol edin, ardından tam olarak o isteğe ve içeriğe bağlı onayı tüketin.
+
+Rust ve Python 3.10+ kullanın. [araç şeması tasarımı](../../phases/13-tools-and-protocols/05-tool-schema-design/docs/en.md) ve [güvenlik sınırları](../../phases/17-infrastructure-and-production/25-security-secrets-audit/docs/en.md) konularını gözden geçirin. Kimliği çağıran uygulama sağlar; model bir işlem önerir.
+
+```bash
+python3 scripts/project_test.py tool-call-firewall \
+  --init learning-artifacts/tool-call-firewall
+python3 scripts/project_test.py tool-call-firewall \
+  --stage 1 --path learning-artifacts/tool-call-firewall --strict
+python3 scripts/project_test.py tool-call-firewall \
+  --all --path learning-artifacts/tool-call-firewall --strict
+```
+
+**Saklayın:** istenen işlemi ve politika kararını gösteren bir denetim kaydı. Onaylar tek bir çağrı içinde bir kez kullanılabilir; bu proje kalıcı yetkilendirme veya işletim sistemi korumalı alanı sağlamaz.
+
+[Projeye başlayın](https://aiengineeringfromscratch.com/project.html?id=tool-call-firewall) · [Referansı inceleyin](../../projects/tool-call-firewall/solution/) · [Onay sınırlarını inceleyin](https://aiengineeringfromscratch.com/project.html?id=tool-call-firewall&stage=03-consume-a-request-bound-approval-once)
+
+</details>
+
+[Tüm projeleri inceleyin](https://aiengineeringfromscratch.com/projects.html) · [Kariyer uygulama rehberi](../../learning-paths/CAREER-PRACTICE.md)
+
+## Nasıl öğreneceğinizi seçin
+
+### Web sitesinde
+
+Tamamlanmış dersleri [aiengineeringfromscratch.com](https://aiengineeringfromscratch.com) adresinde okuyun veya [İçindekiler](#contents) bölümünden bir aşamayı açın. Kurulum veya klonlama gerekmez.
+
+### Bir AI eğitmeniyle
+
+Node.js, `npx` ve Agent Skills destekleyen bir kodlama ajanı zaten yüklüyse, ajanınızı ders eğitmenine dönüştürebilirsiniz. Eğitmen becerilerini yüklemek veya okumak için depoyu klonlamanız gerekmez. Odaklı yol laboratuvarlarını çalıştırmak için `python3` gerekir. Agent Skills laboratuvarlarında ayrıca bir host seçmeniz ve kullanıcı ya da proje kapsamında yazılabilir bir beceri dizini sağlamanız gerekir.
+
+```bash
+npx skills add rohitg00/ai-engineering-from-scratch
+```
+
+Yükleyici sorduğunda host ve kapsamı seçin. Codex'te `start-learning`, Claude Code'da `/start-learning` kullanın veya hostunuzdan beceriyi adıyla kullanmasını isteyin.
+
+<details>
+<summary>Eğitmen kurulumu ve ana ortam komutları</summary>
 
 Önce yerel gereksinimleri denetleyin:
 
@@ -111,15 +180,11 @@ npx --version
 python3 --version
 ```
 
-Ardından müfredat becerilerini yükleyin; yükleyici sorduğunda kullanacağınız konağı ve kapsamı seçin:
-
-```bash
-npx skills add rohitg00/ai-engineering-from-scratch
-```
+`skills` yükleyicisi, kurulum sırasında seçtiğiniz host ve kapsama yazar; örneğin `.claude/skills/`, `.cursor/skills/`, `.codex/skills/` veya başka bir desteklenen beceri dizinine. Seçtiğiniz hostun tam bu konumu algıladığını doğrulayın.
 
 Çağrı biçimini host belirler; taşınabilir `SKILL.md` biçimi belirlemez:
 
-| Host | Müfredata başlama | Model Context Protocol (MCP) yoluna başlama | Agent Skills yoluna başlama | Aşama sınavını yapma |
+| Ana uygulama | Müfredata başlama | Model Context Protocol (MCP) yoluna başlama | Agent Skills yoluna başlama | Aşama sınavını yapma |
 |---|---|---|---|---|
 | Codex | `start-learning` yazın veya `/skills` içinden seçin | `learn-mcp` yazın veya `/skills` içinden seçin | `learn-agent-skills` yazın veya `/skills` içinden seçin | `check-understanding 13` yazın veya `/skills` içinden seçin |
 | Claude Code | `/start-learning` | `/learn-mcp` | `/learn-agent-skills` | `/check-understanding 13` |
@@ -132,121 +197,6 @@ Yalnızca Model Context Protocol (MCP) yolunu mu istiyorsunuz? Kullandığınız
 Yalnızca Agent Skills yolunu mu istiyorsunuz? Kullandığınız hosta uygun Agent Skills çağrısını kullanın. `AGENT-SKILLS-LEARNING.md` oluşturulur ve beceri sözleşmesi, keşif, çağırma, korumalı alan sınırları, yayımlama değerlendirmeleri ve gerçek hostlarda taşınabilirlik konularını tutarlı bir beş derslik sırayla işler. Web üzerinden [Agent Skills yoluna](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/22-skills-and-agent-sdks&learningPath=agent-skills) başlayabilirsiniz.
 
 Yükleyici, yapılandırabildiği hostları listeler ve yükleme konumunu sorar. Node.js, `npx`, `python3`, desteklenen bir host veya yazılabilir bir kapsam henüz yoksa web sitesini kullanın ya da `docs/en.md` dosyasını elle okuyun. Böylece kavramları öğrenebilirsiniz; gerçek hostta keşif, çağırma, betik çalıştırma ve kaldırma kanıtlarını ise ön denetim tamamlanınca toplayabilirsiniz. [Dersleri aiengineeringfromscratch.com adresinde okuyun](https://aiengineeringfromscratch.com).
-
-## Bu müfredat nasıl işliyor?
-
-Yapay zekâ öğrenme kaynakları çoğu zaman birbirinden kopuk parçalardan oluşuyor: bir yerde makale, başka yerde ince ayar yazısı, bir başka yerde gösterişli ajan demosu. Konular nadiren birbiriyle ilişkilendiriliyor. Bir sohbet robotu yayımlıyorsunuz ama kayıp eğrisini açıklayamıyorsunuz; ajana bir işlev bağlıyorsunuz ama onu çağıran modelde dikkatin ne yaptığını anlatamıyorsunuz.
-
-Bu müfredat hepsini birbirine bağlayan omurgadır: 20 aşama, 523 ders, dört dil — Python, TypeScript, Rust ve Julia. Bir uçta lineer cebir, diğerinde özerk sürüler var. Her algoritma önce temel matematiğinden başlayarak kurulur: geri yayılım, tokenizer, dikkat mekanizması, ajan döngüsü. PyTorch’a geldiğinizde, altyapıda ne yaptığını zaten biliyor olursunuz.
-
-Her ders aynı döngüyü izler: problemi okuyun, matematiği türetin, kodu yazın, testi çalıştırın, eseri saklayın. Beş dakikalık videolar, kopyala-yapıştır dağıtımları veya el tutan anlatımlar yok. Ücretsiz, açık kaynaklı ve kendi dizüstü bilgisayarınızda çalıştırılacak şekilde hazırlanmıştır.
-
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
-
-## Müfredatın yapısı
-
-Yirmi aşama birbiri üzerine kurulur: matematik temeldir; ajanlar ve üretim ortamı en üst katmandır. Alt katmanları biliyorsanız ileri atlayabilirsiniz; ancak temel eksikler, ilerideki konuların neden aksadığını anlamanızı zorlaştırır.
-
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
-flowchart TB
-  P0["Phase 0 — Setup &amp; Tooling"] --> P1["Phase 1 — Math Foundations"]
-  P1 --> P2["Phase 2 — ML Fundamentals"]
-  P2 --> P3["Phase 3 — Deep Learning Core"]
-  P3 --> P4["Phase 4 — Vision"]
-  P3 --> P5["Phase 5 — NLP"]
-  P3 --> P6["Phase 6 — Speech &amp; Audio"]
-  P3 --> P9["Phase 9 — RL"]
-  P5 --> P7["Phase 7 — Transformers"]
-  P7 --> P8["Phase 8 — GenAI"]
-  P7 --> P10["Phase 10 — LLMs from Scratch"]
-  P10 --> P11["Phase 11 — LLM Engineering"]
-  P10 --> P12["Phase 12 — Multimodal"]
-  P11 --> P13["Phase 13 — Tools &amp; Protocols"]
-  P13 --> P14["Phase 14 — Agent Engineering"]
-  P14 --> P15["Phase 15 — Autonomous Systems"]
-  P15 --> P16["Phase 16 — Multi-Agent &amp; Swarms"]
-  P14 --> P17["Phase 17 — Infrastructure &amp; Production"]
-  P15 --> P18["Phase 18 — Ethics &amp; Alignment"]
-  P16 --> P19["Phase 19 — Capstone Projects"]
-  P17 --> P19
-  P18 --> P19
-```
-
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
-
-## Bir dersin yapısı
-
-Her ders, müfredatın tamamında aynı yapıyı izleyen ayrı bir klasörde yer alır:
-
-```text
-phases/<NN>-<phase-name>/<NN>-<lesson-name>/
-├── code/      çalıştırılabilir uygulamalar (Python, TypeScript, Rust, Julia)
-├── docs/
-│   └── en.md  ders anlatımı
-└── outputs/   bu dersin ürettiği istemler, beceriler, ajanlar veya MCP sunucuları
-```
-
-Her ders altı adımdan oluşur. *Kendin İnşa Et / Kullan* yaklaşımı müfredatın omurgasıdır: önce algoritmayı sıfırdan uygular, ardından aynı işlemi üretim ortamındaki kütüphaneyle yaparsınız. Küçük sürümü kendiniz yazdığınız için çerçevenin ne yaptığını anlarsınız.
-
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
-flowchart LR
-  M["MOTTO<br/><sub>one-line core idea</sub>"] --> Pr["PROBLEM<br/><sub>concrete pain</sub>"]
-  Pr --> C["CONCEPT<br/><sub>diagrams &amp; intuition</sub>"]
-  C --> B["BUILD IT<br/><sub>raw math, no frameworks</sub>"]
-  B --> U["USE IT<br/><sub>same thing in PyTorch / sklearn</sub>"]
-  U --> S["SHIP IT<br/><sub>prompt · skill · agent · MCP</sub>"]
-```
-
-## Başlarken
-
-Başlamak için üç yol var. Birini seçin.
-
-**Seçenek A — terminalde öğrenin *(önerilen)*.** Yukarıdaki Node.js, `npx`, host ve kapsam ön denetiminden sonra, öğrenme becerilerini uyumlu bir ajana yükleyin; müfredat sizi adım adım yönlendirsin:
-
-```bash
-npx skills add rohitg00/ai-engineering-from-scratch
-```
-
-Yukarıdaki konağa özel çağrı tablosunu kullanın. Yüklü beceriler `start-learning`, `learn`, `course-guide` ile odaklı `learn-mcp` ve `learn-agent-skills` yollarını sunar. Ders anlatımları depoyu klonlamadan bu depodan aktarılabilir. Depodaki kod komutlarını ve çalıştırılabilir MCP ya da Agent Skills laboratuvarlarını kullanmak için yerel klon gerekir. İlerlemeniz projenizdeki `LEARNING.md`, `MCP-LEARNING.md` veya `AGENT-SKILLS-LEARNING.md` dosyalarında saklanır; böylece her oturuma kaldığınız yerden devam edebilirsiniz.
-
-**Seçenek B — okuyun.** Tamamlanmış dersleri [aiengineeringfromscratch.com](https://aiengineeringfromscratch.com) adresinde okuyun veya [İçindekiler](#contents) bölümünden bir aşamayı açın. Kurulum veya klonlama gerekmez.
-
-**Seçenek C — klonlayıp çalıştırın.**
-
-```bash
-git clone https://github.com/rohitg00/ai-engineering-from-scratch.git
-cd ai-engineering-from-scratch
-python3 phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
-```
-
-Depoyu klonlamak, öğrenme becerilerinin Claude Code tarafından otomatik algılanmasını da sağlar. Ayrıca her dersin kodunu `learn` eğitmeniyle yalnızca okuyarak değil, gerçekten çalıştırabilirsiniz.
-
-### Ön koşullar
-
-- Kod yazabiliyor olmanız (herhangi bir dilde; Python yardımcı olur).
-- Yapay zekânın **gerçekte nasıl çalıştığını** anlamak istemeniz; yalnızca API çağırmakla yetinmemeniz.
-
-### Claude sertifikalarına hazırlanın
-
-[Claude Certification Academy](../../certifications/claude/README.md), dört resmî Claude sertifika sınavı için ücretsiz, açık kaynaklı bir hazırlık programıdır: Associate Foundations, Developer Foundations, Architect Foundations ve Architect Professional. Her öğrenme yolu, sınav hedefleriyle eşleştirilmiş dersleri, çalıştırılabilir laboratuvarları, bir tanılama sınavını, bitirme projesini ve özgün, tam uzunlukta bir deneme sınavını bir araya getirir.
-
-[Ajan destekli GitHub başlangıç rehberini](../../certifications/claude/GETTING_STARTED.md) Claude Code, Codex, ChatGPT, Cursor veya başka bir ajanla kullanın. Codex’te `claude-certification`, Claude Code’da `/claude-certification` komutunu çalıştırın ya da başka bir hosttan `claude-certification` becerisini kullanmasını isteyin. Beceri bir sertifika yolu seçer, `CLAUDE-CERTIFICATION.md` dosyasında kalıcı bir plan oluşturur, sizi adım adım eğitir, gerçek laboratuvarları çalıştırır ve ürettiğiniz eserlere göre geri bildirim verir. Program [sertifika web sitesinde](https://aiengineeringfromscratch.com/certifications.html) da kullanılabilir.
-
-Akademi, yayımlanmış sınav hedeflerine dayalı bağımsız bir çalışma kaynağıdır. Anthropic ile bağlantılı değildir, gerçek sınav sorularını yayımlamaz ve sınavı geçmenizi garanti etmez.
-
-### MCP Associate (MCPA) sertifikasına hazırlanın
-
-[MCPA Sertifikasyon Müfredatı](../../certifications/mcpa/README.md), Agentic AI Foundation’ın Linux Foundation Training üzerinden sunduğu Model Context Protocol Associate sınavı için ücretsiz, açık kaynaklı bir hazırlık programıdır. Otuz dört ders, 2026-07-28 tarihli durumsuz protokolü beş sınav alanı boyunca öğretir: eski el sıkışma yerine istek başına `_meta` ve `server/discover`, birden çok gidiş-dönüş gerektiren istekler, abonelikler, önbellekleme, Tasks ve MCP Apps uzantıları, OAuth yetkilendirmesi, kayıt defteri ve SDK katmanları. Her ders, dökümü güncel kablo biçimine göre doğrulanan standart kütüphane laboratuvarı içerir. Program ayrıca bir tanılama sınavı, bitirme projesi ve yayımlanmış sınav dağılımını izleyen üç özgün, tam uzunlukta deneme sınavı sunar.
-
-[Ajan destekli GitHub başlangıç rehberini](../../certifications/mcpa/GETTING_STARTED.md) Claude Code, Codex, ChatGPT, Cursor veya başka bir ajanla kullanın. Codex’te `mcpa-certification`, Claude Code’da `/mcpa-certification` komutunu çalıştırın ya da başka bir hosttan `mcpa-certification` becerisini kullanmasını isteyin. Beceri bir öğrenme yolu seçer, `MCPA-CERTIFICATION.md` dosyasında kalıcı bir plan oluşturur, sizi adım adım eğitir, gerçek laboratuvarları çalıştırır ve ürettiğiniz eserlere göre geri bildirim verir. Ayrıntılar [MCPA sertifika sayfasında](https://aiengineeringfromscratch.com/certification?id=mcpa-f) yer alır.
-
-Bu müfredat, yayımlanmış sınav hedeflerine dayalı bağımsız bir çalışma kaynağıdır. Agentic AI Foundation veya Linux Foundation ile bağlantılı değildir, gerçek sınav sorularını yayımlamaz ve sınavı geçmenizi garanti etmez.
 
 ### Öğrenme becerileri
 
@@ -262,106 +212,115 @@ Bu müfredat, yayımlanmış sınav hedeflerine dayalı bağımsız bir çalış
 | [`find-your-level`](../../skills/find-your-level/SKILL.md) | On soruluk bir sınavla mevcut bilginizi başlangıç aşamasına eşler ve tahmini sürelerle kişiselleştirilmiş bir yol oluşturur. |
 | [`check-understanding <phase>`](../../skills/check-understanding/SKILL.md) | Eğlenerek tekrar yapmak ve bilgiyi sınamak için sekiz soruluk bir sınav hazırlar. Codex veya Claude Code’da yukarıdaki çağrı tablosunu kullanın; diğer hostlarda doğal dille isteyin. |
 
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
+</details>
+
+<a id="local-setup"></a>
+
+### Yerel kod çalıştırın
+
+```bash
+git clone https://github.com/rohitg00/ai-engineering-from-scratch.git
+cd ai-engineering-from-scratch
+python3 phases/00-setup-and-tooling/01-dev-environment/code/verify.py --route beginner
+python3 phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
 ```
 
-## Temel müfredatı kitap olarak okuyun
+Ön kontrol, şimdi gereken gereksinimleri daha sonra gerekecek araçlardan ayırır. Her zorunlu hata, tespit edilen nedeni ve bir düzeltme komutunu gösterir. `vectors.py` komutu bağımlılık gerektirmeyen bir ders çalıştırır ve sonunda bir matrisi bir vektörle çarpmanın, bir sinir ağı katmanının içindeki işlem olduğunu gösterir. Bu terminal çıktısını ilk kanıtınız olarak saklayın.
 
-20 aşamalı temel müfredat, `phases/` içeriğinden üretilen altı ciltlik EPUB ve PDF kitap serisine dönüştürülüyor. CI, kitapları derslerin kullandığı aynı kaynaklardan oluşturur; her cilt [GitHub sürümlerinde](https://github.com/rohitg00/ai-engineering-from-scratch/releases) yayımlanır ve aşağıdaki bağlantılar her zaman en son dosyalara gider. Cilt numaraları serideki yeri gösterir, baskı sürümünü değil. Her indirme tarihli bir baskıdır; önceki baskılar yayımlandıktan sonra da indirilebilir kalır.
+<details>
+<summary>Her derse aynı şekilde çalışın</summary>
 
-Sertifika programları bilerek kitap biçimine dönüştürülmüyor. AI eğitmeninin durum takibi, çalıştırılabilir laboratuvarlar, etkileşimli çizimler, tanılama ve süreli deneme sınavları GitHub’da ve web sitesinde birinci sınıf içerik olarak kalır.
+### Her derse aynı şekilde çalışın
 
-| Cilt | Başlık | Aşamalar | İndir |
-|-----|-------|--------|----------|
-| 1 | Temeller · Matematik, Araçlar ve Klasik Makine Öğrenimi | 00-02 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.pdf) |
-| 2 | Derin Öğrenme · Ağlar, Görüntü ve Konuşma | 03, 04, 06 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.pdf) |
-| 3 | Dil · NLP Temelleri ve Transformer’lar | 05, 07 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol3-language.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol3-language.pdf) |
-| 4 | Büyük Dil Modelleri · Üretken Yapay Zekâ, Güçlendirme, Ön Eğitim ve Mühendislik | 08-11 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol4-llms.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol4-llms.pdf) |
-| 5 | Ajanlar · Çok Modluluk, Protokoller, Özerklik ve Sürü Sistemleri | 12-16 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol5-agents.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol5-agents.pdf) |
-| 6 | Üretim Ortamı · Altyapı, Güvenlik ve Bitirme Projeleri | 17-19 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol6-production.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol6-production.pdf) |
+1. **Okuyun:** `docs/en.md` dosyasını okuyun ve ana fikri kendi cümlelerinizle anlatın.
+2. **Yazın ve kurun:** Önemli kodu kendiniz yazın; kod bloğuna süs gibi bakmayın.
+3. **Çalıştırın:** Ders komutunu depo kökünden, yani `README.md` ve `phases/` klasörünün bulunduğu dizinden çalıştırın.
+4. **Kanıt saklayın:** Komutu, çalışma dizinini, çıkış kodunu, anlamlı çıktıyı ve değiştirdiğiniz ya da ürettiğiniz çıktıyı kaydedin.
+5. **Devam edin:** Ancak çıktıyı açıklayabildiğinizde ve tahmin etmeden küçük bir değişiklik yapabildiğinizde ilerleyin.
 
-Kitaplar müfredatın anlık görüntüsünü, depo ise güncel sürümünü sunar. Her bölüm; derslerdeki hareketli şekillere, sınavlara ve çalıştırılabilir koda bağlantılarla sona erer. `python3 scripts/build_book.py` komutunu çalıştırın (Pandoc gerekir). Ayrıntılar için [book/README.md](../../book/README.md) sayfasına bakın.
+Ders sayfalarındaki komutlar, ders açıkça başka bir dizine geçmenizi söylemedikçe depo kökünden verilen yollardır. Bir ders birden fazla dil sunuyorsa öğrendiğiniz dilin uygulamasını çalıştırın.
 
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
+</details>
 
-## Her ders somut bir çıktı üretir
+<a id="study-guide"></a>
 
-Başka müfredatlar genellikle “X’i öğrendiniz” diyerek biter. Burada her ders, günlük iş akışınıza yükleyebileceğiniz veya ekleyebileceğiniz **yeniden kullanılabilir bir araç** üretir.
+## Bir öğrenme yolu seçin
 
-<table>
-<tr>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A istemler"/><br/><sub>FIG_001 · A</sub><br/><b>İSTEMLER</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B beceriler"/><br/><sub>FIG_001 · B</sub><br/><b>BECERİLER</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-c-agents.svg" width="120" height="120" alt="FIG_001.C ajanlar"/><br/><sub>FIG_001 · C</sub><br/><b>AJANLAR</b></th>
-<th align="left" width="25%"><img src="../../site/assets/figures/001-d-mcp-servers.svg" width="120" height="120" alt="FIG_001.D MCP sunucuları"/><br/><sub>FIG_001 · D</sub><br/><b>MCP SUNUCULARI</b></th>
-</tr>
-<tr>
-<td valign="top">Tekrarlanan bir görev için uzman düzeyinde yardım almak üzere herhangi bir yapay zekâ aracına yapıştırın.</td>
-<td valign="top">Claude, Cursor, Codex, OpenClaw, Hermes veya <code>SKILL.md</code> okuyabilen başka bir ajanla kullanın.</td>
-<td valign="top">Size özel bir ajanı çalıştırın. 14. aşamada bu döngüyü kendiniz yazdınız.</td>
-<td valign="top">Herhangi bir yapay zekâ aracına MCP üzerinden bağlanın; 13. aşamada uçtan uca kurulur.</td>
-</tr>
-</table>
+Başlamadan önce 523 dersin hepsine göz atmanız gerekmez. Bir hedef seçin. Her bağlantı aynı müfredatı GitHub'da ya da web sitesinde açar; iki sürüm de aynı ders kodunu kullanır.
 
-> Araçların tümünü `python3 scripts/install_skills.py <target>` ile yükleyin. Ödev değil, gerçek araçlar. Müfredat sonunda kendi ellerinizle kurup gerçekten anladığınız 523 eserden oluşan portföyünüz olur.
+| Hedefiniz | GitHub'da öğrenin | Web sitesinde öğrenin |
+|---|---|---|
+| Yeni başlıyorum ve temeli eksiksiz kurmak istiyorum | [Aşama 0: Kurulum ve Araçlar](../../phases/00-setup-and-tooling/) | [Geliştirme Ortamı](https://aiengineeringfromscratch.com/lesson?path=phases/00-setup-and-tooling/01-dev-environment) |
+| Python biliyorum, matematik ve makine öğrenmesi temellerini istiyorum | [Aşama 1: Matematik Temelleri](../../phases/01-math-foundations/) | [Lineer Cebir Sezgisi](https://aiengineeringfromscratch.com/lesson?path=phases/01-math-foundations/01-linear-algebra-intuition) |
+| Üretime hazır LLM uygulamaları geliştirmek istiyorum | [Aşama 11: LLM Mühendisliği](../../phases/11-llm-engineering/) | [Prompt Mühendisliği](https://aiengineeringfromscratch.com/lesson?path=phases/11-llm-engineering/01-prompt-engineering) |
+| Ajan geliştirmek istiyorum | [Aşama 14: Ajan Mühendisliği](../../phases/14-agent-engineering/) | [Ajan Döngüsü](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/01-the-agent-loop) |
+| Kodlama ajanlarını gerçek depolarda kullanmak istiyorum | [Ajan Destekli Mühendislik yolu](../../learning-paths/using-coding-agents.json) | [Ajan Destekli Mühendislik](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/31-agent-workbench-why-models-fail&learningPath=using-coding-agents) |
+| Uygulamaya geçmeden önce doğru şeyi tasarlamak istiyorum | [Ürün Muhakemesi ve Teslimat yolu](../../learning-paths/shaping-the-build.json) | [Ürün Muhakemesi ve Teslimat](https://aiengineeringfromscratch.com/lesson?path=phases/14-agent-engineering/47-outcomes-before-output&learningPath=shaping-the-build) |
 
-### FIG_002 · Uygulamalı bir örnek
+Nereden başlayacağınızdan emin değil misiniz? [`start-learning` seviye belirleme rehberini](../../skills/start-learning/SKILL.md) ya da [web sitesindeki ön koşullar kılavuzunu](https://aiengineeringfromscratch.com/prereqs.html) kullanın.
 
-Aşama 14, ders 1: ajan döngüsü. Yalnızca Python ile yaklaşık 120 satır; çerçeve yok.
+[AI Engineering öğrenme yollarında](https://aiengineeringfromscratch.com/learning-paths.html) dört temel alanı ve altı kariyer rotasını karşılaştırın.
 
-<table>
-<tr>
-<td valign="top" width="50%">
+<details>
+<summary>Odaklanmış MCP ve Agent Skills yolları</summary>
 
-**`code/agent_loop.py`** &nbsp; <sub><i>Kendin inşa et</i></sub>
+| Hedefiniz | GitHub'da öğrenin | Web sitesinde öğrenin |
+|---|---|---|
+| Model Context Protocol (MCP) ile geliştirmek istiyorum | [Model Context Protocol (MCP) rotası](../../phases/13-tools-and-protocols/README.md#model-context-protocol-mcp-path) | [Model Context Protocol (MCP) yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/06-mcp-fundamentals&learningPath=model-context-protocol) |
+| Agent Skills yazıp yayımlamak istiyorum | [Odaklı Agent Skills rotası](../../phases/13-tools-and-protocols/README.md#agent-skills-fast-path) | [Agent Skills yolu](https://aiengineeringfromscratch.com/lesson?path=phases/13-tools-and-protocols/22-skills-and-agent-sdks&learningPath=agent-skills) |
 
-```python
-def run(query, tools):
-    history = [user(query)]
-    for step in range(MAX_STEPS):
-        msg = llm(history)
-        if msg.tool_calls:
-            for call in msg.tool_calls:
-                result = tools[call.name](**call.args)
-                history.append(tool_result(call.id, result))
-            continue
-        return msg.content
-    raise StepLimitExceeded
-```
+</details>
 
-</td>
-<td valign="top" width="50%">
+<details>
+<summary>Ön koşullar ve çalışma süresi</summary>
 
-**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>Yayımla</i></sub>
+### Ön koşullar
 
-```markdown
----
-name: agent-loop
-description: ReAct-style loop for any tool list
-phase: 14
-lesson: 01
----
+- Kod yazabiliyor olmanız (herhangi bir dilde; Python yardımcı olur).
+- Yapay zekânın **gerçekte nasıl çalıştığını** anlamak istemeniz; yalnızca API çağırmakla yetinmemeniz.
 
-Implement a minimal agent loop that...
-```
+## Nereden başlamalı?
 
-**`outputs/prompt-debug-agent.md`**
+| Geçmişiniz | Başlangıç noktası | Tahmini süre |
+|---|---|---|
+| Programlamaya ve yapay zekâya yeni başlıyorum | Aşama 0: Kurulum ve Araçlar | Yaklaşık 306 saat |
+| Python biliyorum, makine öğreniminde yeniyim | Aşama 1: Matematik Temelleri | Yaklaşık 270 saat |
+| Makine öğrenimini biliyorum, derin öğrenmede yeniyim | Aşama 3: Derin Öğrenmenin Temelleri | Yaklaşık 200 saat |
+| Derin öğrenmeyi biliyorum; LLM ve ajanları öğrenmek istiyorum | Aşama 10: LLM’leri Sıfırdan Geliştirme | Yaklaşık 100 saat |
+| Kıdemli mühendisim; yalnızca ajan mühendisliğini öğrenmek istiyorum | Aşama 14: Ajan Mühendisliği | Yaklaşık 60 saat |
+| Yalnızca üretim ortamına yönelik MCP sistemleri geliştirmek istiyorum | [Model Context Protocol (MCP) yolu](../../learning-paths/model-context-protocol.json) | Yaklaşık 23 saat 15 dakika |
+| Yalnızca Agent Skills geliştirmeyi öğrenmek istiyorum | [Agent Skills Mühendisliği yolu](../../learning-paths/agent-skills.json) | Yaklaşık 9,5 saat |
 
-```markdown
-You are an agent debugger. Given the trace
-of an agent run, identify the step where
-the agent went wrong and explain why...
-```
+</details>
 
-</td>
-</tr>
-</table>
+## Müfredatın yapısı
 
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
+Yirmi aşama birbiri üzerine kurulur: matematik temeldir; ajanlar ve üretim ortamı en üst katmandır. Alt katmanları biliyorsanız ileri atlayabilirsiniz; ancak temel eksikler, ilerideki konuların neden aksadığını anlamanızı zorlaştırır.
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
+flowchart TB
+  P0["Aşama 0: Kurulum ve Araçlar"] --> P1["Aşama 1 : Matematik Temelleri"]
+  P1 --> P2["Aşama 2 : Makine Öğrenimi Temelleri"]
+  P2 --> P3["Aşama 3 : Derin Öğrenmenin Temelleri"]
+  P3 --> P4["Aşama 4 : Bilgisayarlı Görü"]
+  P3 --> P5["Aşama 5 : NLP: Temellerden İleri Konulara"]
+  P3 --> P6["Aşama 6 : Konuşma ve Ses"]
+  P3 --> P9["Aşama 9 : Pekiştirmeli Öğrenme"]
+  P5 --> P7["Aşama 7 : Transformer’ları Derinlemesine İnceleme"]
+  P7 --> P8["Aşama 8 : Üretken Yapay Zekâ"]
+  P7 --> P10["Aşama 10 : LLM’leri Sıfırdan Geliştirme"]
+  P10 --> P11["Aşama 11 : LLM Mühendisliği"]
+  P10 --> P12["Aşama 12 : Çok Kipli Yapay Zekâ"]
+  P11 --> P13["Aşama 13 : Araçlar ve Protokoller"]
+  P13 --> P14["Aşama 14 : Ajan Mühendisliği"]
+  P14 --> P15["Aşama 15 : Özerk Sistemler"]
+  P15 --> P16["Aşama 16 : Çok Ajanlı Sistemler ve Sürü Mimarileri"]
+  P14 --> P17["Aşama 17 : Altyapı ve Üretim Ortamı"]
+  P15 --> P18["Aşama 18 : Etik, Güvenlik ve Hizalama"]
+  P16 --> P19["Aşama 19 : Bitirme Projeleri"]
+  P17 --> P19
+  P18 --> P19
 ```
 
 <a id="contents"></a>
@@ -1084,33 +1043,104 @@ Her Aşama 14 çalışma tezgâhı dersi (31–42), ajana ders belgelerini açma
 
 </details>
 
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
+## Kitaplar ve sertifikalar
+
+<details>
+<summary>Temel müfredatı kitap olarak okuyun</summary>
+
+20 aşamalı temel müfredat, `phases/` içeriğinden üretilen altı ciltlik EPUB ve PDF kitap serisine dönüştürülüyor. CI, kitapları derslerin kullandığı aynı kaynaklardan oluşturur; her cilt [GitHub sürümlerinde](https://github.com/rohitg00/ai-engineering-from-scratch/releases) yayımlanır ve aşağıdaki bağlantılar her zaman en son dosyalara gider. Cilt numaraları serideki yeri gösterir, baskı sürümünü değil. Her indirme tarihli bir baskıdır; önceki baskılar yayımlandıktan sonra da indirilebilir kalır.
+
+Sertifika programları bilerek kitap biçimine dönüştürülmüyor. AI eğitmeninin durum takibi, çalıştırılabilir laboratuvarlar, etkileşimli çizimler, tanılama ve süreli deneme sınavları GitHub’da ve web sitesinde birinci sınıf içerik olarak kalır.
+
+| Cilt | Başlık | Aşamalar | İndir |
+|-----|-------|--------|----------|
+| 1 | Temeller · Matematik, Araçlar ve Klasik Makine Öğrenimi | 00-02 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol1-foundations.pdf) |
+| 2 | Derin Öğrenme · Ağlar, Görüntü ve Konuşma | 03, 04, 06 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol2-deep-learning.pdf) |
+| 3 | Dil · NLP Temelleri ve Transformer’lar | 05, 07 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol3-language.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol3-language.pdf) |
+| 4 | Büyük Dil Modelleri · Üretken Yapay Zekâ, Güçlendirme, Ön Eğitim ve Mühendislik | 08-11 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol4-llms.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol4-llms.pdf) |
+| 5 | Ajanlar · Çok Modluluk, Protokoller, Özerklik ve Sürü Sistemleri | 12-16 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol5-agents.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol5-agents.pdf) |
+| 6 | Üretim Ortamı · Altyapı, Güvenlik ve Bitirme Projeleri | 17-19 | [EPUB](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol6-production.epub) · [PDF](https://github.com/rohitg00/ai-engineering-from-scratch/releases/latest/download/aiefs-vol6-production.pdf) |
+
+Kitaplar müfredatın anlık görüntüsünü, depo ise güncel sürümünü sunar. Her bölüm; derslerdeki hareketli şekillere, sınavlara ve çalıştırılabilir koda bağlantılarla sona erer. `python3 scripts/build_book.py` komutunu çalıştırın (Pandoc gerekir). Ayrıntılar için [book/README.md](../../book/README.md) sayfasına bakın.
+
+</details>
+
+<details>
+<summary>Claude sertifikalarına hazırlanın</summary>
+
+[Claude Certification Academy](../../certifications/claude/README.md), dört resmî Claude sertifika sınavı için ücretsiz, açık kaynaklı bir hazırlık programıdır: Associate Foundations, Developer Foundations, Architect Foundations ve Architect Professional. Her öğrenme yolu, sınav hedefleriyle eşleştirilmiş dersleri, çalıştırılabilir laboratuvarları, bir tanılama sınavını, bitirme projesini ve özgün, tam uzunlukta bir deneme sınavını bir araya getirir.
+
+[Ajan destekli GitHub başlangıç rehberini](../../certifications/claude/GETTING_STARTED.md) Claude Code, Codex, ChatGPT, Cursor veya başka bir ajanla kullanın. Codex’te `claude-certification`, Claude Code’da `/claude-certification` komutunu çalıştırın ya da başka bir hosttan `claude-certification` becerisini kullanmasını isteyin. Beceri bir sertifika yolu seçer, `CLAUDE-CERTIFICATION.md` dosyasında kalıcı bir plan oluşturur, sizi adım adım eğitir, gerçek laboratuvarları çalıştırır ve ürettiğiniz eserlere göre geri bildirim verir. Program [sertifika web sitesinde](https://aiengineeringfromscratch.com/certifications.html) da kullanılabilir.
+
+Akademi, yayımlanmış sınav hedeflerine dayalı bağımsız bir çalışma kaynağıdır. Anthropic ile bağlantılı değildir, gerçek sınav sorularını yayımlamaz ve sınavı geçmenizi garanti etmez.
+
+</details>
+
+<details>
+<summary>MCP Associate (MCPA) sertifikasına hazırlanın</summary>
+
+[MCPA Sertifikasyon Müfredatı](../../certifications/mcpa/README.md), Agentic AI Foundation’ın Linux Foundation Training üzerinden sunduğu Model Context Protocol Associate sınavı için ücretsiz, açık kaynaklı bir hazırlık programıdır. Otuz dört ders, 2026-07-28 tarihli durumsuz protokolü beş sınav alanı boyunca öğretir: eski el sıkışma yerine istek başına `_meta` ve `server/discover`, birden çok gidiş-dönüş gerektiren istekler, abonelikler, önbellekleme, Tasks ve MCP Apps uzantıları, OAuth yetkilendirmesi, kayıt defteri ve SDK katmanları. Her ders, dökümü güncel kablo biçimine göre doğrulanan standart kütüphane laboratuvarı içerir. Program ayrıca bir tanılama sınavı, bitirme projesi ve yayımlanmış sınav dağılımını izleyen üç özgün, tam uzunlukta deneme sınavı sunar.
+
+[Ajan destekli GitHub başlangıç rehberini](../../certifications/mcpa/GETTING_STARTED.md) Claude Code, Codex, ChatGPT, Cursor veya başka bir ajanla kullanın. Codex’te `mcpa-certification`, Claude Code’da `/mcpa-certification` komutunu çalıştırın ya da başka bir hosttan `mcpa-certification` becerisini kullanmasını isteyin. Beceri bir öğrenme yolu seçer, `MCPA-CERTIFICATION.md` dosyasında kalıcı bir plan oluşturur, sizi adım adım eğitir, gerçek laboratuvarları çalıştırır ve ürettiğiniz eserlere göre geri bildirim verir. Ayrıntılar [MCPA sertifika sayfasında](https://aiengineeringfromscratch.com/certification?id=mcpa-f) yer alır.
+
+Bu müfredat, yayımlanmış sınav hedeflerine dayalı bağımsız bir çalışma kaynağıdır. Agentic AI Foundation veya Linux Foundation ile bağlantılı değildir, gerçek sınav sorularını yayımlamaz ve sınavı geçmenizi garanti etmez.
+
+</details>
 
 ## Araç Seti
 
-Her ders yeniden kullanılabilir bir çıktı üretir. Program sonunda elinizde:
+Her ders yeniden kullanılabilir bir çıktı üretir. Bunu ajanınıza yükleyin veya aşağıdaki betikleri depo kökünden kullanın.
+
+<details>
+<summary>Ders yapısı ve yeniden kullanılabilir çıktılar</summary>
+
+## Bir dersin yapısı
+
+Her ders, müfredatın tamamında aynı yapıyı izleyen ayrı bir klasörde yer alır:
 
 ```text
-outputs/
-├── prompts/      her tür yapay zekâ görevi için istem şablonları
-└── skills/       AI kodlama ajanları için SKILL.md dosyaları
+phases/<NN>-<phase-name>/<NN>-<lesson-name>/
+├── code/      çalıştırılabilir uygulamalar (Python, TypeScript, Rust, Julia)
+├── docs/
+│   └── en.md  ders anlatımı
+└── outputs/   bu dersin ürettiği istemler, beceriler, ajanlar veya MCP sunucuları
 ```
 
-Bunları Claude, Cursor, Codex, OpenClaw, Hermes veya `SKILL.md` / `AGENTS.md` dizinlerini okuyabilen başka bir ajana ekleyin. Ödev değil, gerçek araçlar.
+Her ders altı adımdan oluşur. *Kendin İnşa Et / Kullan* yaklaşımı müfredatın omurgasıdır: önce algoritmayı sıfırdan uygular, ardından aynı işlemi üretim ortamındaki kütüphaneyle yaparsınız. Küçük sürümü kendiniz yazdığınız için çerçevenin ne yaptığını anlarsınız.
 
-### Ders becerilerini ajanınıza yükleyin
-
-İki beceri grubu, iki yükleme yöntemi:
-
-**Öğrenme becerileri** (`start-learning`, `learn`, `course-guide`, `learn-mcp`, `learn-agent-skills`, `claude-certification`, `mcpa-certification`, `find-your-level` ve `check-understanding`) [`skills/`](../../skills/) altında bulunur. Tek komutla beceri destekleyen bir konağa yüklenir. Node.js ve `npx` gerekir; Python veya depo klonu gerekmez:
-
-```bash
-npx skills add rohitg00/ai-engineering-from-scratch
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
+flowchart LR
+  M["ANA FİKİR<br/><sub>tek satırda temel düşünce</sub>"] --> Pr["SORUN<br/><sub>somut bir güçlük</sub>"]
+  Pr --> C["KAVRAM<br/><sub>şemalar ve sezgi</sub>"]
+  C --> B["KENDİN YAP<br/><sub>temel matematik, çerçeve kullanmadan</sub>"]
+  B --> U["KULLAN<br/><sub>aynı işlem PyTorch / sklearn ile</sub>"]
+  U --> S["YAYIMLA<br/><sub>istem · beceri · ajan · MCP</sub>"]
 ```
 
-`skills` yükleyicisi, kurulum sırasında seçtiğiniz host ve kapsama yazar; örneğin `.claude/skills/`, `.cursor/skills/`, `.codex/skills/` veya başka bir desteklenen beceri dizinine. Seçtiğiniz hostun tam bu konumu algıladığını doğrulayın.
+## Her ders somut bir çıktı üretir
+
+Başka müfredatlar genellikle “X’i öğrendiniz” diyerek biter. Burada her ders, günlük iş akışınıza yükleyebileceğiniz veya ekleyebileceğiniz **yeniden kullanılabilir bir araç** üretir.
+
+<table>
+<tr>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-a-prompts.svg" width="120" height="120" alt="FIG_001.A istemler"/><br/><sub>FIG_001 · A</sub><br/><b>İSTEMLER</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-b-skills.svg" width="120" height="120" alt="FIG_001.B beceriler"/><br/><sub>FIG_001 · B</sub><br/><b>BECERİLER</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-c-agents.svg" width="120" height="120" alt="FIG_001.C ajanlar"/><br/><sub>FIG_001 · C</sub><br/><b>AJANLAR</b></th>
+<th align="left" width="25%"><img src="../../site/assets/figures/001-d-mcp-servers.svg" width="120" height="120" alt="FIG_001.D MCP sunucuları"/><br/><sub>FIG_001 · D</sub><br/><b>MCP SUNUCULARI</b></th>
+</tr>
+<tr>
+<td valign="top">Tekrarlanan bir görev için uzman düzeyinde yardım almak üzere herhangi bir yapay zekâ aracına yapıştırın.</td>
+<td valign="top">Claude, Cursor, Codex, OpenClaw, Hermes veya <code>SKILL.md</code> okuyabilen başka bir ajanla kullanın.</td>
+<td valign="top">Size özel bir ajanı çalıştırın. 14. aşamada bu döngüyü kendiniz yazdınız.</td>
+<td valign="top">Herhangi bir yapay zekâ aracına MCP üzerinden bağlanın; 13. aşamada uçtan uca kurulur.</td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary>Ders çıktılarını yükleyin</summary>
 
 **Ders çıktıları.** Depodaki `phases/**/outputs/` dizinlerinde 396 beceri ve 99 istem bulunur; bunları `scripts/install_skills.py` ile yükleyin. Depoyu klonlamanız gerekir. Etiket filtrelerini, deneme çalıştırmasını ve ajan başına yerleşim düzenlerini destekler:
 
@@ -1135,7 +1165,10 @@ Betik varsayılan olarak var olan bir hedefin üzerine yazmayı reddeder ve çak
 | `by-phase` | `<target>/phase-NN/<name>.md` |
 | `flat` | `<target>/<name>.md` |
 
-### Ajan çalışma tezgâhını kendi deponuza ekleyin
+</details>
+
+<details>
+<summary>Ajan çalışma tezgâhını kendi deponuza ekleyin</summary>
 
 Aşama 14’ün bitirme projesi, yeniden kullanılabilir Ajan Çalışma Tezgâhı paketini (AGENTS.md, şemalar, başlatma / doğrulama / devir betikleri) sunar. Herhangi bir depoda başlangıç yapısını oluşturmak için:
 
@@ -1148,7 +1181,10 @@ python3 scripts/scaffold_workbench.py path/to/your-repo --force    # overwrite
 
 Yedi çalışma tezgâhı bileşenini bağlar, başlangıç `task_board.json` dosyasını ve `schema_version: 1` içeren yeni bir `agent_state.json` oluşturur. Ardından görevi ve `AGENTS.md` dosyasını düzenleyin, `scripts/init_agent.py` komutunu çalıştırın ve sözleşmeyi ajana verin. Paketin kaynak dizini: `phases/14-agent-engineering/42-agent-workbench-capstone/outputs/agent-workbench-pack/`.
 
-### Kursun tamamını JSON olarak inceleyin
+</details>
+
+<details>
+<summary>Kursun tamamını JSON olarak inceleyin</summary>
 
 `scripts/build_catalog.py` diskteki tüm aşamaları, dersleri ve çıktıları tarar; depo köküne `catalog.json` dosyasını yazar. Müfredatın tamamı tek dosyada.
 
@@ -1160,9 +1196,12 @@ python3 scripts/build_catalog.py --out path/to/file.json
 
 Katalog README’den değil dosya sisteminden üretilir; sayılar bu nedenle diskteki içerikle eşleşir. Site derlemelerinde, alt akıştaki araçlarda veya README’deki sayıların güncel olduğunu doğrularken kullanın. Şema, betiğin başında belgelenmiştir.
 
-GitHub Actions iş akışı (`.github/workflows/curriculum.yml`) her PR’de `catalog.json` dosyasını yeniden oluşturur; depodaki dosya güncel değilse derlemeyi başarısız kılar. Herhangi bir dersi düzenledikten sonra `python3 scripts/build_catalog.py` komutunu çalıştırıp sonucu commit edin; aksi hâlde CI PR’ı reddeder. Aynı iş akışı `audit_lessons.py` denetimini yalnızca uyarı kipinde çalıştırır; böylece mevcut tutarsızlıklar katkıda bulunmayı engellemez.
+Müfredat iş akışı `catalog.json` dosyasını Git tarafından yok sayılan geçici bir çıktı olarak oluşturur. Commit etmeyin. Aynı iş akışı `audit_lessons.py` dosyasını engelleyici denetim olarak çalıştırır.
 
-### Her dersin Python kodunu hızlıca denetleyin
+</details>
+
+<details>
+<summary>Her dersin Python kodunu hızlıca denetleyin</summary>
 
 `scripts/lesson_run.py`, her dersin `code/` dizinindeki tüm `.py` dosyalarını bayt koduna derler. Varsayılan kip yalnızca sözdizimini denetler; kodu çalıştırmaz ve API anahtarı ya da ağır makine öğrenimi bağımlılıkları gerektirmez. Katkılarda en sık görülen gerilemeleri yakalar: yanlış girinti, bozuk f-string ifadeleri ve istenmeyen düzenlemeler.
 
@@ -1178,40 +1217,10 @@ python3 scripts/lesson_run.py --execute        # actually run, 10s timeout per l
 
 Yalnızca standart kütüphane; Python 3.10 ve üzeri. Varsayılan atlama listesini (`twitter.com`, `x.com`, `linkedin.com`, `instagram.com`, `medium.com`) değiştirmek için `LINK_CHECK_SKIP=domain1,domain2` ayarlayın. Bu alan adları otomatik HEAD/GET isteklerini etkin biçimde engeller.
 
-## Nereden başlamalı?
+</details>
 
-| Geçmişiniz | Başlangıç noktası | Tahmini süre |
-|---|---|---|
-| Programlamaya ve yapay zekâya yeni başlıyorum | Aşama 0: Kurulum ve Araçlar | Yaklaşık 306 saat |
-| Python biliyorum, makine öğreniminde yeniyim | Aşama 1: Matematik Temelleri | Yaklaşık 270 saat |
-| Makine öğrenimini biliyorum, derin öğrenmede yeniyim | Aşama 3: Derin Öğrenmenin Temelleri | Yaklaşık 200 saat |
-| Derin öğrenmeyi biliyorum; LLM ve ajanları öğrenmek istiyorum | Aşama 10: LLM’leri Sıfırdan Geliştirme | Yaklaşık 100 saat |
-| Kıdemli mühendisim; yalnızca ajan mühendisliğini öğrenmek istiyorum | Aşama 14: Ajan Mühendisliği | Yaklaşık 60 saat |
-| Yalnızca üretim ortamına yönelik MCP sistemleri geliştirmek istiyorum | [Model Context Protocol (MCP) yolu](../../learning-paths/model-context-protocol.json) | Yaklaşık 23 saat 15 dakika |
-| Yalnızca Agent Skills geliştirmeyi öğrenmek istiyorum | [Agent Skills Mühendisliği yolu](../../learning-paths/agent-skills.json) | Yaklaşık 9,5 saat |
-
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
-
-## Bu konu neden şimdi önemli?
-
-<table>
-<tr>
-<th align="left" width="50%"><sub>FIG_003 · A</sub><br/><b>SEKTÖRDEN İŞARETLER</b></th>
-<th align="left" width="50%"><sub>FIG_003 · B</sub><br/><b>İNCELENEN TEMEL MAKALELER</b></th>
-</tr>
-<tr>
-<td valign="top">
-
-> *“En gözde yeni programlama dili İngilizcedir.”*<br/> — **Andrej Karpathy** ([tweet](https://x.com/karpathy/status/1617979122625712128))
->
-> *“Yazılım mühendisliği gözlerimizin önünde yeniden şekilleniyor.”*<br/> — **Boris Cherny**, Claude Code’un yaratıcısı
->
-> *“Modeller gelişmeye devam edecek. Bileşik getirisi en yüksek beceri, **ne geliştireceğini bilmektir**.”*<br/> — 2026 sektör uzlaşısı
-
-</td>
-<td valign="top">
+<details>
+<summary>Temel makaleler ve protokoller</summary>
 
 - *Attention Is All You Need* — Vaswani et al., 2017 → [Aşama 7](#phase-7)
 - *Language Models are Few-Shot Learners* (GPT-3) → [Aşama 10](#phase-10)
@@ -1222,13 +1231,7 @@ Yalnızca standart kütüphane; Python 3.10 ve üzeri. Varsayılan atlama listes
 - *ReAct: Reasoning + Acting in LLMs* → [Aşama 14](#phase-14)
 - *Model Context Protocol* — Anthropic → [Aşama 13](#phase-13)
 
-</td>
-</tr>
-</table>
-
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
+</details>
 
 ## Katkıda Bulunma
 
@@ -1251,32 +1254,26 @@ python3 scripts/audit_lessons.py --json    # CI-friendly output
 
 Herhangi bir kural başarısız olduğunda komut sıfırdan farklı bir çıkış koduyla sonlanır. L001–L010 kuralları dizin yapısını, `docs/en.md` dosyasının ve H1 başlığının varlığını, `code/` dizininin boş olmamasını, `quiz.json` şemasını (sorun #102’ye neden olan eski `q/choices/answer` anahtarlarını reddeder) ve ders belgelerindeki göreli bağlantıları doğrular.
 
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
-
 <a id="supporters"></a>
 
 ## Çalışmaları destekleyin
+
+<!-- STATS:START (generated from site/stats.json by build.js — do not edit by hand) -->
+<p align="center"><sub><b>114,584</b> okuyucu &nbsp;·&nbsp; Son 30 günde <b>181,995</b> sayfa görüntüleme &nbsp;·&nbsp; 2026-08-29 itibarıyla</sub></p>
+<!-- STATS:END -->
 
 Ücretsiz, MIT lisanslı, 523 ders. Bu çalışmayı mümkün kılan sponsorlara ve destekçilere teşekkür ederiz. [Tüm sponsorları ve destekçileri görün](../../BACKERS.md).
 
 Çalışmaları desteklemek ister misiniz? [Sponsorluk seçeneklerini](../../SPONSORS.md), [donanım sponsorluğunu](../../SPONSORS.md#hardware-lab-partner) inceleyin veya [GitHub üzerinden sponsor olun](https://github.com/sponsors/rohitg00).
 
-```text
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
-
 Bu başvuru kılavuzu size yardımcı olduysa depoya yıldız verin; bu, projenin sürmesine katkı sağlar.
 
 ## Lisans
 
-MIT. İstediğiniz gibi kullanın: çatallayın, öğretin, satın veya yayımlayın. Atıf memnuniyetle karşılanır ancak zorunlu değildir.
+MIT. İstediğiniz gibi kullanın: fork'layın, öğretin, satın, yayımlayın. Atıf makbule geçer ama zorunlu değildir.
 
 [Rohit Ghumare](https://github.com/rohitg00) ve topluluk tarafından sürdürülmektedir.
 
 <sub>
-  <a href="https://x.com/ghumare64">@ghumare64</a> &nbsp;·&nbsp;
-  <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a> &nbsp;·&nbsp;
-  <a href="https://github.com/rohitg00/ai-engineering-from-scratch/issues/new/choose">Bildirim / Öneri</a>
+  <a href="https://x.com/ghumare64">@ghumare64</a> &nbsp;·&nbsp; <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a> &nbsp;·&nbsp; <a href="https://github.com/rohitg00/ai-engineering-from-scratch/issues/new/choose">Bildirim / Öneri</a>
 </sub>
